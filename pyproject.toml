@@ -1,0 +1,16 @@
+[project]
+name = "llm-color-steering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate>=1.10.1",
+    "google-genai>=1.32.0",
+    "numpy>=2.2.6",
+    "pandas>=2.3.2",
+    "python-dotenv>=1.1.1",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=4.56.0",
+]
