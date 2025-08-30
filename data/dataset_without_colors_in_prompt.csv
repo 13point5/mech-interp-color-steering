@@ -1,0 +1,3531 @@
+prompt,thinking_content,content
+Generate a website for a law firm specializing in family law.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Family Law Firm - [Your Law Firm Name]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+    }
+    header h1 {
+      text-align: center;
+    }
+    header p {
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f8f9fa;
+    }
+    .card h2 {
+      color: #333;
+    }
+    .card p {
+      color: #555;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Law Firm - [Your Law Firm Name]</h1>
+    <p>Contact us at [Your Email] or [Your Phone Number] for assistance.</p>
+  </header>
+  <div class=""container"">
+    <div class=""card"">
+      <h2>Our Services</h2>
+      <p>Specializing in family law, we provide legal support for all aspects of family matters.</p>
+    </div>
+    <div class=""card"">
+      <h2>Our Team</h2>
+      <p>Our team consists of experienced professionals who can help you navigate complex family issues.</p>
+    </div>
+    <div class=""card"">
+      <h2>Our Location</h2>
+      <p>Find us at [Your Address] or visit our website for more details.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; [Your Law Firm Name] - All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Create a website for a small accounting firm serving local businesses.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Local Accounting Firm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      text-align: center;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .section h2 {
+      margin-bottom: 15px;
+    }
+    .section p {
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Local Accounting Firm</h1>
+    <p>Help your local businesses thrive with professional accounting services.</p>
+  </header>
+
+  <div class=""content"">
+    <div class=""section"">
+      <h2>Our Services</h2>
+      <p>We offer a range of accounting services tailored to meet the needs of your business. From bookkeeping to tax preparation and financial planning, we help you stay organized and compliant.</p>
+    </div>
+    <div class=""section"">
+      <h2>Meet Our Team</h2>
+      <p>Our team of professionals is dedicated to helping you succeed. We pride ourselves on our commitment to quality, service, and innovation.</p>
+    </div>
+    <div class=""section"">
+      <h2>Get Started</h2>
+      <p>Request a free consultation to discuss how we can support your business's growth and financial health.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2023 Local Accounting Firm. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+```"
+Design a landing page for a freelance software engineer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Freelance Software Engineer</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .section-title {
+      margin-bottom: 30px;
+    }
+    .section-text {
+      margin-bottom: 20px;
+    }
+    .button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Freelance Software Engineer</h1>
+  </header>
+  <section class=""section-title"">
+    <h2>Find Your Voice</h2>
+  </section>
+  <section class=""section-text"">
+    <p>Are you a passionate software engineer seeking to build your own career? Our platform offers flexible, remote opportunities for freelance engineers to thrive in a dynamic work environment.</p>
+  </section>
+  <div class=""button"" onclick=""window.location.href='contact.html'"">Get Started</div>
+</body>
+</html>
+```"
+Build a corporate website for a management consulting company.,,
+Generate a portfolio site for an independent graphic designer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Independent Graphic Designer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #fff;
+    }
+    h2 {
+      color: #555;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      color: #444;
+    }
+    .card p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class=""container"">
+    <h2>Welcome to My Portfolio</h2>
+    <p>As an independent graphic designer, I specialize in creating unique and visually compelling work that reflects my creative vision.</p>
+    
+    <div class=""card"">
+      <h3>Portfolio</h3>
+      <p>View my full portfolio here: <a href=""#"">Portfolio</a></p>
+    </div>
+
+    <div class=""card"">
+      <h3>Projects</h3>
+      <p>Some of my recent projects include: <a href=""#"">Project 1</a>, <a href=""#"">Project 2</a>, and <a href=""#"">Project 3</a>.</p>
+    </div>
+
+    <div class=""card"">
+      <h3>Skills</h3>
+      <p>Graphic design, typography, branding, and digital illustration are my core skills.</p>
+    </div>
+  </div>
+</body>
+</html>
+```"
+Create a website for an online tutoring service.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Online Tutoring Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    nav {
+      background-color: #007BFF;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .section p {
+      margin-bottom: 10px;
+    }
+    .section .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .content img {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    .content p {
+      width: 80%;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Online Tutoring Service</h1>
+</header>
+
+<nav>
+  <a href=""#"">Home</a>
+  <a href=""#"">Tutoring</a>
+  <a href=""#"">About</a>
+  <a href=""#"">Contact</a>
+</nav>
+
+<div class=""container"">
+  <section class=""section"">
+    <h2>Welcome to Our Service</h2>
+    <p>Find a tutor in your area and start your learning journey today!</p>
+  </section>
+  <section class=""section"">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Subject-specific tutoring</li>
+      <li>Personalized learning plans</li>
+      <li>Online classes available</li>
+    </ul>
+  </section>
+  <section class=""section"">
+    <h2>Get Started</h2>
+    <p>Click here to start your free trial or schedule a consultation with a tutor.</p>
+  </section>
+</div>
+
+</body>
+</html>
+```"
+Generate a platform for a local language school.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Local Language School Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Local Language School Platform</h1>
+  <p>Welcome to our platform for local language schools! Here you can manage classes, courses, students, and more.</p>
+</body>
+</html>
+```"
+Build a university department homepage.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>University Department Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #555;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>University Department Homepage</h1>
+  </header>
+
+  <nav>
+    <a href=""#"">Home</a>
+    <a href=""#"">About</a>
+    <a href=""#"">Faculty</a>
+    <a href=""#"">Courses</a>
+    <a href=""#"">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Welcome to Our Department</h2>
+    <p>Discover the latest research, courses, and opportunities available at our university department.</p>
+  </section>
+
+  <section>
+    <h2>Our Faculty</h2>
+    <p>Our department is home to a team of highly skilled researchers and students dedicated to advancing knowledge in their respective fields.</p>
+  </section>
+
+  <footer>
+    <p>University Department © 2023</p>
+  </footer>
+</body>
+</html>
+```"
+Make a site for an educational nonprofit organization.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Education for All</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      color: #333;
+    }
+    .section p {
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Education for All</h1>
+  </header>
+  <div class=""container"">
+    <section class=""section"">
+      <h2>About Us</h2>
+      <p>We are an educational nonprofit organization dedicated to providing access to quality education for all children and families in underserved communities. Our mission is to empower individuals and families through free and quality learning opportunities.</p>
+    </section>
+    <section class=""section"">
+      <h2>Our Programs</h2>
+      <p>We offer a variety of free educational programs designed to support learning in different settings. Our programs are tailored to meet the needs of diverse learners and help them succeed in school and beyond.</p>
+    </section>
+    <section class=""section"">
+      <h2>Contact Us</h2>
+      <p>Find us at <a href=""mailto:info@educationforall.org"">info@educationforall.org</a>.</p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2023 Education for All. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+Design an interactive site for a children’s learning center.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Children's Learning Center Interactive Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 1.2em;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .section p {
+      margin-bottom: 15px;
+    }
+    .button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Children's Learning Center</h1>
+  </header>
+  <div class=""container"">
+    <section class=""section"">
+      <h2>Welcome to Our Learning Center</h2>
+      <p>Help your child learn, play, and explore in a safe and fun environment.</p>
+      <button class=""button"">Explore Now</button>
+    </section>
+    <section class=""section"">
+      <h2>Our Activities</h2>
+      <p>- Reading & Writing</p>
+      <p>- Math & Science</p>
+      <p>- Music & Art</p>
+      <button class=""button"">Explore Activities</button>
+    </section>
+    <section class=""section"">
+      <h2>Our Teachers</h2>
+      <p>- Teachers with experience in children's learning</p>
+      <button class=""button"">Contact Us</button>
+    </section>
+  </div>
+</body>
+</html>
+```"
+Generate a website for a dental clinic.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Dental Clinic - [Clinic Name]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #28a745;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 15px 10px;
+      }
+
+      section {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dental Clinic - [Clinic Name]</h1>
+  </header>
+
+  <section>
+    <h2>Welcome to [Clinic Name]</h2>
+    <p>Experience the best dental care at [Clinic Name]. Our team is committed to providing compassionate and effective treatments for all patients.</p>
+  </section>
+
+  <footer>
+    <p>&copy; [Clinic Name] - All rights reserved. Contact us for more information.</p>
+  </footer>
+
+</body>
+</html>
+```"
+Build a homepage for a physiotherapy practice.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Physiotherapy Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .info-box {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .info-box h2 {
+      margin: 0 0 10px;
+    }
+    .info-box p {
+      margin: 0;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Physiotherapy Practice</h1>
+    <p>Help with all your physical needs</p>
+  </header>
+  <div class=""info-box"">
+    <h2>Our Services</h2>
+    <p>- Physical therapy for injuries and conditions</p>
+    <p>- Sports and exercise programs</p>
+    <p>- Pain management and rehabilitation</p>
+  </div>
+  <div class=""info-box"">
+    <h2>Our Team</h2>
+    <p>Our physiotherapists are passionate and trained professionals</p>
+  </div>
+  <footer>
+    <p>&copy; 2023 Physiotherapy Practice. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Create a website for a mental health counseling center.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Mental Health Counseling Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      color: #333;
+    }
+    .card p {
+      color: #555;
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mental Health Counseling Center</h1>
+  </header>
+  <nav>
+    <a href=""#"">Home</a>
+    <a href=""#"">Services</a>
+    <a href=""#"">About</a>
+    <a href=""#"">Contact</a>
+  </nav>
+  <section class=""container"">
+    <h2>Our Services</h2>
+    <div class=""card"">
+      <h3>Therapy Sessions</h3>
+      <p>Available for all ages and needs.</p>
+    </div>
+    <div class=""card"">
+      <h3>Support Groups</h3>
+      <p>Join our community for support and connection.</p>
+    </div>
+    <div class=""card"">
+      <h3>Community Classes</h3>
+      <p>Learn new skills and find joy in life.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Mental Health Counseling Center. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Make a site for a veterinary clinic.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Veterinary Clinic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .info {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Veterinary Clinic</h1>
+  </header>
+  <nav>
+    <a href=""#"">Home</a>
+    <a href=""#"">Services</a>
+    <a href=""#"">About</a>
+    <a href=""#"">Contact</a>
+  </nav>
+  <section class=""info"">
+    <h2>Welcome to Our Clinic</h2>
+    <p>We provide comprehensive veterinary care for pets and livestock. Our clinic is equipped with the latest technology and expert veterinary staff to ensure the health of your pets and the health of the environment.</p>
+  </section>
+</body>
+</html>"
+Develop a telemedicine platform landing page.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Telemedicine Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      color: #4a90e2;
+    }
+    .section p {
+      color: #555;
+    }
+    .section button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .section button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Telemedicine Platform</h1>
+    <p>Connect with healthcare professionals for 24/7 access to medical support</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <p>From general health to emergency care, our platform offers a wide range of options</p>
+  </section>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <p>
+      - Real-time patient support
+      - 24/7 availability
+      - Affordable pricing
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Features</h2>
+    <p>
+      - Secure patient records
+      - Mobile-friendly interface
+      - Easy to use and understand
+    </p>
+  </section>
+
+  <section>
+    <h2>Join Now</h2>
+    <button>Sign Up</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Telemedicine Platform. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+```"
+Create an online store for handmade jewelry.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Handmade Jewelry Online Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .product-card {
+      border: 2px solid #ccc;
+      margin: 20px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product-card h3 {
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      margin-bottom: 15px;
+    }
+    .button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Handmade Jewelry Online Store</h1>
+  </header>
+  <div class=""container"">
+    <div class=""product-card"">
+      <h3>Our First Product</h3>
+      <p>This is the first product we have added to our store.</p>
+      <button class=""button"">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>
+```"
+Build a site for a boutique clothing brand.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>My Boutique Clothing Brand</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/800x300');
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 1.2em;
+      text-shadow: 0 0 10px #000;
+    }
+    .hero h2 {
+      margin-bottom: 10px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+    }
+    .feature {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+    .feature p {
+      margin-bottom: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Boutique Clothing</h1>
+  </header>
+  <section class=""hero"">
+    <h2>Discover the Future of Fashion</h2>
+    <p>Experience the latest trends with our boutique brand, designed to inspire and uplift.</p>
+  </section>
+  <section class=""features"">
+    <div class=""feature"">
+      <h3>Modern Designs</h3>
+      <p>Our clothing is crafted with the latest fashion trends in mind, ensuring that each piece is both stylish and comfortable.</p>
+    </div>
+    <div class=""feature"">
+      <h3>Quality Craftsmanship</h3>
+      <p>Every piece is made with care and attention to detail, ensuring that every customer feels satisfied and proud of their purchase.</p>
+    </div>
+    <div class=""feature"">
+      <h3>Unique Styles</h3>
+      <p>Our collection includes a variety of styles to suit all occasions, from casual to formal, and from home to formal wear.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 My Boutique Clothing. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Generate a product page for a consumer electronics company.,,"```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consumer Electronics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-info-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .product-name {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            font-size: 1em;
+        }
+        .product-buttons {
+            margin-top: 20px;
+        }
+        .product-buttons a {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .product-buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consumer Electronics</h1>
+    <div class=""product-container"">
+        <div class=""product-image""><img src=""https://via.placeholder.com/300x200"" alt=""Product Image""></div>
+        <div class=""product-info"">
+            <div class=""product-name"">Smartphones</div>
+            <div class=""product-price"">$99.99</div>
+            <div class=""product-buttons"">
+                <a href=""#"">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class=""product-container"">
+        <div class=""product-image""><img src=""https://via.placeholder.com/300x200"" alt=""Product Image""></div>
+        <div class=""product-info"">
+            <div class=""product-name"">Laptops</div>
+            <div class=""product-price"">$499.99</div>
+            <div class=""product-buttons"">
+                <a href=""#"">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```"
+Make a website for a subscription box service.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Subscription Box Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Subscription Box Service</h1>
+  <p>Welcome to our subscription box service! We offer curated and delicious selections for you to enjoy throughout the year. Whether you're looking for a healthy snack, a tasty meal, or a special occasion treat, we have your selection!</p>
+  <p><strong>Enjoy our curated selections every month for a great experience!</strong></p>
+</body>
+</html>"
+Design a catalog site for a furniture retailer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Furniture Catalog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product-card h2 {
+      margin-top: 0;
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Furniture Catalog</h1>
+  </header>
+
+  <nav>
+    <a href=""#products"">Products</a>
+    <a href=""#gallery"">Gallery</a>
+  </nav>
+
+  <main>
+    <div class=""product-card"">
+      <h2>Chair</h2>
+      <img src=""chair.jpg"" alt=""Chair"">
+      <p>Designed for comfort and style. Available in various sizes.</p>
+    </div>
+    <div class=""product-card"">
+      <h2>Table</h2>
+      <img src=""table.jpg"" alt=""Table"">
+      <p>Perfect for home or office. Includes storage and drawers.</p>
+    </div>
+    <div class=""product-card"">
+      <h2>Desk</h2>
+      <img src=""desk.jpg"" alt=""Desk"">
+      <p>Modern and functional design. Includes shelves and lighting.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Furniture Catalog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Create a restaurant website with online reservations.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Restaurant Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+    .content p {
+      color: #666;
+    }
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Restoran</h1>
+  </header>
+
+  <nav>
+    <a href=""#"">Home</a>
+    <a href=""#"">Reservations</a>
+    <a href=""#"">About</a>
+    <a href=""#"">Contact</a>
+  </nav>
+
+  <div class=""container"">
+    <div class=""content"">
+      <h2>Reservations</h2>
+      <p>Book your table online at our restaurant for the best dining experience.</p>
+      <button class=""btn"">Book Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
+```"
+Build a homepage for a local bakery.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+  <title>Local Bakery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .content h2 {
+      color: #333;
+    }
+    .content p {
+      color: #666;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Local Bakery</h1>
+    <p>Welcome to our local bakery!</p>
+  </header>
+  <div class=""content"">
+    <h2>About Us</h2>
+    <p>We are a small, family-owned bakery located in the heart of our community. Our friendly and warm atmosphere makes us a popular spot for baking and eating.</p>
+  </div>
+  <div class=""content"">
+    <h2>Our Products</h2>
+    <p>
+      We offer a variety of delicious bread, pastries, and baked goods. Our menu is filled with local ingredients and freshly baked items.
+    </p>
+  </div>
+  <div class=""footer"">
+    <p>&copy; 2023 Local Bakery. All rights reserved.</p>
+  </div>
+</body>
+</html>
+```"
+Generate a site for a coffee shop.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>My Coffee Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .menu-item {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .menu-item h3 {
+      margin-bottom: 10px;
+    }
+    .menu-item p {
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Our Coffee Shop</h1>
+  <div class=""container"">
+    <div class=""menu"">
+      <div class=""menu-item"">
+        <h3>Smoothies</h3>
+        <p>Enjoy our delicious smoothies with different flavors.</p>
+      </div>
+      <div class=""menu-item"">
+        <h3>Espresso</h3>
+        <p>Enjoy the best quality espresso with a variety of options.</p>
+      </div>
+      <div class=""menu-item"">
+        <h3>Latte</h3>
+        <p>Enjoy our rich latte with a variety of choices.</p>
+      </div>
+    </div>
+    <p>Contact us at 123 Main St, City, USA</p>
+  </div>
+  <footer>
+    <p>&copy; 2023 My Coffee Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Make a catering service website.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Catering Service Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left {
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .right {
+      width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class=""container"">
+    <div class=""content"">
+      <div class=""left"">
+        <h2>Welcome to Our Catering Service</h2>
+        <p>We offer delicious meals for all occasions.</p>
+        <button class=""button"">Book Now</button>
+      </div>
+      <div class=""right"">
+        <h2>Our Menu</h2>
+        <ul>
+          <li>Breakfast</li>
+          <li>Lunch</li>
+          <li>Dinner</li>
+        </ul>
+      </div>
+    </div>
+    <div class=""footer"">
+      &copy; 2023 Catering Service. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
+```"
+Design a hotel booking site.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Hotel Booking Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .booking-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .booking-form h2 {
+      margin-bottom: 15px;
+    }
+    .booking-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .booking-form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .booking-form button:hover {
+      background-color: #0056b3;
+    }
+    .booking-form .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hotel Booking Site</h1>
+  </header>
+  <div class=""container"">
+    <div class=""booking-form"">
+      <h2>Book Your Stay</h2>
+      <form>
+        <input type=""text"" placeholder=""Your Name"" required />
+        <input type=""text"" placeholder=""From Date"" required />
+        <input type=""text"" placeholder=""To Date"" required />
+        <input type=""text"" placeholder=""Hotel Name"" required />
+        <input type=""text"" placeholder=""Number of Nights"" required />
+        <button type=""submit"">Book Now</button>
+      </form>
+      <div class=""error"">Please fill in all required fields.</div>
+    </div>
+  </div>
+</body>
+</html>"
+Create a portfolio website for a photographer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Photographer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    section {
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Photographer Portfolio</h1>
+  <section>
+    <h2>Experience</h2>
+    <p>Photography has always been my passion, and I'm excited to share my portfolio with you. Here are a few of my most notable projects:</p>
+    <ul>
+      <li>Wedding Photography - [Insert Project Name]</li>
+      <li>Personal Event Photography - [Insert Project Name]</li>
+      <li>Travel Photography - [Insert Project Name]</li>
+    </ul>
+  </section>
+</body>
+</html>
+```"
+Generate a band or musician homepage.,,"```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Band Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Band</h1>
+    <h2>Explore our music and perform together!</h2>
+    <p>Join us in creating music and sharing it with others.</p>
+</body>
+</html>
+```"
+Build a site for a film festival.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <title>Film Festival Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .section h2 {
+      color: #2c3e50;
+    }
+    .content {
+      padding: 20px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class=""container"">
+    <section class=""section"">
+      <h2>Welcome to Our Film Festival</h2>
+      <p>Experience the world of cinema with our latest events and highlights.</p>
+    </section>
+    <section class=""section"">
+      <h2>Event Highlights</h2>
+      <div class=""content"">
+        <p>Our film festival will feature a variety of films, screenings, and interactive activities.</p>
+      </div>
+    </section>
+    <section class=""section"">
+      <h2>Join Us</h2>
+      <p>Connect with fellow film lovers and attend our events at our main venue.</p>
+    </section>
+  </div>
+</body>
+</html>
+```"
+Make a platform for an independent bookstore.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <title>Independent Bookstore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Independent Bookstore</h1>
+  <p>Welcome to our independent bookstore! We offer a wide range of books from all genres and authors. Come explore our collection and enjoy reading for pleasure.</p>
+  <p>Contact us at <a href=""mailto:info@bookstore.com"">info@bookstore.com</a> for more details.</p>
+</body>
+</html>
+```"
+Develop a personal blog for a travel writer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>My Travel Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .post {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .post h2 {
+      margin-top: 0;
+    }
+
+    .post p {
+      margin-bottom: 10px;
+    }
+
+    .post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Travel Blog</h1>
+  </header>
+
+  <div class=""post"">
+    <h2>My First Adventure</h2>
+    <p>Traveling is my passion. This blog is a personal journey.</p>
+    <img src=""https://via.placeholder.com/400x200"" alt=""My First Travel Photo"" />
+  </div>
+
+  <div class=""post"">
+    <h2>Exploring the Mountains</h2>
+    <p>Mountain trails and cultural experiences are my favorite spots.</p>
+    <img src=""https://via.placeholder.com/400x200"" alt=""Mountain View"" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Travel Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Create a donation page for a charity.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Charity Donation Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Donate to Our Charity</h1>
+  <p>Thank you for your support. Your donation will help us reach more people.</p>
+  <button onclick=""alert('Thank you for your donation!')"">Donate Now</button>
+</body>
+</html>
+```"
+Generate a website for an environmental NGO.,,"Languages: English, Spanish, French, German, Chinese, Japanese, Korean, Russian, Arabic, Czech, Polish, Dutch, Swedish, Norwegian, Italian, Portuguese, Thai, Vietnamese, Indonesian, Malay, Tamil, Hindi, Urdu, Bengali, Marathi, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali, Marathi, Tamil, Hindi, Urdu, Bengali"
+Build a community center homepage.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+  <title>Community Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .hero {
+      background-image: url('community-center.jpg');
+      background-size: cover;
+      height: 50vh;
+      position: relative;
+    }
+    .hero h2 {
+      margin: 0;
+      padding: 20px 0;
+      color: #fff;
+    }
+    .hero p {
+      color: #fff;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Community Center</h1>
+  </header>
+  <div class=""hero"">
+    <h2>Welcome to Our Community Center</h2>
+    <p>We provide a space for community events, workshops, and social gatherings.</p>
+  </div>
+  <div class=""container"">
+    <div class=""content"">
+      <div class=""card"">
+        <h3>Event Calendar</h3>
+        <p>Join our schedule for local community events.</p>
+      </div>
+      <div class=""card"">
+        <h3>Workshops</h3>
+        <p>Whether you're looking for learning or social activities, we have a range to choose from.</p>
+      </div>
+      <div class=""card"">
+        <h3>Meetings</h3>
+        <p>Connect with others and share ideas.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Community Center. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+Design a site for a local sports club.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Local Sports Club - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #0056b3;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      margin-bottom: 15px;
+    }
+    .section p {
+      color: #333;
+    }
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Local Sports Club</h1>
+  </header>
+  <nav>
+    <a href=""#about"">About</a>
+    <a href=""#services"">Services</a>
+    <a href=""#gallery"">Gallery</a>
+    <a href=""#contact"">Contact</a>
+  </nav>
+  <section id=""about"">
+    <h2>About</h2>
+    <p>Welcome to our local sports club. We offer a wide range of sports activities to keep you active and engaged with our community. Whether you're interested in running, swimming, or basketball, we have a place to play.</p>
+  </section>
+  <section id=""services"">
+    <h2>Services</h2>
+    <ul>
+      <li>Running Club</li>
+      <li>Swimming Club</li>
+      <li>Basketball Club</li>
+      <li>Yoga Club</li>
+    </ul>
+  </section>
+  <section id=""gallery"">
+    <h2>Gallery</h2>
+    <p>Check out our latest photos and videos from our activities and events.</p>
+  </section>
+  <section id=""contact"">
+    <h2>Contact</h2>
+    <p>Call us at 123-456-7890 or visit our website for more information.</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 Local Sports Club. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Make a platform for a neighborhood association.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <title>Neighborhood Association Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Neighborhood Association Platform</h1>
+  <p>Get started with our platform to manage your neighborhood association's goals, events, and members. Sign up now and join the community!</p>
+</body>
+</html>
+```"
+Create a landing page for a SaaS startup.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>MySaaS Startup - Start Your Business</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .hero {
+      background-color: #007BFF;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h2 {
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .hero button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #0056b3;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    .footer p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MySaaS Startup</h1>
+  </header>
+  <div class=""hero"">
+    <h2>Welcome to MySaaS Startup</h2>
+    <p>Start your business with our intuitive and powerful SaaS solutions.</p>
+    <button onclick=""window.location.href='https://example.com'"">Get Started</button>
+  </div>
+  <footer>
+    <p>&copy; 2023 MySaaS Startup. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Build a homepage for a mobile app.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>My Mobile App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #007bff;
+      padding: 10px 20px;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1545650145-7c42a5a87805?ixlib=rb-1.0.2&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .container h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        height: 80vh;
+      }
+
+      .hero h1 {
+        font-size: 1.5em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .button {
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Mobile App</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href=""#home"">Home</a></li>
+      <li><a href=""#features"">Features</a></li>
+      <li><a href=""#contact"">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class=""hero"">
+    <h1>Welcome to My Mobile App</h1>
+    <p>This is a self-contained mobile app homepage.</p>
+  </div>
+
+  <div class=""container"">
+    <h2>About Us</h2>
+    <p>Welcome to our app, where you can do all your daily tasks seamlessly.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Task Management</li>
+      <li>Notifications</li>
+      <li>Settings</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: support@example.com | Phone: +123456789</p>
+  </div>
+
+  <button class=""button"" onclick=""window.location.href='https://www.example.com'"">Start Using My App</button>
+</body>
+</html>
+```"
+Generate a developer documentation site.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Developer Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Developer Documentation</h1>
+  <p>Welcome to the Developer Documentation Site. This is a self-contained site for your development needs.</p>
+  <p><a href=""#"">Documentation Index</a></p>
+</body>
+</html>
+```"
+Make a website for a blockchain project.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Blockchain Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin-bottom: 15px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blockchain Project</h1>
+  </header>
+  <div class=""container"">
+    <div class=""card"">
+      <h2>About Us</h2>
+      <p>We are a blockchain development team focused on creating secure and transparent decentralized applications.</p>
+    </div>
+    <div class=""card"">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Develop blockchain solutions</li>
+        <li>Provide secure data storage</li>
+        <li>Support various blockchain technologies</li>
+      </ul>
+    </div>
+    <div class=""card"">
+      <h2>Join Us</h2>
+      <p>Get started by signing up and becoming a member today!</p>
+    </div>
+    <div class=""footer"">
+      <p>&copy; 2025 Blockchain Project. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
+```"
+Design a site for a robotics company.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Robotics Company</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Robotics Innovators</h1>
+  </header>
+
+  <div class=""container"">
+    <section class=""section"">
+      <h2>About Us</h2>
+      <p>We are a leading robotics company that develops advanced robotic solutions for various industries. Our team combines engineering, AI, and design to create innovative technologies that enhance productivity and improve human safety.</p>
+    </section>
+
+    <section class=""section"">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Smart Industrial Robots</li>
+        <li>Autonomous Vehicles</li>
+        <li>Robotics for Education</li>
+      </ul>
+    </section>
+
+    <section class=""section"">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Robotics Development</li>
+        <li>Training and Certification</li>
+        <li>Consulting Services</li>
+      </ul>
+    </section>
+
+    <section class=""section"">
+      <h2>Contact Us</h2>
+      <p>Email: support@roboticscompany.com<br>
+        Phone: +1 (202) 345-6789<br>
+        Address: 123 Robotics Street, Cityville, USA</p>
+    </section>
+
+    <footer class=""footer"">
+      <p>&copy; 2023 Robotics Innovators. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
+```"
+Create a wedding planning service website.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Wedding Planning Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wedding Planning Service</h1>
+  </header>
+  <div class=""container"">
+    <div class=""card"">
+      <h3>Wedding Planning</h3>
+      <p>Book your wedding with our expert planners and caterers.</p>
+    </div>
+    <div class=""card"">
+      <h3>Custom Catering</h3>
+      <p>Choose your favorite menu from our curated options.</p>
+    </div>
+    <div class=""card"">
+      <h3>Event Dates</h3>
+      <p>Book your wedding date with us.</p>
+    </div>
+    <div class=""card"">
+      <h3>Additional Services</h3>
+      <p>Includes photography, venue booking, and more.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Wedding Planning Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+Generate an event registration page for a conference.,,"```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conference Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type=""text""],
+        input[type=""email""],
+        input[type=""password""] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conference Event Registration</h1>
+    <form>
+        <label for=""name"">Name:</label><br>
+        <input type=""text"" id=""name"" name=""name"" required><br>
+        
+        <label for=""email"">Email:</label><br>
+        <input type=""email"" id=""email"" name=""email"" required><br>
+        
+        <label for=""password"">Password:</label><br>
+        <input type=""password"" id=""password"" name=""password"" required><br>
+        
+        <button type=""submit"">Register</button>
+    </form>
+    <div class=""message"">Your details have been saved. You can now proceed to the conference.</div>
+</body>
+</html>
+```"
+Build a site for a fitness trainer.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Fitness Trainer Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e3a5e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    footer {
+      background-color: #1e3a5e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FitTrainer</h1>
+  </header>
+
+  <div class=""container"">
+    <div class=""card"">
+      <h2>Our Services</h2>
+      <p>Our fitness trainer offers a wide range of services to help you achieve your fitness goals.</p>
+    </div>
+    <div class=""card"">
+      <h2>Our Fitness Programs</h2>
+      <p>Whether you're looking for a personal training session or a group workout, we have programs tailored to your needs.</p>
+    </div>
+    <div class=""card"">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our trainers at 123 Fitness Lane, City, USA. We are here to help you achieve your fitness goals.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Fitness Trainer. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+Make a booking site for a yoga studio.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Yoga Studio Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+    header h1 {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    .booking-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .booking-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .booking-form input[type=""text""],
+    .booking-form input[type=""date""],
+    .booking-form input[type=""time""],
+    .booking-form input[type=""tel""] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .booking-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .booking-form button:hover {
+      background-color: #0056b3;
+    }
+    .booking-form p {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yoga Studio Booking</h1>
+  </header>
+  <div class=""container"">
+    <h2>Book Your Yoga Class</h2>
+    <form class=""booking-form"">
+      <label for=""name"">Your Name</label>
+      <input type=""text"" id=""name"" required />
+      <br />
+      <label for=""email"">Email Address</label>
+      <input type=""email"" id=""email"" required />
+      <br />
+      <label for=""date"">Date of Class</label>
+      <input type=""date"" id=""date"" required />
+      <br />
+      <label for=""time"">Time of Class</label>
+      <input type=""time"" id=""time"" required />
+      <br />
+      <label for=""contact"">Contact Number</label>
+      <input type=""tel"" id=""contact"" required />
+      <br />
+      <button type=""submit"">Book Now</button>
+    </form>
+    <p>© 2023 Yoga Studio Booking - All Rights Reserved</p>
+  </div>
+  <footer>
+    <p>Footer Text Here</p>
+  </footer>
+</body>
+</html>
+```"
+Design a personal coaching service website.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Personal Coaching Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background-color: #0b1c3c;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #2e7d32, #3498db);
+      padding: 50px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #e0e0e0;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #0b1c3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Personal Coaching Service</h1>
+  </header>
+
+  <section class=""hero"">
+    <h2>Transform Your Life Through Coaching</h2>
+    <p>Find expert guidance to unlock your potential and achieve your goals.</p>
+  </section>
+
+  <section class=""services"">
+    <div class=""service"">
+      <h3>Personal Development</h3>
+      <p>Work on self-awareness, confidence, and goal setting.</p>
+    </div>
+    <div class=""service"">
+      <h3>Time Management</h3>
+      <p>Improve time efficiency and productivity.</p>
+    </div>
+    <div class=""service"">
+      <h3>Health & Wellbeing</h3>
+      <p>Enhance physical and mental health through holistic approaches.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Personal Coaching Service. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"
+Create a portfolio site for an interior designer.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Interior Designer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .section p {
+      margin-bottom: 10px;
+    }
+    .section img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .section .skills {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+    }
+    .section .skills a {
+      color: #333;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Interior Designer Portfolio</h1>
+    <p>Welcome to my interior design portfolio. I specialize in creating beautiful, functional spaces that bring life to any home.</p>
+  </header>
+
+  <div class=""container"">
+    <div class=""section"">
+      <h2>Projects</h2>
+      <p>Here are some of my recent projects:</p>
+      <div class=""skills"">
+        <a href=""#"">Modern Living Spaces</a>
+        <a href=""#"">Art & Decor</a>
+        <a href=""#"">Functional Design</a>
+      </div>
+    </div>
+    <div class=""section"">
+      <h2>Education</h2>
+      <p>Education: Bachelor of Interior Design, XYZ University, 2020–2023.</p>
+    </div>
+    <div class=""section"">
+      <h2>Skills</h2>
+      <p>Interior Design, Interior Lighting, Furniture Design, 3D Modeling, Sustainable Design.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Interior Designer Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+```"
+Generate a homepage for a landscaping company.,,"<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
+  <title>Landscaping Company - [Your Company Name]</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1em 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x300');
+      background-size: cover;
+      position: relative;
+      height: 300px;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      color: #888;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .content h3 {
+      color: #2e7d32;
+    }
+
+    .content p {
+      color: #666;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[Your Company Name]</h1>
+  </header>
+
+  <nav>
+    <a href=""#about"">About</a>
+    <a href=""#services"">Services</a>
+    <a href=""#contact"">Contact</a>
+  </nav>
+
+  <section class=""hero"">
+    <h2>Welcome to [Your Company Name]</h2>
+    <p>Transform your space with professional landscaping services.</p>
+  </section>
+
+  <section class=""content"">
+    <h3>About Us</h3>
+    <p>We specialize in creating beautiful, functional landscapes that enhance your property and improve your quality of life.</p>
+
+    <h3>Services</h3>
+    <ul>
+      <li>Landscaping</li>
+      <li>Tree and weed removal</li>
+      <li>Outdoor improvements</li>
+      <li>Green spaces</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <p>Phone: (555) 123-4567</p>
+    <p>Email: contact@landscapingcompany.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; [Your Company Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>"
+Build a site for a local plumbing business.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Local Plumbing Business</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      color: #333;
+    }
+    .content p {
+      color: #555;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Local Plumbing Services</h1>
+  </header>
+
+  <div class=""container"">
+    <div class=""content"">
+      <h2>About Us</h2>
+      <p>Our local plumbing business provides top-quality services to our community. We specialize in residential and commercial plumbing repairs and installations. We are committed to excellence and customer satisfaction.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Local Plumbing Services. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+```"
+Make a repair service website for smartphones.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Smartphone Repair Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .container h2 {
+      color: #333;
+    }
+    .container p {
+      color: #666;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .service {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-bottom: 10px;
+    }
+    .service p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smartphone Repair Service</h1>
+  </header>
+  <div class=""container"">
+    <div class=""services"">
+      <div class=""service"">
+        <h3>Phone Repair & Replacement</h3>
+        <p>Fix broken devices and provide replacement parts</p>
+      </div>
+      <div class=""service"">
+        <h3>Software & System Support</h3>
+        <p>Technical support and troubleshooting for all smartphone models</p>
+      </div>
+      <div class=""service"">
+        <h3>Custom Modifications</h3>
+        <p>Custom phone modifications and enhancements</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```"
+Design a platform for pet adoption.,,"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"" />
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0""/>
+  <title>Pet Adoption Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+    }
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #333;
+    }
+    .card p {
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Adoption Platform</h1>
+  </header>
+  <div class=""container"">
+    <div class=""card"">
+      <h3>Adopt a Pet</h3>
+      <p>Find your perfect pet with our platform. Please fill out the form below.</p>
+    </div>
+    <div class=""card"">
+      <h3>Get a Pet</h3>
+      <p>Our pet adoption page offers a free adoption process and a community of pet lovers.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Pet Adoption Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```"

@@ -60,7 +60,6 @@ def extract_colors(text: str) -> list[str]:
 	)
 
 	response = response.parsed
-	print(f"Response: {response}")
 
 	colors = []
 	if response is None:
@@ -87,7 +86,7 @@ def extract_colors(text: str) -> list[str]:
 
 
 if __name__ == "__main__":
-	df = pd.read_csv("data/dataset_without_colors_in_prompt.csv")
+	df = pd.read_csv("data/dataset_with_colors_in_prompt.csv")
 	colors_list = []
 	
 	for index, row in df.iterrows():
@@ -103,7 +102,7 @@ if __name__ == "__main__":
 	df["colors"] = colors_list
 	
 	# Save to new CSV file
-	output_file = "data/dataset_without_colors_in_prompt_with_annotated_colors.csv"
+	output_file = "data/dataset_with_colors_in_prompt_with_annotated_colors.csv"
 	df.to_csv(output_file, index=False)
 	print(f"Saved dataset with colors to {output_file}")
 	print(f"Total rows processed: {len(df)}")
