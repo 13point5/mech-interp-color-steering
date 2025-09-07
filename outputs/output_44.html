@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Coaching | Transform Your Life</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f3f4f6;
+      color: #333;
+    }
+
+    header {
+      background: #6a11cb;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav {
+      background: #5e0fa4;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-button {
+      background: #6a11cb;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #5e0fa4;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      padding: 50px 0;
+    }
+
+    .service {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .service h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .service p {
+      font-size: 1em;
+      color: #555;
+    }
+
+    footer {
+      background: #6a11cb;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elite Coaching</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Transform Your Life with Expert Coaching</h2>
+      <p>Personalized coaching to help you achieve your goals, improve your well-being, and unlock your full potential. Whether it's career growth, mental health, or life balance, we're here to support you every step of the way.</p>
+      <button class="cta-button" onclick="location.href='#contact'">Book a Session</button>
+    </div>
+
+    <section id="services" class="services">
+      <div class="service">
+        <h3>Life Coaching</h3>
+        <p>Help you set and achieve personal and professional goals with actionable strategies and guidance.</p>
+      </div>
+      <div class="service">
+        <h3>Career Coaching</h3>
+        <p>Unlock your potential in your career with expert advice on job search, career transitions, and professional growth.</p>
+      </div>
+      <div class="service">
+        <h3>Stress & Wellness Coaching</h3>
+        <p>Improve your mental and physical well-being through personalized coaching and mindfulness techniques.</p>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About Us</h2>
+      <p>We are a team of certified coaches dedicated to helping individuals achieve their goals and live their best lives. With years of experience and a deep understanding of human behavior, we provide personalized coaching that is tailored to your unique needs and aspirations.</p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to schedule a session? Reach out to us anytime. We're here to help you succeed.</p>
+      <p>Email: info@elitecoaching.com | Phone: (123) 456-7890</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Elite Coaching. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

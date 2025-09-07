@@ -1,0 +1,194 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenSpace Landscaping</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #388e3c;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1552674603-86495448e4d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px #00000080;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0 0;
+    }
+
+    .services {
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .service {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .contact {
+      background: #4caf50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      color: #333;
+    }
+
+    .contact-form button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .service-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GreenSpace Landscaping</h1>
+    <p>Transform your outdoor space into a beautiful sanctuary</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <h1>Beautiful Landscapes, Starting Today</h1>
+      <p>Professional landscaping services for residential and commercial properties.</p>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Landscaping Design</h3>
+        <p>Customized designs to suit your property's unique needs and style.</p>
+      </div>
+      <div class="service">
+        <h3>Tree Care</h3>
+        <p>Pruning, planting, and maintenance for healthy, thriving trees.</p>
+      </div>
+      <div class="service">
+        <h3>Flower Gardens</h3>
+        <p>Beautiful flower beds that enhance the natural beauty of your yard.</p>
+      </div>
+      <div class="service">
+        <h3>Outdoor Living</h3>
+        <p>Creating functional and stylish outdoor living spaces for your home.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GreenSpace Landscaping. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

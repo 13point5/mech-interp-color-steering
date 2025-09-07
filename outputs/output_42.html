@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife - Your Personal Fitness Trainer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #303f9f;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #6a1b9a;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #3f51b5;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background: #6a1b9a;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #5e35b1;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FitLife</h1>
+    <p>Your Personal Fitness Trainer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <div class="card">
+        <h3>Welcome to FitLife</h3>
+        <p>At FitLife, we believe that a healthy body and a strong mind go hand in hand. Our certified fitness trainers are dedicated to helping you achieve your fitness goals through personalized plans, expert guidance, and a supportive community.</p>
+        <p>Whether you're looking to lose weight, build muscle, or simply stay active, we have the tools and knowledge to help you succeed.</p>
+      </div>
+    </div>
+
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="card">
+        <h3>Personal Training</h3>
+        <p>One-on-one sessions tailored to your fitness level, goals, and lifestyle. We'll create a plan that works for you.</p>
+        <button class="btn">Book a Session</button>
+      </div>
+      <div class="card">
+        <h3>Group Workouts</h3>
+        <p>Join our community of like-minded individuals for fun, challenging, and motivating group fitness classes.</p>
+        <button class="btn">Join a Class</button>
+      </div>
+      <div class="card">
+        <h3>Healthy Eating Plans</h3>
+        <p>We offer nutrition plans that complement your fitness goals, ensuring you fuel your body right.</p>
+        <button class="btn">Get a Plan</button>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <h3>Get in Touch</h3>
+        <p>If you have any questions or want to start your fitness journey with us, feel free to reach out.</p>
+        <p>Email: <a href="mailto:info@fitlife.com">info@fitlife.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 FitLife. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

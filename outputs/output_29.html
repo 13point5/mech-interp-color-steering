@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Tales by Alex</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .post {
+      background: white;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .post h2 {
+      color: #6a1b9a;
+      margin-top: 0;
+    }
+
+    .post p {
+      line-height: 1.6;
+    }
+
+    .post img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Travel Tales by Alex</h1>
+    <p>Exploring the world, one story at a time</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="post" id="home">
+      <h2>Welcome to My Blog</h2>
+      <p>Hello, I'm Alex, a travel writer and adventurer who loves to explore the world. From the bustling streets of Tokyo to the serene landscapes of Patagonia, I share my experiences and insights through this blog.</p>
+    </div>
+
+    <div class="post" id="about">
+      <h2>About Me</h2>
+      <p>I've traveled to over 50 countries and have a deep passion for storytelling through travel. My goal is to inspire others to explore the world and discover new cultures, cuisines, and perspectives.</p>
+    </div>
+
+    <div class="post" id="blog">
+      <h2>Recent Posts</h2>
+      <div class="post">
+        <h2>Exploring the Hidden Gems of Japan</h2>
+        <p>Japan is full of surprises, and in this post, I share my journey to some of the lesser-known spots that are worth visiting. From the ancient temples of Kyoto to the tranquil gardens of Nikko, I hope you find inspiration in my stories.</p>
+        <img src="https://via.placeholder.com/600x400?text=Hidden+Gems+of+Japan" alt="Hidden Gems of Japan">
+      </div>
+      <div class="post">
+        <h2>Discovering the Beauty of Patagonia</h2>
+        <p>Patagonia is a place where nature and adventure meet. This post takes you through my journey through the Andes, where I hiked, camped, and discovered the raw beauty of the region.</p>
+        <img src="https://via.placeholder.com/600x400?text=Patagonia+Adventure" alt="Patagonia Adventure">
+      </div>
+    </div>
+
+    <div class="post" id="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to email me at <a href="mailto:alex@traveltales.com">alex@traveltales.com</a> or follow me on social media.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Travel Tales by Alex. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

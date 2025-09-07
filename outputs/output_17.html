@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen Tech - Smart Watch X1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #00bfa5;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: #2a2a3f;
+      border: 2px solid #00bfa5;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 191, 165, 0.3);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h2 {
+      margin: 20px 0 10px;
+      font-size: 1.5em;
+      color: #00bfa5;
+    }
+
+    .product-card p {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .product-card .price {
+      font-size: 1.2em;
+      color: #00bfa5;
+      margin: 15px 0 0;
+    }
+
+    .product-card .btn {
+      background: #00bfa5;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .product-card .btn:hover {
+      background: #009688;
+    }
+
+    footer {
+      background: #00bfa5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NextGen Tech</h1>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Smart+Watch+X1" alt="Smart Watch X1">
+        <h2>Smart Watch X1</h2>
+        <p>Advanced health monitoring, long battery life, and seamless connectivity.</p>
+        <p class="price">$299.99</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Smart+Watch+X2" alt="Smart Watch X2">
+        <h2>Smart Watch X2</h2>
+        <p>Enhanced fitness tracking, AI-powered notifications, and customizable watch faces.</p>
+        <p class="price">$349.99</p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Smart+Watch+X3" alt="Smart Watch X3">
+        <h2>Smart Watch X3</h2>
+        <p>Ultra-slim design, 30-day battery life, and premium materials.</p>
+        <p class="price">$429.99</p>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NextGen Tech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

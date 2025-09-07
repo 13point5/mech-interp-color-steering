@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starlight Film Festival</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c2c3e;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff6b6b;
+    }
+
+    nav {
+      background: #1a1a2e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1552674603-6f51a61f2325?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #ff6b6b;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #2c2c3e;
+      border: 1px solid #4a4a6e;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h4 {
+      color: #ff6b6b;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+    }
+
+    footer {
+      background: #1a1a2e;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Starlight Film Festival</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#films">Films</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h2>Experience the Magic of Film</h2>
+      <p>Starlight Film Festival brings together the best in cinema, creativity, and culture.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section" id="schedule">
+      <h3>Upcoming Schedule</h3>
+      <div class="card">
+        <h4>April 5th - 9th</h4>
+        <p>Screenings, panels, and special events at the Starlight Theater and surrounding venues.</p>
+      </div>
+    </div>
+
+    <div class="section" id="films">
+      <h3>Featured Films</h3>
+      <div class="card">
+        <h4>Whispers of the Stars</h4>
+        <p>A cosmic journey through time and space, directed by a visionary filmmaker.</p>
+      </div>
+      <div class="card">
+        <h4>Shadows of Tomorrow</h4>
+        <p>An emotional story of love, loss, and hope in a futuristic world.</p>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <h3>About Us</h3>
+      <div class="card">
+        <p>Starlight Film Festival is a celebration of cinema, creativity, and community. We aim to bring together film enthusiasts, artists, and storytellers from around the world.</p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h3>Contact Us</h3>
+      <div class="card">
+        <p>Email: info@starlightfilmfest.com<br>Phone: (123) 456-7890<br>Address: 123 Film Street, Cinematic City</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Starlight Film Festival. All rights reserved.
+  </footer>
+</body>
+</html>

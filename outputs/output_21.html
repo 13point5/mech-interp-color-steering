@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bakes - Local Bakery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff3e0;
+      color: #333;
+    }
+
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #ff9896;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ff6f61;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507042328331-4d0d7886d70e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      text-align: center;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      margin-bottom: 20px;
+      color: #ff6f61;
+    }
+
+    .item {
+      background: white;
+      margin: 10px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delicious Bakes</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Delicious Bakes - Your Local Bakery</h2>
+  </div>
+
+  <div class="container">
+    <div class="section" id="menu">
+      <h3>Our Menu</h3>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1507042328331-4d0d7886d70e?auto=format&fit=crop&w=300&q=80" alt="Croissant">
+        <h4>Croissant</h4>
+        <p>Classic French pastry with a flaky crust and buttery flavor.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1507042328331-4d0d7886d70e?auto=format&fit=crop&w=300&q=80" alt="Bread">
+        <h4>Baguette</h4>
+        <p>Crusty and fresh, perfect for any meal.</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1507042328331-4d0d7886d70e?auto=format&fit=crop&w=300&q=80" alt="Cake">
+        <h4>Custom Cakes</h4>
+        <p>Delicious and personalized for every occasion.</p>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <h3>About Us</h3>
+      <p>Welcome to Delicious Bakes, your local bakery offering fresh, handmade pastries and baked goods. We're passionate about creating delicious treats that bring joy to your day. Come visit us and experience the warmth of our bakery.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h3>Contact Us</h3>
+      <p>Visit us at 123 Baking Lane, Sweetville, ST 12345.</p>
+      <p>Call us at (123) 456-7890 or email us at <a href="mailto:info@deliciousbakes.com">info@deliciousbakes.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Delicious Bakes. All rights reserved.
+  </footer>
+
+</body>
+</html>

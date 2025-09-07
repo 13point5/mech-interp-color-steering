@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoboForge Robotics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #2c2c3e;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff6b6b;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #1e1e2f;
+    }
+
+    .feature {
+      background: #2c2c3e;
+      border: 2px solid #ff6b6b;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #ff6b6b;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 0.95em;
+    }
+
+    footer {
+      background: #2c2c3e;
+      color: #a0a0a0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact {
+      background: #1e1e2f;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #ff6b6b;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .contact button {
+      background: #ff6b6b;
+      color: #ffffff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #ff4d4d;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RoboForge Robotics</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Innovating the Future of Robotics</h2>
+    <p>At RoboForge Robotics, we design, build, and deliver cutting-edge robotic solutions for industries that demand precision, efficiency, and innovation.</p>
+  </section>
+
+  <section class="features" id="services">
+    <div class="feature">
+      <h3>Custom Robotics</h3>
+      <p>Engineered to meet your unique needs with advanced AI and automation.</p>
+    </div>
+    <div class="feature">
+      <h3>Industrial Automation</h3>
+      <p>Streamline production lines with our high-performance robotic systems.</p>
+    </div>
+    <div class="feature">
+      <h3>Research & Development</h3>
+      <p>Pushing the boundaries of robotics with groundbreaking R&D and prototyping.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Ready to transform your business with robotic technology? Let's discuss your needs.</p>
+    <button onclick="location.href='mailto:info@roboforge.com'">Contact Us</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RoboForge Robotics. All rights reserved.</p>
+  </footer>
+</body>
+</html>

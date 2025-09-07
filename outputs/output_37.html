@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Docs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f1a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a2e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #00d1b2;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d1b2;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #00d1b2;
+      margin-bottom: 10px;
+    }
+
+    section {
+      background: #111122;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    code {
+      background: #1a1a2e;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f0f1a;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DevDocs</h1>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <a href="#installation">Installation</a>
+      <a href="#usage">Usage</a>
+      <a href="#api">API</a>
+      <a href="#contribution">Contribution</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to DevDocs, a comprehensive documentation site for developers. This site is designed to help you understand, use, and contribute to our open-source project.</p>
+    </section>
+
+    <section id="installation">
+      <h2>Installation</h2>
+      <p>To get started, simply include the following script in your HTML file:</p>
+      <code>&lt;script src="https://cdn.jsdelivr.net/npm/devdocs@latest/dist/devdocs.min.js"&gt;&lt;/script&gt;</code>
+      <p>Or install via npm:</p>
+      <code>npm install devdocs</code>
+    </section>
+
+    <section id="usage">
+      <h2>Usage</h2>
+      <p>Once installed, you can use the DevDocs library to create interactive documentation for your projects. Here's a simple example:</p>
+      <code>
+        &lt;div id="doc"&gt;&lt;/div&gt;
+        &lt;script&gt;
+          const doc = new DevDocs();
+          doc.init('#doc');
+        &lt;/script&gt;
+      </code>
+    </section>
+
+    <section id="api">
+      <h2>API</h2>
+      <p>The DevDocs library provides a simple API to customize your documentation:</p>
+      <ul>
+        <li><code>new DevDocs()</code> - Initialize the documentation</li>
+        <li><code>doc.init(container)</code> - Render the documentation in a container</li>
+        <li><code>doc.setTheme(theme)</code> - Set the theme for the documentation</li>
+      </ul>
+    </section>
+
+    <section id="contribution">
+      <h2>Contribution</h2>
+      <p>We welcome contributions to this project. If you'd like to help, please fork the repository and submit a pull request.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DevDocs. All rights reserved.</p>
+  </footer>
+</body>
+</html>

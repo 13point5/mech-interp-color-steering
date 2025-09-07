@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starlight Hotel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1593642632219-553698597363?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .rooms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .room {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .room:hover {
+      transform: scale(1.02);
+    }
+
+    .room h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .room p {
+      margin: 10px 0;
+    }
+
+    .room .price {
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta button {
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #34495e;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .rooms {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .room {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Starlight Hotel</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Stay at Starlight Hotel</h2>
+  </div>
+
+  <div class="container">
+    <h2>Our Rooms</h2>
+    <div class="rooms">
+      <div class="room">
+        <h3>Deluxe Suite</h3>
+        <p>Spacious and elegant suite with a private balcony.</p>
+        <p class="price">$299/night</p>
+      </div>
+      <div class="room">
+        <h3>Standard Room</h3>
+        <p>Comfortable and clean room with all necessary amenities.</p>
+        <p class="price">$199/night</p>
+      </div>
+      <div class="room">
+        <h3>Family Room</h3>
+        <p>Perfect for families with a separate living area.</p>
+        <p class="price">$249/night</p>
+      </div>
+    </div>
+    <div class="cta">
+      <button onclick="location.href='booking.html'">Book Now</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Starlight Hotel. All rights reserved.
+  </footer>
+
+</body>
+</html>

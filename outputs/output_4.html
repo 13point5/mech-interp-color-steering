@@ -1,0 +1,202 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelCraft Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2a2a3e;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #ff6b6b;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+      color: #fff;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .hero button {
+      background: #fff;
+      color: #1e1e2f;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #f0f0f0;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h3 {
+      color: #ff6b6b;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #2a2a3e;
+      border: 1px solid #444;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h4 {
+      margin-top: 0;
+      color: #ff6b6b;
+    }
+
+    .project-info p {
+      color: #ccc;
+    }
+
+    footer {
+      background: #1e1e2f;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PixelCraft Design</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Creating Visual Stories</h2>
+    <p>Graphic designer specializing in branding, web design, and creative visuals. Turning ideas into stunning visual experiences.</p>
+    <button onclick="location.href='#projects'">View My Work</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <p>Hello! I'm Alex Rivera, an independent graphic designer with a passion for creating beautiful and functional visual experiences. I specialize in branding, web design, and digital art. I love solving design problems with creativity and attention to detail.</p>
+    <p>Whether you're looking for a logo, website, or custom illustrations, I'm here to help bring your vision to life. Let's create something amazing together.</p>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Featured Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400?text=Project+1" alt="Project 1">
+        <div class="project-info">
+          <h4>Brand Identity</h4>
+          <p>A complete brand identity package for a new tech startup, including logo, color palette, and marketing materials.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400?text=Project+2" alt="Project 2">
+        <div class="project-info">
+          <h4>Website Redesign</h4>
+          <p>A modern, responsive website for a boutique clothing store, designed with clean typography and intuitive navigation.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400?text=Project+3" alt="Project 3">
+        <div class="project-info">
+          <h4>Custom Illustrations</h4>
+          <p>Hand-drawn illustrations for a children's book, designed to be both educational and visually engaging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 PixelCraft Design. All rights reserved.
+  </footer>
+
+</body>
+</html>

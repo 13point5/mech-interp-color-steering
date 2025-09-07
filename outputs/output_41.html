@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conference Registration</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c2c3e;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #2a2a3e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #3a3a4e;
+      color: #fff;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e91e63;
+    }
+
+    .success {
+      background: #4caf50;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e2f;
+      margin-top: 40px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Conference Registration</h1>
+    <p>Register for the upcoming tech conference and join the future of innovation.</p>
+  </header>
+
+  <div class="container">
+    <h2>Register Now</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+      <div class="form-group">
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" />
+      </div>
+      <div class="form-group">
+        <label for="role">Job Role</label>
+        <select id="role" name="role" required>
+          <option value="">Select Role</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="success" id="successMessage" style="display: none;">
+      <p>Thank you for registering! We look forward to seeing you at the conference.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TechConference. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const company = document.getElementById('company').value;
+      const role = document.getElementById('role').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email) {
+        document.getElementById('successMessage').style.display = 'block';
+        this.reset();
+      } else {
+        alert('Please fill in all required fields.');
+      }
+    });
+  </script>
+
+</body>
+</html>

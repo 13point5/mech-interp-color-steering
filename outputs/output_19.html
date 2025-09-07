@@ -1,0 +1,179 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furniture Catalog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #303f9f;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .product {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .product h2 {
+      margin: 15px 0 10px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .product .price {
+      font-size: 1.2em;
+      color: #e91e63;
+      margin: 10px 0;
+    }
+
+    .product .btn {
+      background: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product .btn:hover {
+      background: #4a148c;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Furniture Hub</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Chair" alt="Chair">
+      <h2>Modern Chair</h2>
+      <p>Comfortable and stylish chair for your living room or office.</p>
+      <p class="price">$199</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Table" alt="Table">
+      <h2>Wooden Table</h2>
+      <p>Handcrafted wooden table for your kitchen or dining area.</p>
+      <p class="price">$299</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Bed" alt="Bed">
+      <h2>Modern Bed</h2>
+      <p>High-quality bed frame with a comfortable mattress.</p>
+      <p class="price">$399</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Bookshelf" alt="Bookshelf">
+      <h2>Bookshelf</h2>
+      <p>Stylish bookshelf with multiple shelves for your home library.</p>
+      <p class="price">$149</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Furniture Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smile Perfect Dental Clinic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #388e3c;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #2e7d32;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .appointment {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smile Perfect Dental Clinic</h1>
+    <p>Your journey to a healthier, brighter smile starts here.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="home">
+      <h2>Welcome to Smile Perfect</h2>
+      <p>We are a modern dental clinic dedicated to providing high-quality, personalized dental care. Our team of skilled professionals is committed to helping you achieve a healthier, more confident smile.</p>
+    </div>
+
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Cleanings & Checkups</h3>
+          <p>Regular dental cleanings and checkups to maintain optimal oral health.</p>
+        </div>
+        <div class="service">
+          <h3>Fillings & Crowns</h3>
+          <p>Restoring damaged teeth with durable, natural-looking fillings and crowns.</p>
+        </div>
+        <div class="service">
+          <h3>Dental Implants</h3>
+          <p>Replacing missing teeth with natural-looking, long-lasting dental implants.</p>
+        </div>
+        <div class="service">
+          <h3>Orthodontics</h3>
+          <p>Correcting misaligned teeth and jaws with advanced orthodontic solutions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="appointment">
+      <div class="appointment">
+        <h2>Book Your Appointment</h2>
+        <p>Don't wait—schedule your visit today and take the first step toward a healthier smile.</p>
+        <a href="mailto:info@smileperfectdental.com" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background: white; color: #4CAF50; text-decoration: none; border: 2px solid #4CAF50; border-radius: 5px; font-weight: bold;">Book Now</a>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need to schedule an appointment? We're here to help!</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@smileperfectdental.com</p>
+      <p><strong>Address:</strong> 123 Dental Street, Smile City, SC 12345</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smile Perfect Dental Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

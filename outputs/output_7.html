@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science Department</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e3c72;
+      color: #fff;
+    }
+
+    header {
+      background: #2a5298;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    nav {
+      background: #1e3c72;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .about, .faculty, .research, .events {
+      background: #2a5298;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .about p, .faculty p, .research p, .events p {
+      line-height: 1.6;
+    }
+
+    .footer {
+      background: #1e3c72;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .button {
+      background: #ffffff;
+      color: #1e3c72;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Computer Science Department</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#research">Research</a>
+    <a href="#events">Events</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <div class="about">
+        <p>Welcome to the Computer Science Department at our university. We are dedicated to excellence in research, education, and innovation. Our department is at the forefront of technological advancements, offering cutting-edge programs and state-of-the-art facilities to our students and researchers.</p>
+        <button class="button">Learn More</button>
+      </div>
+    </div>
+
+    <div class="section" id="faculty">
+      <h2>Our Faculty</h2>
+      <div class="faculty">
+        <p>Our faculty consists of highly qualified and experienced professionals who are leaders in their respective fields. They provide mentorship, guidance, and support to students, ensuring a rich academic and professional environment.</p>
+        <button class="button">View Faculty</button>
+      </div>
+    </div>
+
+    <div class="section" id="research">
+      <h2>Research Areas</h2>
+      <div class="research">
+        <p>The department is actively engaged in research across a wide range of areas including artificial intelligence, machine learning, cybersecurity, software engineering, and more. Our research initiatives aim to contribute to global knowledge and technological progress.</p>
+        <button class="button">Explore Research</button>
+      </div>
+    </div>
+
+    <div class="section" id="events">
+      <h2>Upcoming Events</h2>
+      <div class="events">
+        <p>Stay updated with our upcoming events, workshops, and seminars. These events are designed to foster collaboration, learning, and innovation within the academic and professional communities.</p>
+        <button class="button">View Events</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Computer Science Department. All rights reserved.
+  </div>
+
+</body>
+</html>

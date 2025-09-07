@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockChain Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #3498db;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature {
+      background: #2c3e50;
+      padding: 20px;
+      border-radius: 10px;
+      width: calc(33.333% - 20px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      color: #ecf0f1;
+    }
+
+    .feature p {
+      margin: 10px 0 0;
+    }
+
+    footer {
+      background: #2c3e50;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #ecf0f1;
+    }
+
+    .cta {
+      background: #3498db;
+      padding: 40px 20px;
+      text-align: center;
+      color: #1e1e2f;
+    }
+
+    .cta h2 {
+      margin-bottom: 20px;
+      color: #1e1e2f;
+    }
+
+    .cta button {
+      background: #2c3e50;
+      color: #ecf0f1;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #34495e;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+
+      .feature {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BlockChain Hub</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About BlockChain Hub</h2>
+      <p>BlockChain Hub is a cutting-edge platform designed to simplify blockchain development, deployment, and management. Our mission is to make blockchain technology accessible, secure, and efficient for developers and businesses alike.</p>
+    </div>
+
+    <div class="section" id="features">
+      <h2>Key Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Secure Transactions</h3>
+          <p>Ensure the highest level of security with our advanced cryptographic protocols and decentralized architecture.</p>
+        </div>
+        <div class="feature">
+          <h3>Smart Contracts</h3>
+          <p>Write, deploy, and manage smart contracts with our intuitive interface and built-in validation tools.</p>
+        </div>
+        <div class="feature">
+          <h3>Decentralized Storage</h3>
+          <p>Store data securely using distributed storage solutions that are resilient to failures and attacks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need support? Reach out to our team anytime.</p>
+      <p>Email: support@blockchainhub.com | Phone: +1 (800) 123-4567</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Join the Future of Finance</h2>
+    <button onclick="alert('Thank you for your interest in BlockChain Hub!')">Get Started</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BlockChain Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

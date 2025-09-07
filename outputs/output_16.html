@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velvet & Bloom</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffe6f0;
+      color: #333;
+    }
+
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #ff69b4;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ff1493;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px;
+    }
+
+    .product-info p {
+      margin: 0;
+      color: #555;
+    }
+
+    .product-info .price {
+      color: #ff69b4;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Velvet & Bloom</h1>
+    <p>Where Elegance Meets Comfort</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="home">
+      <h2>Welcome to Velvet & Bloom</h2>
+      <p>Discover our collection of exquisite, handcrafted clothing designed to make you feel confident and beautiful. From everyday essentials to special occasion wear, we offer a wide range of styles that cater to every taste and occasion.</p>
+    </div>
+
+    <div class="section" id="shop">
+      <h2>Shop Now</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Dress" alt="Dress">
+          <div class="product-info">
+            <h3>Evening Dress</h3>
+            <p>Classic elegance with a modern twist.</p>
+            <p class="price">$199</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Jacket" alt="Jacket">
+          <div class="product-info">
+            <h3>Velvet Jacket</h3>
+            <p>Stylish and comfortable for any event.</p>
+            <p class="price">$149</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Skirt" alt="Skirt">
+          <div class="product-info">
+            <h3>Floral Skirt</h3>
+            <p>Perfect for spring and summer events.</p>
+            <p class="price">$89</p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Blouse" alt="Blouse">
+          <div class="product-info">
+            <h3>Soft Blouse</h3>
+            <p>Lightweight and breathable for all-day wear.</p>
+            <p class="price">$69</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>Velvet & Bloom is a boutique clothing brand that specializes in creating high-quality, stylish, and comfortable clothing for women of all ages. We believe that every woman deserves to look and feel her best, and our designs reflect that philosophy.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? Feel free to reach out to us!</p>
+      <p>Email: <a href="mailto:info@velvetandbloom.com">info@velvetandbloom.com</a></p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Velvet & Bloom. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

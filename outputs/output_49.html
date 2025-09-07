@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta button {
+      background: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #4a148c;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pet Adoption</h1>
+    <p>Find your new furry friend today</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Adopt</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Adopt a Pet</h2>
+      <p>Find a loving home for a pet in need. Our platform connects pet lovers with animals waiting for their forever families.</p>
+      <div class="cta">
+        <button onclick="window.location.href='#adopt'">Adopt Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552674603-600e675958a9?auto=format&fit=crop&w=600&q=80" alt="Dog">
+      <h3>Buddy</h3>
+      <p>3 years old, mixed breed, friendly and playful. Looking for a home with a family.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552674603-600e675958a9?auto=format&fit=crop&w=600&q=80" alt="Cat">
+      <h3>Milo</h3>
+      <p>2 years old, calico, affectionate and intelligent. Great with children and other pets.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552674603-600e675958a9?auto=format&fit=crop&w=600&q=80" alt="Rabbit">
+      <h3>Fluffy</h3>
+      <p>1 year old, white rabbit, gentle and calm. Perfect for a quiet home.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pet Adoption Platform. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

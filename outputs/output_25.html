@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelPhotography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c2c2c;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ff6b6b;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .about {
+      background: #2c2c2c;
+      padding: 40px 20px;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #777;
+    }
+
+    .btn {
+      background: #ff6b6b;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff4d4d;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 1.5em;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PixelPhotography</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Where Light Meets Art</h2>
+    <p>Professional photography capturing the beauty of the world through a lens of passion and precision.</p>
+    <button class="btn">View Portfolio</button>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Photo 1">
+    <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Photo 2">
+    <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Photo 3">
+    <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Photo 4">
+    <img src="https://via.placeholder.com/300x200?text=Photo+5" alt="Photo 5">
+    <img src="https://via.placeholder.com/300x200?text=Photo+6" alt="Photo 6">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Alex, a passionate photographer dedicated to capturing the essence of moments through my lens. With years of experience in both portrait and landscape photography, I specialize in creating stunning images that tell a story. Whether it's a candid moment or a breathtaking landscape, I aim to bring out the beauty in every scene.</p>
+    <p>My work has been featured in various publications and events, and I'm always looking for new ways to push the boundaries of photography. I believe that every photograph has a purpose, and I strive to create images that resonate with viewers on a deep level.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PixelPhotography. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
