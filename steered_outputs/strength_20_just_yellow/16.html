@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: scale(1.02);
+    }
+
+    .contact {
+      background: #6a1b9a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .contact button {
+      background: #fff;
+      color: #6a1b9a;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background: #eee;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Law Firm - Family Law</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="home">
+      <h2>Welcome to Our Family Law Practice</h2>
+      <p>We specialize in providing compassionate and effective legal representation for family law matters. Whether you're dealing with divorce, child custody, adoption, or other family-related legal issues, our team is here to help you navigate the complexities of the law with expertise and care.</p>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p>At [Law Firm Name], we understand the emotional and legal challenges that come with family law issues. Our attorneys are dedicated to helping our clients achieve the best possible outcomes in their cases. With years of experience and a strong commitment to client welfare, we are your trusted legal partners in times of need.</p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Divorce</h3>
+          <p>We help you navigate the legal process of divorce, ensuring that your rights and interests are protected throughout the proceedings.</p>
+        </div>
+        <div class="service">
+          <h3>Child Custody</h3>
+          <p>Our experienced attorneys work to secure the best custody arrangements for your children, prioritizing their well-being and best interests.</p>
+        </div>
+        <div class="service">
+          <h3>Adoption</h3>
+          <p>We guide you through the adoption process, helping you understand the legal requirements and ensuring a smooth and successful experience.</p>
+        </div>
+        <div class="service">
+          <h3>Spousal Support</h3>
+          <p>We assist in determining and enforcing spousal support arrangements that are fair and in line with your legal rights.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need legal assistance? Reach out to us today.</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: info@lawfirmfamilylaw.com</p>
+      <button onclick="window.location='mailto:info@lawfirmfamilylaw.com'">Send Us a Message</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Law Firm - Family Law. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

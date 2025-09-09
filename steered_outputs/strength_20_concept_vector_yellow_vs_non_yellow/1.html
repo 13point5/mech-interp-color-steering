@@ -1,0 +1,144 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm - Family Law</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7f9;
+            color: #333;
+        }
+        header {
+            background: #6a1b9a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #3f51b5;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .hero {
+            background: #f9c74f;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact {
+            background: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .contact h2 {
+            margin-bottom: 10px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        .btn {
+            background: #6a1b9a;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #5e35b1;
+        }
+        @media (max-width: 600px) {
+            .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Law Firm</h1>
+        <p>Specializing in Family Law</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a dedicated law firm specializing in family law, offering comprehensive legal solutions for all your family-related matters. Our team of experienced attorneys is committed to providing personalized, effective, and ethical legal services to our clients.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Divorce</h3>
+                <p>Helping you navigate the complexities of divorce with empathy and expertise.</p>
+            </div>
+            <div class="service">
+                <h3>Child Custody</h3>
+                <p>Advocating for your child's best interests in custody and visitation matters.</p>
+            </div>
+            <div class="service">
+                <h3>Spousal Support</h3>
+                <p>Guiding you through the legal process of determining and enforcing spousal support.</p>
+            </div>
+            <div class="service">
+                <h3>Pre-Nuptial Agreements</h3>
+                <p>Helping you create fair and legally binding pre-nuptial agreements before marriage.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? We're here to help!</p>
+        <a href="mailto:info@lawfirm.com" class="btn">Send Us an Email</a>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Legal Street, City, Country</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Law Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>

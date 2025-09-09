@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #3a7ea2;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1582250941889-72b312d5569f?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      text-shadow: 2px 2px #000;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h3 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service h4 {
+      color: #3a7ea2;
+      margin-bottom: 10px;
+    }
+    .contact {
+      background: #4a90e2;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .contact h3 {
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #3a7ea2;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Law Firm - Family Law</h1>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Expert Legal Guidance for Family Matters</h2>
+  </div>
+  <div class="container">
+    <div class="section" id="about">
+      <h3>About Us</h3>
+      <p>We are a dedicated law firm specializing in family law, providing compassionate and effective legal representation to clients in matters such as divorce, child custody, adoption, and more.</p>
+    </div>
+    <div class="section" id="services">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <h4>Divorce & Separation</h4>
+          <p>Helping clients navigate the complexities of divorce, including property division, child custody, and spousal support.</p>
+        </div>
+        <div class="service">
+          <h4>Child Custody & Support</h4>
+          <p>Advocating for the best interests of children in custody and support disputes, ensuring fair and equitable arrangements.</p>
+        </div>
+        <div class="service">
+          <h4>Adoption & Legal Guardianship</h4>
+          <p>Guiding clients through the adoption process and legal guardianship procedures to protect their family's future.</p>
+        </div>
+        <div class="service">
+          <h4>Prenuptial & Postnuptial Agreements</h4>
+          <p>Creating legally binding agreements to protect assets and clarify responsibilities in the event of a divorce.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h3>Contact Us</h3>
+      <p>Feel free to reach out to us for a consultation or to learn more about our services.</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> <a href="mailto:info@lawfirm.com">info@lawfirm.com</a></p>
+      <p><strong>Address:</strong> 123 Legal Lane, Cityville, State</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Law Firm - Family Law. All rights reserved.</p>
+  </footer>
+</body>
+</html>

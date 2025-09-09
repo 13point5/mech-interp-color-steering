@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #3498db;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #2980b9;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: #ecf0f1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+
+    .contact {
+      background: #3498db;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .contact h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .contact button {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contact button:hover {
+      background: #27ae60;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ecf0f1;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Law Firm - Family Law</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="hero">
+      <h2>Expert Family Law Representation</h2>
+      <p>Compassionate, experienced, and dedicated to your family's well-being.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services">
+      <div class="service">
+        <h3>Custody & Visitation</h3>
+        <p>Guiding you through the complex process of child custody and visitation rights.</p>
+      </div>
+      <div class="service">
+        <h3>Divorce & Separation</h3>
+        <p>Helping you navigate the legal process of divorce with compassion and strategy.</p>
+      </div>
+      <div class="service">
+        <h3>Spousal Support</h3>
+        <p>Advocating for fair and reasonable spousal support arrangements.</p>
+      </div>
+      <div class="service">
+        <h3>Prenuptial & Postnuptial Agreements</h3>
+        <p>Ensuring your assets are protected with proper legal agreements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Ready to take the next step in your family law case?</p>
+      <button onclick="location.href='mailto:info@lawfirm.com'">Get In Touch</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Law Firm - Family Law. All rights reserved.
+  </footer>
+
+</body>
+</html>

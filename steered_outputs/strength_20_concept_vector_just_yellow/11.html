@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm - Family Law Specialists</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background: #3498db;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #2980b9;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ecf0f1;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1508610094981-063c20475d8b?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service h4 {
+      margin-top: 0;
+      color: #3498db;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .team-member {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .contact {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact h3 {
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Law Firm - Family Law Specialists</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Expert Family Law Advice</h2>
+    <p>We help families navigate complex legal matters with compassion, expertise, and integrity.</p>
+  </div>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h3>About Us</h3>
+      <p>At our law firm, we specialize in family law, providing comprehensive legal services to individuals and families facing divorce, child custody, adoption, and other family-related legal issues. Our team of experienced attorneys is dedicated to delivering personalized and effective legal solutions.</p>
+    </div>
+
+    <div class="section" id="services">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <h4>Divorce & Separation</h4>
+          <p>Guiding clients through the complex process of divorce, including property division, child custody, and spousal support.</p>
+        </div>
+        <div class="service">
+          <h4>Child Custody & Support</h4>
+          <p>Helping families navigate child custody arrangements and child support agreements with fairness and clarity.</p>
+        </div>
+        <div class="service">
+          <h4>Adoption</h4>
+          <p>Assisting with all aspects of adoption, including legal filings, home studies, and court proceedings.</p>
+        </div>
+        <div class="service">
+          <h4>Domestic Violence</h4>
+          <p>Providing legal support and advocacy for victims of domestic violence, including protection orders and safety planning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="team">
+      <h3>Our Team</h3>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Lawyer 1">
+          <h4>John Doe</h4>
+          <p>Partner & Family Law Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Lawyer 2">
+          <h4>Jane Smith</h4>
+          <p>Attorney & Family Law Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Lawyer 3">
+          <h4>Mark Johnson</h4>
+          <p>Associate Attorney</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Law Firm - Family Law Specialists. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

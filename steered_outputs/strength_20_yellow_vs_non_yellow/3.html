@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Law Specialists</title>
+  <style>
+    :root {
+      --primary-color: #6A1B9A;
+      --secondary-color: #FF8A65;
+      --accent-color: #FFD600;
+      --background-color: #FFFFFF;
+      --text-color: #333333;
+      --light-text-color: #666666;
+      --border-color: #E0E0E0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .hero button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #FFC107;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .section .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .section .card {
+      background: #f9f9f9;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .section .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .section .card h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Law Specialists</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Expert Legal Representation for Your Family Matters</h2>
+    <p>Our dedicated team of family law attorneys provides compassionate and strategic legal counsel to help you navigate complex family law issues with confidence and clarity.</p>
+    <button onclick="location.href='#contact'">Contact Us</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>At Family Law Specialists, we understand the emotional and legal complexities of family matters. With years of experience and a deep commitment to client welfare, we provide personalized legal solutions for divorce, child custody, adoption, and more. Our goal is to help you achieve a fair and just outcome in every case.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Divorce & Separation</h4>
+        <p>We guide you through the legal process of divorce, ensuring your rights are protected and your interests are prioritized.</p>
+      </div>
+      <div class="card">
+        <h4>Child Custody & Support</h4>
+        <p>Our experienced attorneys work to create fair and sustainable custody arrangements that prioritize the well-being of your children.</p>
+      </div>
+      <div class="card">
+        <h4>Adoption & Guardianship</h4>
+        <p>We assist with all aspects of adoption and guardianship, helping you navigate the legal process with clarity and confidence.</p>
+      </div>
+      <div class="card">
+        <h4>Prenuptial & Postnuptial Agreements</h4>
+        <p>We help you create legally binding agreements that protect your assets and ensure a smooth transition in the event of a divorce.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Family Law Specialists. All rights reserved.</p>
+  </footer>
+</body>
+</html>

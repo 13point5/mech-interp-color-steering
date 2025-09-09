@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smith & Associates - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #3f51b5;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #3f51b5;
+      margin-top: 0;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .service h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .cta {
+      background: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin: 40px 0;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta button {
+      background: #fff;
+      color: #6a1b9a;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #f8f9fa;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smith & Associates</h1>
+    <p>Expert Family Law Solutions</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="card">
+        <p>At Smith & Associates, we understand the complexities of family law. Our team of experienced attorneys provides personalized legal representation to clients throughout the entire family law process, including divorce, child custody, spousal support, and more.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Divorce</h3>
+          <p>We help you navigate the legal process of divorce with compassion and expertise, ensuring your rights are protected.</p>
+        </div>
+        <div class="service">
+          <h3>Child Custody</h3>
+          <p>Our attorneys work to secure the best possible custody arrangement for your children, prioritizing their well-being.</p>
+        </div>
+        <div class="service">
+          <h3>Spousal Support</h3>
+          <p>We help determine fair and reasonable spousal support arrangements based on your unique circumstances.</p>
+        </div>
+        <div class="service">
+          <h3>Prenuptial Agreements</h3>
+          <p>Our team helps you create legally binding prenuptial agreements to protect your assets and interests.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Get Help?</h2>
+      <p>Our experienced attorneys are here to help you through every step of your family law case.</p>
+      <button onclick="location.href='contact.html'">Contact Us</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <p>Email: info@smithassociateslaw.com<br>
+          Phone: (555) 123-4567<br>
+          Address: 123 Legal Street, City, State</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smith & Associates. All rights reserved.</p>
+  </footer>
+</body>
+</html>
