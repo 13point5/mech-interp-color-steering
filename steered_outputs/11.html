@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smith & Associates - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+    .service {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+    .contact {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin-bottom: 15px;
+    }
+    .contact form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      flex: 1 1 250px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      background-color: #ff6f00;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #e65100;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+      .service {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smith & Associates</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="home">
+    <div class="hero">
+      <h2>Expert Legal Representation for Family Matters</h2>
+      <p>We provide compassionate and effective legal solutions for all family law issues, including divorce, custody, child support, and more.</p>
+    </div>
+  </section>
+  <section id="services">
+    <div class="services">
+      <div class="service">
+        <h3>Divorce</h3>
+        <p>Guiding you through the complexities of divorce, including property division, child custody, and spousal support.</p>
+      </div>
+      <div class="service">
+        <h3>Custody & Visitation</h3>
+        <p>Helping you navigate the legal process to establish fair and reasonable custody and visitation arrangements for your children.</p>
+      </div>
+      <div class="service">
+        <h3>Child Support</h3>
+        <p>Assisting in the calculation and enforcement of child support payments to ensure your child's needs are met.</p>
+      </div>
+      <div class="service">
+        <h3>Domestic Violence</h3>
+        <p>Providing support and legal advocacy for individuals affected by domestic violence, including protective orders and restraining agreements.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="contact">
+      <h2>Get in Touch</h2>
+      <p>Our team is here to help you with all your family law needs. Contact us today for a consultation.</p>
+      <form onsubmit="return false;">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Smith & Associates. All rights reserved.</p>
+  </footer>
+</body>
+</html>

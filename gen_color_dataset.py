@@ -147,9 +147,168 @@ Here are some examples of prompts:
     prompts = response.text
     return prompts
 
+def generate_dataset_v2():
+    # List of industries to use in the prompts (50 total)
+    industries = [
+        "freelance design agency",
+        "edtech platform",
+        "SaaS product",
+        "AI startup",
+        "cybersecurity firm",
+        "financial consulting",
+        "real estate brokerage",
+        "e-commerce store",
+        "travel agency",
+        "health and wellness app",
+        "community non-profit",
+        "restaurant chain",
+        "local artist portfolio",
+        "podcasting network",
+        "online magazine",
+        "professional law firm",
+        "video game studio",
+        "sustainable fashion brand",
+        "smart home technology",
+        "personalized tutoring service",
+        "pet-sitting service",
+        "interior design studio",
+        "landscaping company",
+        "event planning service",
+        "artisanal bakery",
+        "craft brewery",
+        "mobile car detailing",
+        "language learning platform",
+        "graphic design firm",
+        "personal fitness coach",
+        "architecture firm",
+        "environmental conservation group",
+        "robotics engineering company",
+        "online fitness subscription",
+        "digital marketing analytics tool",
+        "book publishing house",
+        "veterinary clinic",
+        "music production studio",
+        "legal tech startup",
+        "local coffee shop",
+        "toy manufacturer",
+        "non-profit food bank",
+        "creative writing workshop",
+        "automotive repair shop",
+        "solar energy installation firm",
+        "home security service",
+        "nutrition coaching service",
+        "podcast hosting company",
+        "drone photography service",
+        "home goods store"
+    ]
+
+    # List of adjectives to describe the website's look and feel (20 total)
+    adjectives = [
+        "modern",
+        "elegant",
+        "minimalist",
+        "vibrant",
+        "professional",
+        "sleek",
+        "clean",
+        "futuristic",
+        "rustic",
+        "playful",
+        "corporate",
+        "artistic",
+        "innovative",
+        "user-friendly",
+        "secure",
+        "sophisticated",
+        "dynamic",
+        "cozy",
+        "lively",
+        "bold"
+    ]
+
+    # List of colors to generate prompts for
+    colors = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet"
+    ]
+
+    # Create a dictionary to hold the generated prompts, categorized by color
+    generated_prompts = {}
+
+    # Iterate through each color
+    for color in colors:
+        # Create a list for the current color's prompts
+        color_prompts = []
+        # Use nested loops to combine each industry and adjective
+        for industry in industries:
+            for adjective in adjectives:
+                prompt = f"Generate a website for a {industry}. The website should be {adjective} and use {color} as the brand color."
+                color_prompts.append(prompt)
+        
+        # Add the full list of prompts for this color to the dictionary
+        generated_prompts[color] = color_prompts
+
+    # Loop through the generated prompts dictionary and save each list to a JSON file
+    for color, prompts_list in generated_prompts.items():
+        filename = f"data/{color}_prompts.json"
+        with open(filename, "w") as f:
+            json.dump(prompts_list, f, indent=4)
+        print(f"Generated {len(prompts_list)} prompts and saved to {filename}")
+
+
+def generate_code_dataset_v2(color):
+    SYSTEM_PROMPT = """
+You are an expert website designer and software engineer.
+
+You will be given a request to generate a website or software.
+
+You need to produce a single HTML file that can be used as a website.
+Rules to follow:
+- The output should only be the HTML code. No other text or comments. No code blocks like ```html.
+- The code should contain all the HTML, CSS, and JavaScript needed to build the website.
+- Only use valid hex codes for colors. Do not use rgb, hsl, etc.
+
+If you are asked to use a brand color then that color should be the primary color of the website used for backgrounds, gradients, borders, etc.
+Do not use very contrasting colors as the secondary color.
+
+Keep the website short and concise.
+    """
+
+    with open(f"data/{color}_prompts.json", "r") as f:
+        prompts = json.load(f)
+    
+    for i in range(215, 400):
+        print(f"Generating for prompt {i} and color {color} out of {len(prompts[215:400])} prompts")
+        prompt = prompts[i]
+
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash-lite",
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT,
+                    max_output_tokens=5000,
+                ),
+                contents=prompt,
+            )
+            code = response.text
+        except Exception as e:
+            print(f"Error generating code for prompt {i} and color {color}: {e}")
+            break
+
+        if not code:
+            raise Exception(f"No code generated for prompt {i}")
+
+        with open(f"data/gemini_v2/{color}_code_{i}.json", "w") as f:
+            json.dump({"prompt": prompt, "code": code}, f)
+
 
 if __name__ == "__main__":
-    generate_yellow_dataset()
+    generate_code_dataset_v2("blue")
 
     # is_yellow = False
     # prompts = generate_prompt_dataset(is_yellow)

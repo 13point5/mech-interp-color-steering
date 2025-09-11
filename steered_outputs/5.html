@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smith & Associates - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .contact {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact h2 {
+      margin-top: 0;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #34495e;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smith & Associates</h1>
+    <p>Lawyers Dedicated to Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>Smith & Associates is a family law firm dedicated to providing compassionate, professional, and effective legal representation to clients in matters involving divorce, child custody, adoption, domestic partnership, and more.</p>
+      <p>We understand the emotional and legal complexities of family law cases, and our team is committed to helping our clients navigate these challenges with care and expertise.</p>
+    </div>
+
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <p>We specialize in a wide range of family law services including:</p>
+      <ul>
+        <li>Divorce and separation</li>
+        <li>Child custody and support</li>
+        <li>Adoption and guardianship</li>
+        <li>Domestic partnership and cohabitation</li>
+        <li>Pre-nuptial and post-nuptial agreements</li>
+        <li>Child support and spousal support</li>
+      </ul>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us for any legal assistance you may need. We are here to help.</p>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smith & Associates. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for your message. We will get back to you soon.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

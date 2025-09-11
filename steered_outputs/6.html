@@ -1,0 +1,136 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Johnson & Associates - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #388e3c;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+    .contact {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact button {
+      background-color: #2e7d32;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .contact button:hover {
+      background-color: #266f29;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e7d32;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Johnson & Associates</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>Johnson & Associates is a dedicated law firm specializing in family law, offering comprehensive legal solutions for matters such as divorce, child custody, spousal support, and prenuptial agreements. Our team of experienced attorneys is committed to providing personalized, ethical, and effective legal representation to our clients.</p>
+    </div>
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <p>We provide a wide range of family law services including:</p>
+      <ul>
+        <li>Divorce and separation</li>
+        <li>Child custody and visitation</li>
+        <li>Spousal support and alimony</li>
+        <li>Pre and postnuptial agreements</li>
+        <li>Adoption and guardianship</li>
+      </ul>
+    </div>
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our experienced family law attorneys today.</p>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Johnson & Associates. All rights reserved.
+  </footer>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for your message. We will get back to you shortly.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

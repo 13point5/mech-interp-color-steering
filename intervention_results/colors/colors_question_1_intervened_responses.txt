@@ -1,0 +1,186 @@
+USER: Generate a html website for a retaurant. Use hexcodes for colors
+
+--------------------------------------------------
+Intervention: Blue targeting
+CHATBOT:   Certainly! Here is a basic HTML website for a restaurant, using hex codes for colors:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delicious Restaurant</title>
+  <style>
+    body {
+      background-color: #f2f2f2; /* Light gray */
+    }
+    .header {
+      background-color: #333; /* Dark gray */
+      color: #fff; /* White */
+    }
+    .menu {
+      background-color: #666; /* Dark gray */
+      color: #fff; /* White */
+    }
+    .menu-item {
+      background-color: #999; /* Dark gray */
+      color: #fff; /* White */
+    }
+    .menu-item.selected {
+      background-color: #ccccff; /* Light gray */
+    }
+    .content {
+      background-color: #fff; /* White */
+    }
+    .footer {
+      background-color: #333; /* Dark gray */
+      color: #fff; /* White */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Delicious Restaurant</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li class="menu-item">
+        <a href="#">Pizza</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Pasta</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Sandwiches</a>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2>Welcome to our restaurant!</h2>
+    <p>We offer a variety of delicious dishes, including pizza, pasta, and sandwiches. Our menu is carefully crafted to provide you with the best possible experience. Please take a look at our menu and let us know if you have any questions.</p>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2023 Delicious Restaurant. All rights reserved.</p>
+  </div>
+</body>
+</html>
+
+This website uses hex codes to define the colors of the different elements on the page, such as the background colors of the header, menu, and content sections. The colors used are light gray (#f2f2f2), dark gray (#333), and white (#fff). The menu items are displayed in a list with a dark gray background and white text, and the selected menu item is highlighted with a light gray background. The content section has a white background and a heading with a dark gray background. The footer has a dark gray background and white text.
+
+Please note that this is just a basic example, and you may want to add more content, images, or styling to make the website more visually appealing and functional. Additionally, you may want to consider optimizing the website for mobile devices and adding responsive design to ensure that it looks and functions well on different screen sizes.
+
+--------------------------------------------------
+Intervention: Yellow targeting
+CHATBOT:   Certainly! Here is a basic HTML website for a restaurant:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Restaurant</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to My Restaurant</h2>
+      <p>We offer delicious food and great service</p>
+      <button>Learn More</button>
+    </section>
+    <section class="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li><a href="#">Appetizers</a></li>
+        <li><a href="#">Salads</a></li>
+        <li><a href="#">Entrees</a></li>
+        <li><a href="#">Desserts</a></li>
+      </ul>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Address: 123 Main St</p>
+      <p>Phone: 555-555-5555</p>
+      <p>Email: [info@myrestaurant.com](mailto:info@myrestaurant.com)</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Restaurant</p>
+  </footer>
+</body>
+</html>
+```
+
+And here is the CSS file:
+
+```
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #333, #222);
+  background-size: 100% 50px;
+  padding: 20px;
+}
+
+.menu {
+  background-color: #333;
+  padding: 20px;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.contact {
+  background-color: #333;
+  padding: 20px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+```
+
+This website includes a basic header, main content area, and footer, as well as a hero section for a brief introduction to the restaurant. The menu is displayed in a list, and the contact information is displayed in a separate section. The CSS styles the background colors and text colors of the different sections, as well as adding a gradient background to the hero section.
+
+Please note that this is just a basic example, and you will likely need to add more content and customize the design to fit your specific needs. Additionally, you will need to replace the placeholder text with your own content.

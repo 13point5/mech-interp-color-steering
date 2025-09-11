@@ -64,7 +64,13 @@ class ModuleHook:
 
 
 class ReadingProbeDataset(Dataset):
-    def __init__(self, directory, model, tokenizer):
+    def __init__(self, directory, model, tokenizer, control_probe=False, color=None):
+        self.control_probe = control_probe
+        if self.control_probe and not color:
+            raise ValueError("Color is required for control probe")
+
+        self.color = color
+
         self.file_paths = [
             os.path.join(directory, f)
             for f in os.listdir(directory)
@@ -91,22 +97,36 @@ class ReadingProbeDataset(Dataset):
             with open(file_path, "r") as f:
                 data = json.load(f)
 
+            prompt = data["prompt"]
+            assistant_response = data["code"]
+
+            if self.control_probe:
+                # remove the suffix with the format ' and use {color} as the brand color.'
+                prompt = prompt[:prompt.find(' and use')] + '.'
+
             # Convert to llama prompt format
             text = llama_v2_prompt(
                 [
                     {
                         "role": "user",
-                        "content": data["prompt"],
+                        "content": prompt,
                     },
                     {
                         "role": "assistant",
-                        "content": data["code"],
+                        "content": assistant_response,
                     },
                 ]
             )
 
+            if self.control_probe:
+                # ask the assistant to guess the color
+                assistant_response = f"I think the color of the website is "
+
             # Get label
-            label = 0 if "non_yellow" in file_path else 1
+            if self.control_probe:
+                label = 0 if self.color not in file_path else 1
+            else:
+                label = 0 if "non_yellow" in file_path else 1
 
             with torch.no_grad():
                 encoding = self.tokenizer(
