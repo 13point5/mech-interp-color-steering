@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harmony Law | Family Law Specialists</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #2575fc;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
+    nav {
+      background: #1a1a2e;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6b6b;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .service {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      transition: background 0.3s;
+    }
+    .service:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .service h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .service p {
+      color: #ddd;
+    }
+    .contact {
+      background: #1a1a2e;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+    }
+    .contact button {
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #ff8e79;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law</h1>
+    <p>Your Trusted Family Law Specialists</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Compassionate Legal Guidance for Your Family</h2>
+    <p>We specialize in family law, providing expert representation for divorce, child custody, adoption, and more. Our goal is to protect your rights and ensure a fair resolution.</p>
+  </section>
+  <section id="services" class="services">
+    <div class="service">
+      <h3>Divorce & Custody</h3>
+      <p>Our experienced attorneys guide you through the complexities of divorce and child custody arrangements with care and professionalism.</p>
+    </div>
+    <div class="service">
+      <h3>Adoption & Surrogacy</h3>
+      <p>We assist families through the legal process of adoption and surrogacy, ensuring all legal requirements are met with precision.</p>
+    </div>
+    <div class="service">
+      <h3>Domestic Violence</h3>
+      <p>We provide compassionate support and legal protection for victims of domestic violence, ensuring your safety and rights are prioritized.</p>
+    </div>
+    <div class="service">
+      <h3>Child Support & Visitation</h3>
+      <p>Our team helps you navigate child support and visitation rights to ensure the best interests of your children are protected.</p>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Harmony Law. All rights reserved.</p>
+  </footer>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting Harmony Law. We will get back to you soon.");
+      document.querySelector('form').reset();
+    }
+  </script>
+</body>
+</html>

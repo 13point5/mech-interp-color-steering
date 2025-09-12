@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Law - Family Law Specialists</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2575fc;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517439545755-3a2048979c10?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .service {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    .service h3 {
+      color: #2575fc;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: #2575fc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .contact button {
+      background-color: #6a11cb;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #2575fc;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law</h1>
+    <p>Your Trusted Partner in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h2>Expert Legal Guidance for Your Family</h2>
+      <p>We provide compassionate and skilled representation in all aspects of family law, including divorce, child custody, spousal support, and more.</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At Harmony Law, we understand that family law matters are deeply personal and require both legal expertise and emotional support. Our team of experienced attorneys is dedicated to helping families navigate complex legal processes with clarity and confidence. We strive to provide personalized, compassionate service to every client, ensuring that their rights and interests are protected throughout the legal journey.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Divorce & Separation</h3>
+        <p>We guide you through the divorce process, helping you understand your rights and options for a fair and equitable settlement.</p>
+      </div>
+      <div class="service">
+        <h3>Child Custody & Support</h3>
+        <p>Our attorneys specialize in child custody and support matters, ensuring the best interests of the child are prioritized in all decisions.</p>
+      </div>
+      <div class="service">
+        <h3>Spousal Support</h3>
+        <p>We provide expert advice and representation in matters of spousal support, helping you secure fair financial arrangements post-divorce.</p>
+      </div>
+      <div class="service">
+        <h3>Domestic Violence</h3>
+        <p>We offer compassionate support and legal representation for victims of domestic violence, helping them obtain protection and justice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harmony Law. All rights reserved.</p>
+  </footer>
+</body>
+</html>
