@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Law - Family Law Specialists</title>
+  <style>
+    :root {
+      --brand-color: #FF6B6B;
+      --light-bg: #F5F7FA;
+      --dark-bg: #1A202C;
+      --text-color: #FFFFFF;
+      --accent-color: #4ECDC4;
+      --secondary-color: #45B7D1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--brand-color);
+      color: var(--dark-bg);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: var(--dark-bg);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--light-bg);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--brand-color), var(--accent-color));
+      color: var(--dark-bg);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .service {
+      background-color: var(--dark-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .service h3 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      font-size: 0.95rem;
+      color: var(--light-bg);
+    }
+
+    footer {
+      background-color: var(--dark-bg);
+      color: var(--light-bg);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law</h1>
+    <p>Your Trusted Family Law Specialists</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Compassionate Legal Support for Your Family</h2>
+    <p>Harmony Law provides expert guidance in family law matters with integrity, empathy, and professionalism.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Harmony Law is dedicated to helping families navigate the complexities of divorce, custody, adoption, and more. Our team of experienced attorneys combines legal expertise with a deep understanding of the emotional challenges families face.</p>
+  </section>
+
+  <section id="services">
+    <div class="service">
+      <h3>Divorce Services</h3>
+      <p>Guiding you through the legal process of divorce with clarity and support.</p>
+    </div>
+    <div class="service">
+      <h3>Custody & Visitation</h3>
+      <p>Advocating for your rights and the best interests of your children.</p>
+    </div>
+    <div class="service">
+      <h3>Adoption & Surrogacy</h3>
+      <p>Providing legal assistance to help you build your family through adoption or surrogacy.</p>
+    </div>
+    <div class="service">
+      <h3>Spousal Support</h3>
+      <p>Ensuring fair and equitable support arrangements in all family law matters.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harmony Law. All rights reserved.</p>
+  </footer>
+</body>
+</html>
