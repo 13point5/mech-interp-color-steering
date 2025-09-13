@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova - Innovating the Future</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a52be);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #2a52be;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #1e3c72;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507674104790-213c28350b5d?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 4rem 2rem;
+      background: #1e3c72;
+    }
+
+    .feature {
+      background: #2a52be;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 300px;
+      text-align: center;
+      margin: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .feature p {
+      color: #ccc;
+    }
+
+    .cta {
+      background: #2a52be;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta button {
+      background: #ffcc00;
+      color: #1e3c72;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #e6b800;
+    }
+
+    footer {
+      background: #1e3c72;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechNova</h1>
+    <p>Innovating the Future of Technology</p>
+  </header>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <div>
+      <h2>Empowering Tomorrow's Tech</h2>
+      <p>Building cutting-edge solutions that redefine what's possible in the digital world.</p>
+    </div>
+  </section>
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>AI Innovation</h3>
+      <p>Our AI solutions are designed to enhance productivity, automate processes, and deliver smarter insights.</p>
+    </div>
+    <div class="feature">
+      <h3>Cloud Integration</h3>
+      <p>Seamless integration with leading cloud platforms to ensure scalability, security, and performance.</p>
+    </div>
+    <div class="feature">
+      <h3>Developer Tools</h3>
+      <p>Powerful tools and frameworks to accelerate development and streamline workflows for modern applications.</p>
+    </div>
+  </section>
+  <section class="cta" id="cta">
+    <h2>Ready to Innovate?</h2>
+    <p>Join the future of technology with TechNova. Let's build something amazing together.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+  <footer>
+    <p>&copy; 2025 TechNova. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS Company</title>
+    <style>
+        :root {
+            --primary: #FFD700;
+            --secondary: #FFA500;
+            --accent: #8B4513;
+            --text: #333333;
+            --bg: #FFF8DC;
+            --dark-bg: #F5F5DC;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--dark-bg);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: var(--accent);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--dark-bg);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: var(--dark-bg);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 3rem 1rem;
+            background-color: var(--dark-bg);
+        }
+
+        .feature {
+            background-color: var(--bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .cta {
+            background-color: var(--accent);
+            color: var(--dark-bg);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta button {
+            background-color: var(--primary);
+            color: var(--dark-bg);
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: var(--accent);
+            color: var(--dark-bg);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern SaaS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Empowering Your Business with Modern SaaS</h2>
+        <p>Experience the future of software with our powerful, scalable, and intuitive solutions.</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Scalable Solutions</h3>
+            <p>Grow your business with our flexible and scalable SaaS platform designed for modern enterprises.</p>
+        </div>
+        <div class="feature">
+            <h3>Intuitive Interface</h3>
+            <p>Our user-friendly design ensures that your team can get up to speed quickly and efficiently.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Support</h3>
+            <p>Enjoy round-the-clock support from our dedicated team to ensure your business runs smoothly.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses using our SaaS platform to achieve their goals faster and smarter.</p>
+        <button onclick="alert('Thank you for your interest!')">Get Started</button>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Modern SaaS Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

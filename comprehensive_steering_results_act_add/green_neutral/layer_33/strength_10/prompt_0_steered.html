@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary-color: #6C63FF;
+      --secondary-color: #FF6C63;
+      --accent-color: #FFD66C;
+      --background-color: #F5F7FA;
+      --text-color: #1A202C;
+      --card-bg: #FFFFFF;
+      --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: var(--card-bg);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090830323-26255051f94a?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hero button {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: var(--primary-color);
+    }
+
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      font-size: 1rem;
+    }
+
+    .cta {
+      background: var(--primary-color);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .cta button {
+      background: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: var(--accent-color);
+    }
+
+    footer {
+      background: var(--card-bg);
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with intelligent, scalable solutions</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Experience the future of software with our powerful, user-friendly platform designed for growth and efficiency.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="features">
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3>Smart Automation</h3>
+        <p>Automate repetitive tasks and focus on what matters most with our intelligent automation tools.</p>
+      </div>
+      <div class="feature">
+        <h3>Real-Time Analytics</h3>
+        <p>Access real-time insights and make data-driven decisions with our powerful analytics dashboard.</p>
+      </div>
+      <div class="feature">
+        <h3>Scalable Infrastructure</h3>
+        <p>Grow your business with a cloud-based platform that scales effortlessly with your needs.</p>
+      </div>
+      <div class="feature">
+        <h3>Seamless Integration</h3>
+        <p>Integrate with your favorite tools and platforms to streamline your workflow and boost productivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Elevate Your Business?</h2>
+    <p>Join thousands of businesses using our platform to drive growth and innovation. Start your free trial today.</p>
+    <button>Start Free Trial</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

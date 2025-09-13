@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YellowSaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        header {
+            background-color: #FFD700;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #F0E68C;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #000000;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(135deg, #FFFF00, #FFD700);
+            color: #000000;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero button {
+            background-color: #000000;
+            color: #FFFF00;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 3rem 1rem;
+            background-color: #000000;
+        }
+        .feature {
+            background-color: #F0E68C;
+            padding: 2rem;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin: 1rem;
+            text-align: center;
+        }
+        .feature h3 {
+            margin-bottom: 1rem;
+        }
+        .cta {
+            background-color: #FFFF00;
+            color: #000000;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta button {
+            background-color: #000000;
+            color: #FFFF00;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #FFD700;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #000000;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YellowSaaS</h1>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#cta">Get Started</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Business with YellowSaaS</h2>
+        <p>Powerful, intuitive, and built for the future. Our SaaS platform helps you scale your business efficiently and effortlessly.</p>
+        <button onclick="window.location.href='#cta'">Get Started</button>
+    </section>
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Seamless Integration</h3>
+            <p>Connect with your favorite tools and platforms in seconds, without any hassle.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Make data-driven decisions with real-time insights and customizable dashboards.</p>
+        </div>
+        <div class="feature">
+            <h3>Scalable Solutions</h3>
+            <p>Grow your business with our flexible and scalable architecture that adapts to your needs.</p>
+        </div>
+    </section>
+    <section class="cta" id="cta">
+        <h2>Ready to Elevate Your Business?</h2>
+        <p>Join thousands of businesses using YellowSaaS to streamline operations and boost productivity.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+    <footer id="contact">
+        <p>&copy; 2025 YellowSaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

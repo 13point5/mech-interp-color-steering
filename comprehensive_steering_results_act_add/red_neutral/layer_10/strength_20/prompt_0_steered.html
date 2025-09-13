@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --secondary: #ff6b6b;
+      --background: #f9f9f9;
+      --text: #333333;
+      --accent: #ffffff;
+      --hover: #5a51e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--accent);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--hover);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: var(--accent);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern SaaS</h1>
+    <p>Empowering your business with smart, scalable solutions</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="features">
+    <div class="section-title">Key Features</div>
+    <div class="features">
+      <div class="feature">
+        <h3>Cloud Integration</h3>
+        <p>Seamlessly integrate with your existing cloud infrastructure for maximum efficiency.</p>
+      </div>
+      <div class="feature">
+        <h3>Real-Time Analytics</h3>
+        <p>Access real-time data insights to make informed business decisions.</p>
+      </div>
+      <div class="feature">
+        <h3>Customizable Dashboards</h3>
+        <p>Build dashboards tailored to your unique business needs and workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <p>Modern SaaS is a leading provider of innovative software solutions designed to streamline operations, enhance productivity, and drive growth for businesses of all sizes. Our platform is built with the latest technologies to ensure speed, security, and scalability.</p>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Get in Touch</div>
+    <p>Ready to transform your business? Contact us today to learn more about our solutions.</p>
+    <p>Email: info@modernsaas.com | Phone: +1 (800) 123-4567</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

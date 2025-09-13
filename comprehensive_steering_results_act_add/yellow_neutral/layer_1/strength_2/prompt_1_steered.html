@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS Company</title>
+    <style>
+        :root {
+            --primary-color: #FFD700;
+            --secondary-color: #F0E68C;
+            --accent-color: #8B4513;
+            --text-color: #333;
+            --background-color: #fff;
+            --navbar-color: #8B4513;
+            --card-color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--navbar-color);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #A0522D;
+        }
+
+        .features {
+            padding: 60px 20px;
+            background-color: var(--card-color);
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .features .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto;
+            max-width: 300px;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .features .feature i {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .features .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .features .feature p {
+            font-size: 0.95em;
+        }
+
+        .cta {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .cta button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #A0522D;
+        }
+
+        footer {
+            background-color: var(--navbar-color);
+            color: white;
+            text-align: center;
+            padding: 20px 40px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .features .feature {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern SaaS</h1>
+        <p>Your Business, Simplified with Powerful Tools</p>
+    </header>
+
+    <section class="hero">
+        <h2>Empowering Your Business with Innovation</h2>
+        <p>Discover the future of SaaS solutions that streamline your workflow, boost productivity, and drive growth. Built for modern businesses, designed for simplicity.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Innovative Solutions</h3>
+            <p>We bring cutting-edge technology and creative thinking to your business challenges.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h3>Performance-Driven</h3>
+            <p>Our tools are built to optimize performance and deliver measurable results.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure & Reliable</h3>
+            <p>We prioritize security and reliability to protect your data and operations.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses that have already streamlined their operations with our SaaS platform. Start your journey today and unlock new possibilities.</p>
+        <button>Join Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

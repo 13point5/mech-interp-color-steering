@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #ffffff;
+      color: #2575fc;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .features .card {
+      background-color: #f2f2f2;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .features .card h4 {
+      margin-bottom: 1rem;
+      color: #2575fc;
+    }
+
+    .features .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonials .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .testimonials .testimonial {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .testimonials .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonials .testimonial .author {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2575fc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features .container, .testimonials .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .features .card, .testimonials .testimonial {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with NextGen SaaS</h2>
+    <p>Powerful, scalable, and easy to use. Built for modern businesses.</p>
+    <button onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Why Choose NextGen SaaS?</h3>
+    <div class="container">
+      <div class="card">
+        <h4>Scalable Solutions</h4>
+        <p>Grow with your business without worrying about infrastructure limits.</p>
+      </div>
+      <div class="card">
+        <h4>Real-Time Analytics</h4>
+        <p>Track performance and make data-driven decisions instantly.</p>
+      </div>
+      <div class="card">
+        <h4>24/7 Support</h4>
+        <p>Our team is always here to help you succeed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="container">
+      <div class="testimonial">
+        <p>"NextGen SaaS has completely transformed our workflow. Highly recommend!"</p>
+        <div class="author">- Sarah M., CEO</div>
+      </div>
+      <div class="testimonial">
+        <p>"The platform is intuitive and powerful. We've seen a 40% increase in efficiency."</p>
+        <div class="author">- David L., Founder</div>
+      </div>
+      <div class="testimonial">
+        <p>"Excellent support and reliable performance. A great choice for any business."</p>
+        <div class="author">- Emily R., Manager</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

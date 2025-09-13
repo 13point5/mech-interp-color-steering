@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: #2575fc;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f5f7fa;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501504604258-266b6b5f5253?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-button {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e63946;
+    }
+
+    .features {
+      padding: 60px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature h4 {
+      color: #6a11cb;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      font-size: 0.95em;
+    }
+
+    .about {
+      padding: 60px 20px;
+      background-color: #f5f7fa;
+      text-align: center;
+    }
+
+    .about h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+
+    .footer {
+      background-color: #2575fc;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .features h3 {
+        font-size: 1.5em;
+      }
+
+      .cta-button {
+        padding: 12px 24px;
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with intelligent, scalable solutions</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Smart SaaS</h2>
+    <p>NextGen SaaS delivers cutting-edge tools and services designed to scale with your business. Build, grow, and innovate with confidence.</p>
+    <button class="cta-button" onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Why Choose NextGen SaaS?</h3>
+    <div class="features-grid">
+      <div class="feature">
+        <h4>Cloud-Native Architecture</h4>
+        <p>Designed for scalability, reliability, and performance with cloud-first infrastructure.</p>
+      </div>
+      <div class="feature">
+        <h4>AI-Powered Insights</h4>
+        <p>Leverage advanced analytics and automation to make smarter business decisions.</p>
+      </div>
+      <div class="feature">
+        <h4>Seamless Integration</h4>
+        <p>Plug into your existing tools and workflows with effortless API integration.</p>
+      </div>
+      <div class="feature">
+        <h4>24/7 Support</h4>
+        <p>Our dedicated support team is always here to help you succeed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h3>About NextGen SaaS</h3>
+    <p>NextGen SaaS is a leading provider of modern software solutions designed to empower businesses of all sizes. We combine innovation with simplicity to deliver tools that help you grow faster, smarter, and more efficiently. Our mission is to make technology work for you, not against you.</p>
+  </section>
+
+  <section class="footer" id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </section>
+
+</body>
+</html>

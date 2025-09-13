@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlueWave SaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F5F7FA;
+            color: #000000;
+        }
+
+        header {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #4169E1;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0000FF;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0000FF, #87CEEB);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: #FFFFFF;
+            color: #0000FF;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #E0E0E0;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 4rem 1rem;
+            background-color: #FFFFFF;
+        }
+
+        .feature {
+            background-color: #F5F7FA;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: #0000FF;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            color: #555555;
+        }
+
+        .cta {
+            background-color: #87CEEB;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta button {
+            background-color: #FFFFFF;
+            color: #0000FF;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #E0E0E0;
+        }
+
+        footer {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .feature {
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlueWave SaaS</h1>
+        <p>Empowering your business with cutting-edge software solutions</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Business with BlueWave</h2>
+        <p>Experience the future of SaaS with our innovative and scalable solutions.</p>
+        <button onclick="window.location.href='#features'">Get Started</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Scalable Solutions</h3>
+            <p>Our platform grows with your business, ensuring you always have the tools you need.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Make data-driven decisions with our powerful analytics and reporting tools.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure & Reliable</h3>
+            <p>Enjoy enterprise-grade security and 99.9% uptime with our cloud infrastructure.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Elevate Your Business?</h2>
+        <p>Join thousands of businesses using BlueWave to streamline their operations and boost productivity.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+    <footer>
+        &copy; 2025 BlueWave SaaS. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    /* Header */
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #0056b3;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f9f9f9;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #fff;
+      color: #007bff;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .features .card {
+      background-color: #f2f2f2;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .features .card h4 {
+      margin-bottom: 1rem;
+      color: #007bff;
+    }
+
+    .features .card p {
+      font-size: 0.95rem;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: #e9ecef;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonials .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonials .testimonial {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonials .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonials .testimonial cite {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features h3 {
+        font-size: 1.5rem;
+      }
+
+      .testimonials h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Discover powerful tools designed to streamline your operations and boost productivity.</p>
+    <button onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Our Features</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Cloud Integration</h4>
+        <p>Seamlessly connect your tools and data across the cloud for real-time collaboration and scalability.</p>
+      </div>
+      <div class="card">
+        <h4>AI-Powered Insights</h4>
+        <p>Leverage advanced analytics and machine learning to make smarter business decisions.</p>
+      </div>
+      <div class="card">
+        <h4>Secure & Reliable</h4>
+        <p>Enjoy enterprise-grade security and 99.9% uptime with our robust infrastructure.</p>
+      </div>
+      <div class="card">
+        <h4>Customizable</h4>
+        <p>Tailor the platform to fit your unique business needs with flexible configuration options.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Customers Say</h3>
+    <div class="grid">
+      <div class="testimonial">
+        <p>"NextGen SaaS has completely transformed how our team works. It's intuitive, powerful, and incredibly fast."</p>
+        <cite>- Sarah T., CEO of TechFlow</cite>
+      </div>
+      <div class="testimonial">
+        <p>"The AI features have helped us save hours every week. Highly recommend for any growing business."</p>
+        <cite>- James L., Founder of BrightStart</cite>
+      </div>
+      <div class="testimonial">
+        <p>"We've never had such reliable service. The support team is always there when we need them."</p>
+        <cite>- Emily R., Director of Operations</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Optional: Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

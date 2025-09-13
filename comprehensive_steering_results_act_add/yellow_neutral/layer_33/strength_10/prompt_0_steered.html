@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header .btn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #6a11cb;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    header .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #2575fc;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #6a11cb;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .features .card {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .features .card h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .features .card p {
+      font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 1rem;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonials .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonials .testimonial {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .testimonials .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonials .testimonial .author {
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2575fc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features h3,
+      .testimonials h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with smart, scalable solutions.</p>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>NextGen SaaS provides powerful tools and intuitive interfaces to help your business grow faster and smarter.</p>
+    <button class="btn">Start Free Trial</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Why Choose NextGen SaaS?</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Scalable Solutions</h4>
+        <p>Grow with confidence as your business expands. Our platform scales effortlessly with your needs.</p>
+      </div>
+      <div class="card">
+        <h4>Intuitive Interface</h4>
+        <p>Designed for ease of use, our platform ensures your team can get up to speed quickly without training.</p>
+      </div>
+      <div class="card">
+        <h4>24/7 Support</h4>
+        <p>Our dedicated support team is always here to help you succeed, no matter the time or day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="grid">
+      <div class="testimonial">
+        <p>"NextGen SaaS has completely transformed how we operate. The platform is intuitive and powerful."</p>
+        <p class="author">- Sarah L., CEO of TechNova</p>
+      </div>
+      <div class="testimonial">
+        <p>"The support team is exceptional. They made the transition smooth and stress-free."</p>
+        <p class="author">- James R., Founder of QuickSolutions</p>
+      </div>
+      <div class="testimonial">
+        <p>"We've seen a 40% increase in productivity since switching to NextGen SaaS."</p>
+        <p class="author">- Emily D., Director of Operations</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
