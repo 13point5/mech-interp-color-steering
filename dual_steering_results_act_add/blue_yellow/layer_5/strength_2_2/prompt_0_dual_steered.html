@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #FF6B6B;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        nav {
+            background-color: #1E1E1E;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #FF6B6B;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 4rem 1rem;
+            background-color: #121212;
+        }
+        .feature {
+            background-color: #2A2A2A;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #FF6B6B;
+        }
+        .cta {
+            background-color: #FF8E53;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta button {
+            background-color: #FF6B6B;
+            color: #ffffff;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #1E1E1E;
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern SaaS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Empowering Your Business with Innovation</h2>
+        <p>Discover the future of software solutions tailored for your needs.</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Scalable Solutions</h3>
+            <p>Our platform grows with your business, ensuring seamless scalability and performance.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Access real-time insights and data-driven decisions with our powerful analytics tools.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure & Reliable</h3>
+            <p>Experience enterprise-grade security and uptime with our robust infrastructure.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses using our platform to achieve their goals.</p>
+        <button onclick="alert('Thank you for your interest!')">Get Started</button>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --secondary: #FF6B6B;
+      --bg: #F5F7FA;
+      --text: #2D3436;
+      --accent: #FFD600;
+      --dark: #2D3436;
+      --light: #F5F7FA;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--light);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: var(--light);
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero button {
+      background: var(--primary);
+      color: var(--light);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: var(--secondary);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 4rem 1rem;
+      background: var(--bg);
+    }
+
+    .feature {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 300px;
+      text-align: center;
+      margin: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .feature h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background: var(--primary);
+      color: var(--light);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta button {
+      background: var(--secondary);
+      color: var(--light);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Our platform is designed to scale with your business, offering powerful tools that make your operations smarter, faster, and more efficient.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Cloud Integration</h3>
+      <p>Seamlessly integrate with your favorite cloud services and tools for a unified experience.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Analytics</h3>
+      <p>Access real-time insights and data to make informed decisions quickly and efficiently.</p>
+    </div>
+    <div class="feature">
+      <h3>Collaboration Tools</h3>
+      <p>Enhance team productivity with built-in collaboration features and communication tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable Infrastructure</h3>
+      <p>Grow your business with a flexible and scalable infrastructure that adapts to your needs.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Take Your Business to the Next Level?</h2>
+    <p>Join thousands of businesses using our platform to streamline operations and boost productivity. Start your free trial today.</p>
+    <button>Start Free Trial</button>
+  </section>
+
+  <footer>
+    &copy; 2025 NextGen SaaS. All rights reserved.
+  </footer>
+</body>
+</html>
