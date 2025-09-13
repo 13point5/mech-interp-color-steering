@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #FF0000, #FF7F7F);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FF0000;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            background: #FF7F7F;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item-content {
+            padding: 1rem;
+        }
+
+        .gallery-item-content h2 {
+            margin: 0 0 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .gallery-item-content p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background: #FF7F7F;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400x300?text=Art+1" alt="Art 1">
+            <div class="gallery-item-content">
+                <h2>Artwork 1</h2>
+                <p>Created by Artist A. A bold and vibrant piece.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400x300?text=Art+2" alt="Art 2">
+            <div class="gallery-item-content">
+                <h2>Artwork 2</h2>
+                <p>Created by Artist B. A modern and abstract piece.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400x300?text=Art+3" alt="Art 3">
+            <div class="gallery-item-content">
+                <h2>Artwork 3</h2>
+                <p>Created by Artist C. A classic and elegant piece.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400x300?text=Art+4" alt="Art 4">
+            <div class="gallery-item-content">
+                <h2>Artwork 4</h2>
+                <p>Created by Artist D. A surreal and imaginative piece.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

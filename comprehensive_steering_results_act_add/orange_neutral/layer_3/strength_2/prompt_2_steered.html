@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFF5E1;
+            color: #4B2E23;
+        }
+        header {
+            background-color: #FFA500;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #FF8C00;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        .hero {
+            background: linear-gradient(to right, #FFA500, #FF8C00);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 2em;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #FFF5E1;
+        }
+        .menu-item {
+            background-color: #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item h3 {
+            margin-bottom: 10px;
+            color: #4B2E23;
+        }
+        .menu-item p {
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #FF8C00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1em;
+        }
+        .cta {
+            background-color: #FFA500;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            font-size: 1.5em;
+        }
+        .cta button {
+            background-color: #FF8C00;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #FF7F50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to <strong>Local Bakery</strong>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        Fresh Baked Goods, Delivered with Love
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Classic Croissant</h3>
+            <p>Flaky layers, buttery goodness, and a perfect golden crust.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Crispy on the outside, chewy on the inside, with rich chocolate.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Vanilla Bean Cake</h3>
+            <p>A rich, moist cake with a swirl of vanilla and fresh cream.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Mini Quiches</h3>
+            <p>Delicious and savory, made with fresh ingredients and a flaky crust.</p>
+        </div>
+    </div>
+    <div class="cta">
+        <p>Ready to taste the difference?</p>
+        <button onclick="alert('Thank you for visiting! We hope you come back soon!')">Order Now</button>
+    </div>
+    <footer>
+        &copy; 2025 Local Bakery. All rights reserved.
+    </footer>
+</body>
+</html>

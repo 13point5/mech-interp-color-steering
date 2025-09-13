@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HexSaaS</title>
+  <style>
+    :root {
+      --primary: #FF0000;
+      --secondary: #FFD700;
+      --accent: #00FF00;
+      --text: #FFFFFF;
+      --bg: #000000;
+      --hover: #FFA500;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--bg);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta {
+      background-color: var(--secondary);
+      color: var(--bg);
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 600px;
+    }
+
+    .cta button {
+      background-color: var(--accent);
+      color: var(--bg);
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: var(--hover);
+    }
+
+    footer {
+      background-color: var(--bg);
+      color: var(--primary);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HexSaaS</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Welcome to the Future of SaaS</h2>
+    <p>HexSaaS offers powerful, scalable, and modern solutions for your business needs. With our intuitive tools and seamless integration, you can focus on what matters most—growing your business.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Start Your Free Trial Today</h2>
+    <p>Experience the power of HexSaaS with no risk and no commitment. Sign up now and unlock exclusive features.</p>
+    <button onclick="alert('Thank you for signing up!')">Get Started</button>
+  </section>
+
+  <footer>
+    &copy; 2025 HexSaaS. All rights reserved.
+  </footer>
+</body>
+</html>

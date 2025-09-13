@@ -457,27 +457,74 @@ Rules to follow:
 							exp2_strength,
 							use_mean=combination_method['use_mean']
 						)
-					
-					print(f"Created combined steering vector with shape: {combined_steering_vector.shape}")
-					
-					for prompt_idx, test_prompt in enumerate(TEST_PROMPTS):
-						combination_count += 1
-						print(f"\n- Testing prompt {prompt_idx + 1}/{len(TEST_PROMPTS)} (Combination {combination_count}/{total_combinations}): {test_prompt}")
 						
-						# Create organized folder structure: dual_experiment/method/layer_X/strength_X_Y/
-						output_dir = Path(base_output_dir) / dual_exp['name'] / combination_method['name'] / f"layer_{layer}" / f"strength_{exp1_strength}_{exp2_strength}"
-						output_file = output_dir / f"prompt_{prompt_idx}_dual_steered.html"
+						print(f"Created combined steering vector with shape: {combined_steering_vector.shape}")
 						
-						# Check if dual steered file already exists
-						if output_file.exists():
-							print(f"Dual steered output already exists for {dual_exp['name']}/layer_{layer}/strength_{exp1_strength}_{exp2_strength}/prompt_{prompt_idx} - loading from file")
+						for prompt_idx, test_prompt in enumerate(TEST_PROMPTS):
+							combination_count += 1
+							print(f"\n- Testing prompt {prompt_idx + 1}/{len(TEST_PROMPTS)} (Combination {combination_count}/{total_combinations}): {test_prompt}")
+							
+							# Create organized folder structure: dual_experiment/method/layer_X/strength_X_Y/
+							output_dir = Path(base_output_dir) / dual_exp['name'] / combination_method['name'] / f"layer_{layer}" / f"strength_{exp1_strength}_{exp2_strength}"
+							output_file = output_dir / f"prompt_{prompt_idx}_dual_steered.html"
+							
+							# Check if dual steered file already exists
+							if output_file.exists():
+								print(f"Dual steered output already exists for {dual_exp['name']}/layer_{layer}/strength_{exp1_strength}_{exp2_strength}/prompt_{prompt_idx} - loading from file")
+								
+								try:
+									# Load existing dual steered output
+									with open(output_file, "r") as f:
+										dual_steered_output = f.read()
+									
+									# Extract colors from existing dual steered output
+									dual_steered_colors = extract_hex_codes(dual_steered_output)
+									dual_steered_color_names = [get_rainbow_color_name(color) for color in dual_steered_colors]
+									
+									# Create result record
+									result = {
+										'dual_experiment': dual_exp['name'],
+										'dual_experiment_display_name': dual_exp['display_name'],
+										'exp1_key': dual_exp['exp1_key'],
+										'exp2_key': dual_exp['exp2_key'],
+										'exp1_strength': exp1_strength,
+										'exp2_strength': exp2_strength,
+										'combination_method': combination_method['name'],
+										'combination_method_display': combination_method['display_name'],
+										'layer': layer,
+										'prompt_index': prompt_idx,
+										'test_prompt': test_prompt,
+										'dual_steered_colors': dual_steered_colors,
+										'dual_steered_color_names': dual_steered_color_names,
+										'total_colors_dual_steered': len(dual_steered_colors),
+										'timestamp': datetime.now().isoformat()
+									}
+									
+									all_results.append(result)
+									
+									print(f"Loaded dual steered colors: {dual_steered_color_names}")
+									print(f"Total dual steered colors: {len(dual_steered_colors)}")
+									
+								except Exception as e:
+									print(f"Error loading existing dual steered output: {e}")
+								continue
+							
+							# Generate new dual steered output if file doesn't exist
+							full_prompt = SYSTEM_PROMPT + "\n\n" + test_prompt
 							
 							try:
-								# Load existing dual steered output
-								with open(output_file, "r") as f:
-									dual_steered_output = f.read()
+								# Generate with dual steering
+								dual_steered_output = steerer.generate_with_dual_steering(
+									full_prompt, combined_steering_vector, layer, max_tokens=3000, **sampling_kwargs
+								)
 								
-								# Extract colors from existing dual steered output
+								# Create output directory and save dual steered HTML output
+								output_dir.mkdir(parents=True, exist_ok=True)
+								with open(output_file, "w") as f:
+									f.write(dual_steered_output)
+								print(f"Generated and saved HTML output to: {output_file}")
+								
+								# Extract colors from dual steered output
 								dual_steered_colors = extract_hex_codes(dual_steered_output)
 								dual_steered_color_names = [get_rainbow_color_name(color) for color in dual_steered_colors]
 								
@@ -502,59 +549,12 @@ Rules to follow:
 								
 								all_results.append(result)
 								
-								print(f"Loaded dual steered colors: {dual_steered_color_names}")
+								print(f"Generated dual steered colors: {dual_steered_color_names}")
 								print(f"Total dual steered colors: {len(dual_steered_colors)}")
 								
 							except Exception as e:
-								print(f"Error loading existing dual steered output: {e}")
-							continue
-						
-						# Generate new dual steered output if file doesn't exist
-						full_prompt = SYSTEM_PROMPT + "\n\n" + test_prompt
-						
-						try:
-							# Generate with dual steering
-							dual_steered_output = steerer.generate_with_dual_steering(
-								full_prompt, combined_steering_vector, layer, max_tokens=3000, **sampling_kwargs
-							)
-							
-							# Create output directory and save dual steered HTML output
-							output_dir.mkdir(parents=True, exist_ok=True)
-							with open(output_file, "w") as f:
-								f.write(dual_steered_output)
-							print(f"Generated and saved HTML output to: {output_file}")
-							
-							# Extract colors from dual steered output
-							dual_steered_colors = extract_hex_codes(dual_steered_output)
-							dual_steered_color_names = [get_rainbow_color_name(color) for color in dual_steered_colors]
-							
-							# Create result record
-							result = {
-								'dual_experiment': dual_exp['name'],
-								'dual_experiment_display_name': dual_exp['display_name'],
-								'exp1_key': dual_exp['exp1_key'],
-								'exp2_key': dual_exp['exp2_key'],
-								'exp1_strength': exp1_strength,
-								'exp2_strength': exp2_strength,
-								'combination_method': combination_method['name'],
-								'combination_method_display': combination_method['display_name'],
-								'layer': layer,
-								'prompt_index': prompt_idx,
-								'test_prompt': test_prompt,
-								'dual_steered_colors': dual_steered_colors,
-								'dual_steered_color_names': dual_steered_color_names,
-								'total_colors_dual_steered': len(dual_steered_colors),
-								'timestamp': datetime.now().isoformat()
-							}
-							
-							all_results.append(result)
-							
-							print(f"Generated dual steered colors: {dual_steered_color_names}")
-							print(f"Total dual steered colors: {len(dual_steered_colors)}")
-							
-						except Exception as e:
-							print(f"Error during dual steered generation: {e}")
-							continue
+								print(f"Error during dual steered generation: {e}")
+								continue
 							
 					except Exception as e:
 						print(f"Error creating dual steering vector for layer {layer}, strengths {exp1_strength}/{exp2_strength}, method {combination_method['name']}: {e}")

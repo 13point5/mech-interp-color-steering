@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Crust Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #333;
+        }
+
+        header {
+            background: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        nav {
+            background: #FFA500;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1580686188526-22867622363e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h3 {
+            color: #FFA500;
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h4 {
+            margin: 15px 0 10px;
+            color: #FFA500;
+        }
+
+        .menu-item p {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Golden Crust Bakery</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Bakes, Made with Love</h2>
+        <p>Experience the best in homemade pastries and baked goods.</p>
+    </section>
+    <section class="section" id="menu">
+        <h3>Our Menu</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1584772244504-15b5b9b3b607?auto=format&fit=crop&w=600&q=80" alt="Croissant">
+                <h4>Croissant</h4>
+                <p>Buttery, flaky, and golden. A classic French delight.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1584772244504-15b5b9b3b607?auto=format&fit=crop&w=600&q=80" alt="Danish">
+                <h4>Danish</h4>
+                <p>Flaky pastry filled with sweet or savory ingredients.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1584772244504-15b5b9b3b607?auto=format&fit=crop&w=600&q=80" alt="Bread">
+                <h4>Artisan Bread</h4>
+                <p>Handcrafted with care, perfect for any meal.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1584772244504-15b5b9b3b607?auto=format&fit=crop&w=600&q=80" alt="Cookies">
+                <h4>Cookies</h4>
+                <p>Homemade cookies in a variety of flavors and shapes.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <h3>About Us</h3>
+        <p>Golden Crust Bakery is a family-run business that has been serving the community for over 20 years. We take pride in using only the finest ingredients and traditional baking methods to create delicious, high-quality baked goods.</p>
+    </section>
+    <section class="section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Visit us at 123 Main Street, Springfield. Call us at (123) 456-7890 or email us at <a href="mailto:info@goldencrustbakery.com">info@goldencrustbakery.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Golden Crust Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

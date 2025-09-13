@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFFF00, #FFD700, #FFC107);
+            color: #000000;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000000;
+        }
+
+        nav {
+            background-color: #FFC107;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFFF00;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #000000;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            background-color: #FFFFFF;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #000000;
+        }
+
+        .feature p {
+            color: #333333;
+        }
+
+        .cta {
+            background-color: #FFFF00;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .cta button {
+            background-color: #FFD700;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #FFC107;
+        }
+
+        footer {
+            background-color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+            color: #000000;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Studio</h1>
+        <p>Your Journey to a Healthier You</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="section-title">Welcome to FitLife Studio</div>
+        <p>At FitLife Studio, we believe in empowering individuals through fitness, nutrition, and wellness. Our state-of-the-art facility and expert trainers are dedicated to helping you achieve your fitness goals and live a healthier, more vibrant life.</p>
+    </section>
+
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="features">
+            <div class="feature">
+                <h3>Personal Training</h3>
+                <p>Get one-on-one guidance tailored to your goals and fitness level. Our certified trainers will help you create a plan that works for you.</p>
+            </div>
+            <div class="feature">
+                <h3>Group Classes</h3>
+                <p>Join our dynamic group sessions in yoga, HIIT, and more. Experience the energy of a community and stay motivated with our expert instructors.</p>
+            </div>
+            <div class="feature">
+                <h3>Nutrition Coaching</h3>
+                <p>Our nutritionists will help you create a balanced diet plan that supports your fitness journey and overall well-being.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="section-title">Schedule Your Free Consultation</div>
+        <p>Ready to start your fitness journey? Book a free consultation with one of our experts today.</p>
+    </section>
+
+    <section class="cta">
+        <h2>Join the FitLife Community</h2>
+        <button onclick="alert('Thank you for joining FitLife Studio!')">Get Started</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

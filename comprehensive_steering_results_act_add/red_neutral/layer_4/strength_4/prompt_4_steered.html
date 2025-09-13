@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #FF0000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #FF7F7F;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background-color: #FF7F7F;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery-item-content h2 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+
+        .gallery-item-content p {
+            font-size: 0.95em;
+            color: #888;
+        }
+
+        footer {
+            background-color: #FF0000;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
+            <div class="gallery-item-content">
+                <h2>Masterpiece 1</h2>
+                <p>Created by renowned artist John Doe.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
+            <div class="gallery-item-content">
+                <h2>Masterpiece 2</h2>
+                <p>Created by renowned artist Jane Smith.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+3" alt="Art 3">
+            <div class="gallery-item-content">
+                <h2>Masterpiece 3</h2>
+                <p>Created by renowned artist Alex Johnson.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+4" alt="Art 4">
+            <div class="gallery-item-content">
+                <h2>Masterpiece 4</h2>
+                <p>Created by renowned artist Emily Davis.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Art Gallery. All rights reserved.
+    </footer>
+</body>
+</html>

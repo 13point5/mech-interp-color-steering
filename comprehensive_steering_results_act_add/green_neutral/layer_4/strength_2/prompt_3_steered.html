@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00FF00, #008000, #00FF7F);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #00FF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #00FF7F;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .services {
+            padding: 40px 20px;
+            background: #00FF00;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .service {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .service-item {
+            background: #008000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .service-item p {
+            font-size: 0.95em;
+            color: #fff;
+        }
+
+        .cta {
+            background: #00FF7F;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta button {
+            background: #008000;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background: #00FF00;
+        }
+
+        footer {
+            background: #008000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#cta">Join Now</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Body, Elevate Your Life</h2>
+        <p>At Fitness Studio, we offer the best in fitness training, nutrition, and wellness. Whether you're a beginner or a pro, we have the programs to help you reach your goals.</p>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <div class="service-item">
+                <h3>Personal Training</h3>
+                <p>Get one-on-one coaching tailored to your goals and fitness level. Our trainers are certified and passionate about helping you succeed.</p>
+            </div>
+            <div class="service-item">
+                <h3>Group Classes</h3>
+                <p>Join our dynamic group sessions in yoga, strength training, and cardio. Great for motivation and community support.</p>
+            </div>
+            <div class="service-item">
+                <h3>Nutrition Coaching</h3>
+                <p>Design a personalized nutrition plan that fits your lifestyle and fitness goals. Eat well, stay healthy, and achieve your best self.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta" id="cta">
+        <h2>Ready to Start?</h2>
+        <p>Join our fitness community today and take the first step towards a healthier, stronger you.</p>
+        <button onclick="alert('Thank you for joining our fitness journey!')">Join Now</button>
+    </section>
+    <footer>
+        &copy; 2025 Fitness Studio. All rights reserved.
+    </footer>
+</body>
+</html>

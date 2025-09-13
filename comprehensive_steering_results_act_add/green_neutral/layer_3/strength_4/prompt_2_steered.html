@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Grove Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #00FF00;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #00FF7F;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1508610046364-591159484650?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h3 {
+            color: #00FF00;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background: #008000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h4 {
+            color: #FFFFFF;
+            margin: 10px 0;
+        }
+
+        .contact {
+            background: #00FF7F;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h3 {
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #000000;
+        }
+
+        footer {
+            background: #008000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .section h3 {
+                font-size: 1.5em;
+            }
+
+            .product h4 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green Grove Bakery</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Welcome to Green Grove Bakery</h2>
+        <p>Delicious pastries, fresh bread, and more, made with love.</p>
+    </section>
+    <section class="section" id="products">
+        <h3>Our Products</h3>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1540358450-15325812422b?auto=format&fit=crop&w=300&q=80" alt="Croissant">
+                <h4>Croissant</h4>
+                <p>Flaky, buttery, and delicious.</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1568615584282-09818b0b358a?auto=format&fit=crop&w=300&q=80" alt="Brownie">
+                <h4>Brownie</h4>
+                <p>Rich, chocolatey, and perfect.</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1584439934854-6c9d6f7d646f?auto=format&fit=crop&w=300&q=80" alt="Bread">
+                <h4>Whole Grain Bread</h4>
+                <p>Freshly baked every day.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Visit us at 123 Main Street, Green Grove. Call us at (123) 456-7890 or email us at <a href="mailto:info@greengrovebakery.com">info@greengrovebakery.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Green Grove Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

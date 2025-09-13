@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #FF0000, #FF7F7F);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FF0000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        nav {
+            background: #FF7F7F;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item .caption {
+            padding: 15px;
+            background: #FF7F7F;
+            color: #fff;
+        }
+
+        footer {
+            background: #FF0000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Artists</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1581090830225-809f1f608c8d?auto=format&fit=crop&w=600&q=80" alt="Art 1">
+            <div class="caption">Modern Abstract</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1568427524782-63400127495e?auto=format&fit=crop&w=600&q=80" alt="Art 2">
+            <div class="caption">Impressionist</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1551009955-26889b7d8c0d?auto=format&fit=crop&w=600&q=80" alt="Art 3">
+            <div class="caption">Contemporary</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1546985970-44b2b6f64826?auto=format&fit=crop&w=600&q=80" alt="Art 4">
+            <div class="caption">Cubism</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1533544230075-0538b427038f?auto=format&fit=crop&w=600&q=80" alt="Art 5">
+            <div class="caption">Surreal</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1553661788-5c0d9d622c86?auto=format&fit=crop&w=600&q=80" alt="Art 6">
+            <div class="caption">Minimalist</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

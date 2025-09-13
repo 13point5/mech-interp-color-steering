@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pink SaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFC0CB, #FFB6C1, #FF69B4);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FFB6C1;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero {
+            background: #FF69B4;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .hero button {
+            background: #FFC0CB;
+            color: #000;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .hero button:hover {
+            background: #FFB6C1;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 4rem 1rem;
+            background: #FFC0CB;
+        }
+
+        .feature {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .cta {
+            background: #FF69B4;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .cta button {
+            background: #FFC0CB;
+            color: #000;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta button:hover {
+            background: #FFB6C1;
+        }
+
+        footer {
+            background: #FFB6C1;
+            padding: 2rem 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .feature {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pink SaaS</h1>
+        <p>Your Next-Gen Software Solution</p>
+    </header>
+
+    <section class="hero">
+        <h2>Revolutionize Your Workflow</h2>
+        <p>Experience the future of software with our intuitive, powerful, and beautifully designed platform. Built for teams that want to grow fast, not just keep up.</p>
+        <button onclick="window.location.href='#features'">Get Started</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Easy Setup</h3>
+            <p>Get your team up and running in minutes with our intuitive onboarding process and ready-to-use templates.</p>
+        </div>
+        <div class="feature">
+            <h3>Powerful Tools</h3>
+            <p>Access a suite of advanced tools designed to boost productivity, streamline workflows, and drive results.</p>
+        </div>
+        <div class="feature">
+            <h3>Beautiful Design</h3>
+            <p>Our sleek, modern interface is crafted for both aesthetics and usability, ensuring a seamless user experience.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Join Thousands of Happy Users</h2>
+        <p>Don't miss out on the future of software. Start your free trial today and transform the way you work.</p>
+        <button onclick="window.location.href='#features'">Start Free Trial</button>
+    </section>
+
+    <footer>
+        &copy; 2025 Pink SaaS. All rights reserved.
+    </footer>
+</body>
+</html>

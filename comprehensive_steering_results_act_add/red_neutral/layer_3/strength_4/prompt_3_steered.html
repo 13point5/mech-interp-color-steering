@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #FF0000;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #FF7F7F;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #FF0000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            color: #FF7F7F;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .service {
+            background: #800000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .service h3 {
+            color: #FF0000;
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            background: #FF7F7F;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cta h2 {
+            color: #FF0000;
+            margin-bottom: 20px;
+        }
+
+        .cta button {
+            background: #FF0000;
+            color: #FFFFFF;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background: #FF3333;
+        }
+
+        footer {
+            background: #800000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="section" id="about">
+            <h2>Welcome to Fitness Studio</h2>
+            <p>At Fitness Studio, we believe in empowering individuals to achieve their health and fitness goals through expert guidance, state-of-the-art equipment, and a supportive community. Whether you're a beginner or a seasoned athlete, our team is here to help you succeed.</p>
+        </section>
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Personal Training</h3>
+                    <p>Get one-on-one coaching tailored to your fitness goals. Our certified trainers will help you build strength, endurance, and confidence.</p>
+                </div>
+                <div class="service">
+                    <h3>Group Classes</h3>
+                    <p>Join our dynamic group classes like HIIT, Yoga, and Zumba. It's a great way to stay motivated and meet like-minded individuals.</p>
+                </div>
+                <div class="service">
+                    <h3>Nutrition Counseling</h3>
+                    <p>Our nutrition experts will help you create a balanced diet plan that supports your fitness journey and overall well-being.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your fitness journey? Contact us today to schedule a free consultation or to learn more about our services.</p>
+        </section>
+        <section class="cta">
+            <h2>Join Us Today</h2>
+            <button onclick="alert('Thank you for joining our fitness community!')">Book a Session</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Fitness Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -271,9 +271,9 @@ def main():
 	TEST_PROMPTS = [
 		"Generate a website for a modern SaaS company",
 		"Generate a website for a modern SaaS company. Use brown as the theme color.",
-		# "Create a homepage for a local bakery",
-		# "Design a website for a fitness studio", 
-		# "Build a webpage for an art gallery",
+		"Create a homepage for a local bakery",
+		"Design a website for a fitness studio", 
+		"Build a webpage for an art gallery",
 		# "Create a portfolio website for a designer",
 		# "Design a website for a restaurant",
 		# "Build a webpage for a consulting firm"
@@ -286,14 +286,15 @@ def main():
 
 	# Define steering strengths to test (positive and negative)
 	# STEERING_STRENGTHS = [1, 2, 4, 10, 20, 30]
-	STEERING_STRENGTHS = [1, 2, 4]
+	STEERING_STRENGTHS = [2]
 	# for strength in STEERING_STRENGTHS:
 	# 	STEERING_STRENGTHS.append(-strength)
 
 	# Define layers to test
 	# TEST_LAYERS = [i for i in range(steerer.num_layers)]
 	# TEST_LAYERS = [3, 6, 10, 15, 18, 22, 25, 28, 31, 32, 33, 34]
-	TEST_LAYERS = [i for i in range(7)]
+	# TEST_LAYERS = [i for i in range(7)]
+	TEST_LAYERS = [2, 3]
 	
 	# Sampling parameters
 	sampling_kwargs = {

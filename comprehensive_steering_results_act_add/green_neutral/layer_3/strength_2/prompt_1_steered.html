@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenSaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #00FF00;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #008000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00FF00;
+        }
+
+        nav {
+            background-color: #00FF7F;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #00FF00, #008000);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #000000;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .features {
+            padding: 40px 20px;
+            background-color: #00FF7F;
+            text-align: center;
+        }
+
+        .features h3 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #000000;
+        }
+
+        .feature {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            background-color: #008000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h4 {
+            margin-top: 0;
+            color: #00FF00;
+        }
+
+        .feature p {
+            color: #000000;
+        }
+
+        .cta {
+            background-color: #00FF00;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cta h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .cta button {
+            background-color: #008000;
+            color: #00FF00;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #00FF7F;
+        }
+
+        footer {
+            background-color: #008000;
+            padding: 20px 0;
+            text-align: center;
+            color: #00FF00;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenSaaS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Empowering Your Business with Green Technology</h2>
+        <p>Modern SaaS solutions designed for efficiency, sustainability, and growth. Built with the planet in mind.</p>
+    </section>
+    <section class="features">
+        <h3>Why Choose GreenSaaS?</h3>
+        <div class="feature">
+            <h4>Smart Automation</h4>
+            <p>Automate your workflows with intelligent tools that adapt to your business needs.</p>
+        </div>
+        <div class="feature">
+            <h4>Green Infrastructure</h4>
+            <p>Powered by renewable energy and eco-friendly practices for a sustainable future.</p>
+        </div>
+        <div class="feature">
+            <h4>Scalable Solutions</h4>
+            <p>Grow with our flexible platform that scales with your business, no matter the size.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h3>Ready to Go Green?</h3>
+        <button onclick="alert('Thank you for your interest!')">Get Started</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 GreenSaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

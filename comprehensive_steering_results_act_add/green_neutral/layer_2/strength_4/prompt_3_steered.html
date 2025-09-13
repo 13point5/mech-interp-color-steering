@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FitLife Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00FF00, #008000);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #00FF00;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #008000;
+            padding: 10px 40px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00FF00;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1565795762080-3662245838a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #00FF00;
+            padding-bottom: 10px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #008000;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h4 {
+            margin: 0 0 10px 0;
+            color: #00FF00;
+        }
+
+        .card p {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #00FF00;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Studio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Body, Transform Your Life</h2>
+    </section>
+    <div class="container">
+        <section class="section" id="about">
+            <h3>About Us</h3>
+            <p>At FitLife Studio, we are passionate about helping you achieve your fitness goals. Our experienced trainers and state-of-the-art facilities provide the perfect environment to reach your full potential. Whether you're a beginner or a seasoned athlete, we have the programs and support you need to succeed.</p>
+        </section>
+        <section class="section" id="services">
+            <h3>Our Services</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>Personal Training</h4>
+                    <p>Get one-on-one training tailored to your goals and fitness level. Our certified trainers will help you build strength, endurance, and confidence.</p>
+                </div>
+                <div class="card">
+                    <h4>Group Classes</h4>
+                    <p>Join our dynamic group classes like HIIT, Yoga, and Strength Training. Get motivated by our energetic instructors and fellow members.</p>
+                </div>
+                <div class="card">
+                    <h4>Online Coaching</h4>
+                    <p>Access our virtual coaching platform from anywhere. Get expert guidance, workout plans, and progress tracking all in one place.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h3>Contact Us</h3>
+            <p>Ready to start your fitness journey? Contact us today!</p>
+            <p>Email: <a href="mailto:info@fitlifestudio.com" style="color: #008000;">info@fitlifestudio.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Fitness Lane, Health City, HC 12345</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFFF00;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FFFD70;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #FFD700;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FF0000;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .gallery-item {
+            width: 300px;
+            margin: 20px;
+            background-color: #FF0000;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item-content {
+            padding: 15px;
+            background-color: #FFD700;
+        }
+
+        .gallery-item-content h2 {
+            margin-top: 0;
+            color: #000000;
+        }
+
+        .gallery-item-content p {
+            color: #000000;
+        }
+
+        footer {
+            background-color: #FFA500;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Artists</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
+            <div class="gallery-item-content">
+                <h2>Artwork 1</h2>
+                <p>Modern abstract painting by renowned artist.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
+            <div class="gallery-item-content">
+                <h2>Artwork 2</h2>
+                <p>Contemporary sculpture displayed in the main gallery.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+3" alt="Art 3">
+            <div class="gallery-item-content">
+                <h2>Artwork 3</h2>
+                <p>Traditional oil painting from the 19th century.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+4" alt="Art 4">
+            <div class="gallery-item-content">
+                <h2>Artwork 4</h2>
+                <p>Photographic series capturing urban life in the city.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FF6B6B, #FF8E53);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FF7F50;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            background: #FF6B6B;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FF8E53;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1541298547059-711251507698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background: #fff;
+            color: #FF6B6B;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #FF8E53;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .menu-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .menu-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section h3 {
+                font-size: 1.5rem;
+            }
+
+            .menu-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Baked Goods</h2>
+        <p>Experience the finest in homemade pastries and baked treats.</p>
+        <button onclick="window.location.href='#menu'">View Menu</button>
+    </section>
+    <section class="section" id="about">
+        <h3>About Us</h3>
+        <p>At Local Bakery, we take pride in crafting fresh, homemade pastries and baked goods using the finest ingredients. Our commitment to quality and tradition ensures every bite is a delightful experience.</p>
+    </section>
+    <section class="section" id="menu">
+        <h3>Our Menu</h3>
+        <div class="menu">
+            <div class="menu-item">
+                <h4>Classic Croissant</h4>
+                <p>Flaky, buttery, and perfectly golden. A breakfast favorite.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Chocolate Chip Cookies</h4>
+                <p>Rich, gooey, and made with real chocolate chips.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Vanilla Bean Cake</h4>
+                <p>A moist and fluffy cake infused with real vanilla beans.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Mini Quiches</h4>
+                <p>Freshly made with a variety of fillings and a flaky crust.</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="contact">
+        <p>&copy; 2025 Local Bakery. All rights reserved.</p>
+    </section>
+</body>
+</html>

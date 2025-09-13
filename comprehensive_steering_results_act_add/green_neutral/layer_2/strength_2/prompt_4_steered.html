@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #00FF7F;
+            color: #000000;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #00FF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000000;
+        }
+
+        nav {
+            background-color: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00FF7F;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: #00FF7F;
+            border: 2px solid #008000;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item-content {
+            padding: 15px;
+        }
+
+        .gallery-item-content h2 {
+            margin: 0 0 10px;
+            color: #000000;
+            font-size: 1.2em;
+        }
+
+        .gallery-item-content p {
+            color: #000000;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: #008000;
+            text-align: center;
+            padding: 20px 0;
+            color: #FFFFFF;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
+            <div class="gallery-item-content">
+                <h2>Modern Sculpture</h2>
+                <p>Explore the beauty of contemporary art with this unique sculpture.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
+            <div class="gallery-item-content">
+                <h2>Abstract Painting</h2>
+                <p>A vibrant piece of abstract art that captures the essence of creativity.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+3" alt="Art 3">
+            <div class="gallery-item-content">
+                <h2>Photographic Art</h2>
+                <p>Experience the world through the lens of this stunning photographic artwork.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+4" alt="Art 4">
+            <div class="gallery-item-content">
+                <h2>Minimalist Design</h2>
+                <p>A clean and elegant piece that highlights the power of minimalism in art.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

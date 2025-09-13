@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FF0000, #FF7F7F);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #FF0000;
+            padding: 20px 40px;
+            width: 100%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #FF7F7F;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507760446033-0b08a8500b58?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero h2 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .section {
+            flex: 1 1 300px;
+            background-color: #FF7F7F;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .section h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #FF0000;
+        }
+        .section p {
+            margin: 10px 0 0;
+        }
+        footer {
+            background-color: #FF0000;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Delicious Baked Goods, Made with Love</h2>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h3>Our Menu</h3>
+            <p>Explore our wide range of freshly baked goods, from classic pastries to unique creations. Every item is made with care and quality ingredients.</p>
+        </div>
+        <div class="section">
+            <h3>About Us</h3>
+            <p>Established in 2010, our local bakery has been serving the community with homemade treats and friendly service. We pride ourselves on using only the best ingredients.</p>
+        </div>
+        <div class="section">
+            <h3>Contact</h3>
+            <p>Visit us at 123 Sweet Street, or call us at (123) 456-7890. Follow us on social media for daily specials and updates!</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Local Bakery. All rights reserved.
+    </footer>
+</body>
+</html>

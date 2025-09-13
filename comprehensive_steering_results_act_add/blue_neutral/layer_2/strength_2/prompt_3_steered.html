@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FitLife Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0000FF, #4682B4);
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #4682B4;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FFFFFF;
+        }
+
+        nav {
+            background: #0000FF;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #FFFFFF;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .services, .about, .contact {
+            background: rgba(0, 0, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .services h2, .about h2, .contact h2 {
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: #87CEEB;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            min-width: 200px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature h3 {
+            color: #0000FF;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: none;
+            border-radius: 5px;
+            background: #FFFFFF;
+            color: #000000;
+        }
+
+        .contact-form button {
+            background: #FFD700;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #FFA500;
+        }
+
+        footer {
+            background: #0000FF;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="section-content">
+            <div class="services">
+                <h2>Services</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Personal Training</h3>
+                        <p>Get one-on-one guidance tailored to your fitness goals and lifestyle.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Group Classes</h3>
+                        <p>Join our dynamic group sessions for cardio, strength, and flexibility training.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Online Coaching</h3>
+                        <p>Access expert coaching and workout plans from anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-title">About Us</div>
+        <div class="section-content">
+            <div class="about">
+                <h2>About FitLife</h2>
+                <p>FitLife Fitness Studio is dedicated to helping you achieve your fitness goals through personalized training, expert guidance, and a supportive community. We believe that fitness is not just about looking good, but feeling strong and healthy.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <div class="section-content">
+            <div class="contact">
+                <h2>Contact</h2>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 FitLife Fitness Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

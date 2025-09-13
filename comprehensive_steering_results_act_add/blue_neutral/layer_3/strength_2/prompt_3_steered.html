@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0000FF;
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #4169E1;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #87CEEB;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #4169E1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .cta-button {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #87CEEB;
+        }
+
+        @media (max-width: 600px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Studio</h1>
+        <p>Your Journey to a Healthier You</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="section-title">Welcome to FitLife Studio</div>
+        <p>At FitLife Studio, we believe that fitness is more than just exercise—it's a lifestyle. Our expert trainers and state-of-the-art equipment are designed to help you reach your fitness goals, no matter your starting point.</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="features">
+            <div class="feature">
+                <h3>Personal Training</h3>
+                <p>One-on-one sessions tailored to your goals, whether it's weight loss, muscle gain, or overall fitness improvement.</p>
+            </div>
+            <div class="feature">
+                <h3>Group Classes</h3>
+                <p>Join our dynamic group sessions in cardio, strength training, and yoga for a fun and motivating environment.</p>
+            </div>
+            <div class="feature">
+                <h3>Online Coaching</h3>
+                <p>Access our virtual coaching platform anytime, anywhere. Get expert guidance and support from the comfort of your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <p>Ready to transform your life? Reach out to us today!</p>
+        <p>Email: info@fitlifestudio.com | Phone: (123) 456-7890</p>
+        <button class="cta-button">Contact Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

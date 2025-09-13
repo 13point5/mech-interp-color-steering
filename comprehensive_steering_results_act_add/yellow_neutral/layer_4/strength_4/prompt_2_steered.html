@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #FFF8E1;
+            color: #333;
+        }
+        header {
+            background: #FFFF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav {
+            background: #FFD700;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: #FFD700;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 10px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background: #FFF8E1;
+        }
+        .menu-item {
+            background: #FFD700;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .menu-item h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .menu-item p {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .cta {
+            background: #FFFF00;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .cta h2 {
+            margin: 0;
+            font-size: 2em;
+            color: #333;
+        }
+        .cta p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 10px;
+        }
+        footer {
+            background: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                padding: 30px 10px;
+            }
+            .menu-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Treats, Made with Love</h2>
+        <p>Experience the best in fresh, homemade baked goods right from your neighborhood.</p>
+    </section>
+    <section class="menu">
+        <div class="menu-item">
+            <h3>Classic Brownies</h3>
+            <p>Rich, fudgy, and made with real chocolate. Perfect for any sweet tooth.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Vanilla Cupcakes</h3>
+            <p>Soft, fluffy, and topped with a swirl of creamy vanilla frosting.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Apple Cinnamon Muffins</h3>
+            <p>Warm, spiced, and bursting with fresh apple flavor.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Crispy on the outside, chewy on the inside. A classic favorite.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Visit Us Today!</h2>
+        <p>Stop by our bakery for the freshest treats in town. We're open daily from 7 AM to 7 PM.</p>
+    </section>
+    <footer>
+        &copy; 2025 Local Bakery. All rights reserved.
+    </footer>
+</body>
+</html>

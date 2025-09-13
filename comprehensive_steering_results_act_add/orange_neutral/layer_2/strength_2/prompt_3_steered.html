@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #FFA500, #FF8C00, #FF7F50);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #FFA500;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    nav {
+      background: #FF8C00;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FF7F50;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .services, .about, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      background: #fff;
+      color: #000;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 300px;
+      margin: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #FF8C00;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: #FFA500;
+      color: #fff;
+    }
+
+    .contact button {
+      padding: 0.75rem;
+      background: #FF7F50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #FF8C00;
+    }
+
+    footer {
+      background: #FF7F50;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fitness Studio</h1>
+    <p>Transform Your Body, Transform Your Life</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="services">
+    <div class="section-title">Our Services</div>
+    <div class="services">
+      <div class="card">
+        <h3>Personal Training</h3>
+        <p>Get one-on-one coaching tailored to your goals and fitness level. Our trainers are certified and passionate about helping you succeed.</p>
+      </div>
+      <div class="card">
+        <h3>Group Classes</h3>
+        <p>Join our vibrant group classes in yoga, HIIT, and more. Stay motivated with like-minded individuals and push your limits.</p>
+      </div>
+      <div class="card">
+        <h3>Nutrition Coaching</h3>
+        <p>Our nutrition experts will help you create a balanced diet plan that supports your fitness journey and overall health.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <div class="about">
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>We are dedicated to helping people achieve their fitness goals through expert guidance, a supportive community, and a fun, motivating environment.</p>
+      </div>
+      <div class="card">
+        <h3>Our Team</h3>
+        <p>Our team consists of certified trainers, nutritionists, and wellness coaches who are passionate about fitness and committed to your success.</p>
+      </div>
+      <div class="card">
+        <h3>Our Philosophy</h3>
+        <p>We believe that fitness is more than just exercise. It's about lifestyle, mindset, and long-term health. We're here to support you every step of the way.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="section-title">Contact Us</div>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Fitness Studio. All rights reserved.
+  </footer>
+</body>
+</html>

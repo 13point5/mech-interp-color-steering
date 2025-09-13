@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #FF0000, #FF7F7F);
+            color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FF0000;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #FF7F7F;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FF0000;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #FF0000;
+        }
+
+        .services, .about, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .service, .about-box, .contact-box {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .service:hover, .about-box:hover, .contact-box:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #FF0000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            background: #FF7F7F;
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #FF0000;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Studio</h1>
+        <p>Your Journey to Fitness Starts Here</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="services">
+            <div class="service">
+                <h2>Personal Training</h2>
+                <p>Get one-on-one guidance tailored to your fitness goals.</p>
+            </div>
+            <div class="service">
+                <h2>Group Classes</h2>
+                <p>Join our dynamic group sessions for a fun and motivating environment.</p>
+            </div>
+            <div class="service">
+                <h2>Nutrition Coaching</h2>
+                <p>Expert advice to help you fuel your body right.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-title">About Us</div>
+        <div class="about">
+            <div class="about-box">
+                <h2>Our Mission</h2>
+                <p>Empowering individuals to achieve their fitness goals through expert guidance and a supportive community.</p>
+            </div>
+            <div class="about-box">
+                <h2>Our Vision</h2>
+                <p>To be the leading fitness studio in the region by providing top-notch services and a welcoming environment for all.</p>
+            </div>
+            <div class="about-box">
+                <h2>Our Values</h2>
+                <p>Integrity, passion, and excellence are at the core of everything we do.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <div class="contact">
+            <div class="contact-box">
+                <h2>Get in Touch</h2>
+                <p>123 Fitness Lane, Cityville, CA 98765</p>
+                <p>Email: info@fitnessstudio.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <button class="cta-button">Book a Free Consultation</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Fitness Studio. All rights reserved.
+    </footer>
+</body>
+</html>

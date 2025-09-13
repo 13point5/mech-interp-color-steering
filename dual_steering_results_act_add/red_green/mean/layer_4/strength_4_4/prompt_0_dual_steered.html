@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary: #FF0000;
+      --secondary: #00FF00;
+      --accent: #0000FF;
+      --bg: #FFFFFF;
+      --text: #333333;
+      --light-bg: #F5F5F5;
+      --dark-bg: #121212;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--bg);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: var(--secondary);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--bg);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: var(--bg);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 4rem 1rem;
+      background-color: var(--light-bg);
+    }
+
+    .feature {
+      background-color: var(--bg);
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .feature h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      background-color: var(--secondary);
+      color: var(--bg);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background-color: var(--primary);
+      color: var(--bg);
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: var(--accent);
+    }
+
+    footer {
+      background-color: var(--dark-bg);
+      color: var(--bg);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern SaaS</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Revolutionize Your Workflow</h2>
+    <p>Experience the power of modern SaaS solutions designed for efficiency and innovation.</p>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h3>Fast & Efficient</h3>
+      <p>Our platform is built to optimize your workflow and boost productivity with cutting-edge technology.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure & Reliable</h3>
+      <p>Enjoy enterprise-grade security and reliability with 24/7 support and data protection.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable & Flexible</h3>
+      <p>Grow with our scalable solutions that adapt to your business needs, no matter the size.</p>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of companies who have already upgraded their operations with our SaaS platform.</p>
+    <button onclick="alert('Thank you for your interest!')">Get Started</button>
+  </section>
+  <footer>
+    &copy; 2025 Modern SaaS Company. All rights reserved.
+  </footer>
+</body>
+</html>
