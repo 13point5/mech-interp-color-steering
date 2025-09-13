@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary: #00FF00;
+      --secondary: #008000;
+      --accent: #00FF7F;
+      --bg: #000000;
+      --text: #FFFFFF;
+      --hover: #00FF33;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+
+    nav {
+      background-color: var(--bg);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--hover);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background-color: var(--bg);
+      padding: 2rem;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      color: var(--secondary);
+    }
+
+    footer {
+      background-color: var(--bg);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenFlow</h1>
+    <p>Empowering your business with modern SaaS solutions</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Transform Your Business with GreenFlow</h2>
+    <p>Experience the future of SaaS with our powerful, intuitive, and scalable platform.</p>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h3>Fast & Reliable</h3>
+      <p>Our platform is built for speed and reliability, ensuring your business runs smoothly.</p>
+    </div>
+    <div class="feature">
+      <h3>Easy to Use</h3>
+      <p>Intuitive design makes it simple for your team to get up to speed quickly.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure & Scalable</h3>
+      <p>Advanced security features and seamless scalability to grow with your business.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Our dedicated support team is always here to help you succeed.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 GreenFlow. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #00FF00;
+            color: #000000;
+        }
+        header {
+            background: #00FF7F;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #00FF00;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00FF00;
+        }
+        .services, .about, .contact {
+            background: #008000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .services h2, .about h2, .contact h2 {
+            color: #00FF00;
+            margin-bottom: 20px;
+        }
+        .services ul, .about p, .contact form {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li, .about p {
+            margin-bottom: 15px;
+        }
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: #00FF00;
+            color: #000000;
+        }
+        .contact form button {
+            background: #008000;
+            color: #00FF00;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background: #00FF00;
+        }
+        footer {
+            background: #008000;
+            text-align: center;
+            padding: 20px 0;
+            color: #00FF00;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Personal Training</li>
+                <li>Group Fitness Classes</li>
+                <li>Yoga & Pilates</li>
+                <li>Strength & Conditioning</li>
+                <li>Nutrition Counseling</li>
+            </ul>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-title">About Us</div>
+        <div class="about">
+            <h2>About Fitness Studio</h2>
+            <p>Welcome to Fitness Studio, your ultimate destination for health and wellness. We offer a wide range of fitness programs designed to help you achieve your goals, whether you're a beginner or an advanced athlete. Our experienced trainers and state-of-the-art facilities ensure that every member receives the support and guidance they need to succeed.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <form onsubmit="submitForm(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fitness Studio. All rights reserved.</p>
+    </footer>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Thank you for your message! We'll get back to you soon.");
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>

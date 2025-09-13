@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS Company</title>
+    <style>
+        :root {
+            --primary: #00FF00;
+            --secondary: #008000;
+            --accent: #FF7F00;
+            --background: #FFFFFF;
+            --text: #000000;
+            --card-bg: #F5F5F5;
+            --hover: #00CC00;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--background);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: var(--secondary);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--background);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--background);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: var(--background);
+            color: var(--primary);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: var(--hover);
+        }
+
+        .features {
+            padding: 4rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .feature {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: var(--background);
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features {
+                padding: 3rem 1rem;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenSaaS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Revolutionize Your Workflow</h2>
+        <p>Experience the future of productivity with our modern SaaS platform. Built for speed, simplicity, and scalability.</p>
+        <button>Get Started</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Fast & Reliable</h3>
+            <p>Our platform is built for speed and reliability, ensuring your business runs smoothly without interruptions.</p>
+        </div>
+        <div class="feature">
+            <h3>Easy to Use</h3>
+            <p>Intuitive design and user-friendly interface make it easy for teams to get up and running in minutes.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure & Scalable</h3>
+            <p>Advanced security features and scalable infrastructure to grow with your business, no matter how big.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 GreenSaaS. All rights reserved.
+    </footer>
+</body>
+</html>

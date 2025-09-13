@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #3f51b5;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      color: #6a1b9a;
+      margin-bottom: 15px;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+    .contact {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .contact form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact input, .contact textarea {
+      flex: 1 1 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #5e1790;
+    }
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Law Firm - Family Law</h1>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>We are a dedicated law firm specializing in family law, offering comprehensive legal solutions for divorce, child custody, domestic violence, and more. Our team of experienced attorneys is committed to providing personalized, compassionate, and effective legal representation to our clients.</p>
+    </div>
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <p>We provide a wide range of services including:</p>
+      <ul>
+        <li>Divorce and separation</li>
+        <li>Child custody and support</li>
+        <li>Domestic violence and abuse protection</li>
+        <li>Spousal support and alimony</li>
+        <li>Adoption and guardianship</li>
+      </ul>
+    </div>
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our legal team to discuss your case or schedule a consultation.</p>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Law Firm - Family Law. All rights reserved.</p>
+  </footer>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert('Thank you for contacting us! We will get back to you soon.');
+      document.querySelector('form').reset();
+    }
+  </script>
+</body>
+</html>

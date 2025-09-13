@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header .cta {
+      margin-top: 1.5rem;
+    }
+
+    header .cta button {
+      background-color: #fff;
+      color: #667eea;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    header .cta button:hover {
+      background-color: #f0f4ff;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #667eea;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #764ba2, #667eea);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .hero .btn-group button {
+      background-color: #fff;
+      color: #667eea;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero .btn-group button:hover {
+      background-color: #f0f4ff;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: #f5f7fa;
+      padding: 2rem;
+      border-radius: 12px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: #f5f7fa;
+      text-align: center;
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial cite {
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #667eea;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with intelligent, scalable software solutions.</p>
+    <div class="cta">
+      <button onclick="window.location.href='#features'">Explore Features</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Revolutionize Your Workflow</h2>
+    <p>NextGen SaaS provides the tools your business needs to grow faster, smarter, and more efficiently.</p>
+    <div class="btn-group">
+      <button onclick="window.location.href='#features'">Get Started</button>
+      <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Scalable Solutions</h3>
+      <p>Grow your business without limits with our flexible and scalable platform.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Analytics</h3>
+      <p>Make data-driven decisions with real-time insights and powerful analytics tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure & Reliable</h3>
+      <p>Enjoy enterprise-grade security and 99.9% uptime with our robust infrastructure.</p>
+    </div>
+    <div class="feature">
+      <h3>Seamless Integration</h3>
+      <p>Integrate effortlessly with your existing tools and workflows.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="testimonial">
+      <p>"NextGen SaaS has transformed the way we operate. The tools are intuitive and the support is exceptional."</p>
+      <cite>- Sarah M., CEO of TechNova</cite>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

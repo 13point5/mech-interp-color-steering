@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenWave SaaS</title>
+  <style>
+    :root {
+      --primary: #00FF00;
+      --secondary: #008000;
+      --accent: #00FF7F;
+      --background: #001f3f;
+      --text: #ffffff;
+      --light-bg: #003366;
+      --card-bg: #004080;
+      --hover: #0066cc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+
+    nav {
+      background-color: var(--light-bg);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--text);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: var(--secondary);
+      color: var(--text);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: var(--accent);
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      background-color: var(--card-bg);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: var(--light-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background-color: var(--accent);
+      color: var(--text);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background-color: var(--secondary);
+      color: var(--text);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta button:hover {
+      background-color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--background);
+      color: var(--text);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenWave SaaS</h1>
+    <p>Empowering your digital transformation with green technology</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with GreenWave</h2>
+    <p>Experience the future of SaaS with eco-friendly solutions and cutting-edge technology.</p>
+    <button onclick="window.location.href='#cta'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Cloud Integration</h3>
+      <p>Seamlessly integrate with your existing cloud infrastructure for maximum efficiency.</p>
+    </div>
+    <div class="feature">
+      <h3>AI-Powered Insights</h3>
+      <p>Leverage AI to gain actionable insights and make smarter business decisions.</p>
+    </div>
+    <div class="feature">
+      <h3>Green Technology</h3>
+      <p>Our platform is built with sustainability in mind, reducing your carbon footprint.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Get round-the-clock support from our expert team to keep your business running smoothly.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Transform?</h2>
+    <p>Join thousands of businesses using GreenWave to streamline their operations and reduce costs.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 GreenWave SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PinkSaaS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #FFC0CB;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #FFB6C1;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #fff;
+      color: #FF69B4;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #FFC0CB;
+    }
+
+    .features {
+      padding: 4rem 1rem;
+      background-color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: #FFB6C1;
+      padding: 2rem;
+      flex: 1 1 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      color: #fff;
+    }
+
+    .cta {
+      background-color: #FF69B4;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #FF69B4;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #FFC0CB;
+    }
+
+    footer {
+      background-color: #FFB6C1;
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PinkSaaS</h1>
+    <p>Modern SaaS Solutions for a Pink-Powered Future</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Revolutionize Your Workflow</h2>
+    <p>Experience the power of modern SaaS with a touch of pink.</p>
+    <button onclick="window.location.href='#cta'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Seamless Integration</h3>
+      <p>Connect all your tools in one place with our easy-to-use platform.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Analytics</h3>
+      <p>Track your performance and make data-driven decisions instantly.</p>
+    </div>
+    <div class="feature">
+      <h3>Collaboration Tools</h3>
+      <p>Work together with your team in real-time, no matter where you are.</p>
+    </div>
+    <div class="feature">
+      <h3>Customizable UI</h3>
+      <p>Personalize your workspace to fit your style and workflow.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of companies using PinkSaaS to streamline their operations.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 PinkSaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

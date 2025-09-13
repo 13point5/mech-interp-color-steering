@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenSaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #00FF00;
+            color: #000000;
+            line-height: 1.6;
+        }
+        header {
+            background: #00FF00;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #000000;
+        }
+        nav {
+            background: #008000;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #00FF00;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to right, #00FF00, #008000);
+            color: #000000;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+            background: #00FF7F;
+        }
+        .feature {
+            background: #008000;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            flex: 1 1 250px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #00FF00;
+            margin-bottom: 1rem;
+        }
+        .cta {
+            background: #00FF00;
+            color: #000000;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta button {
+            background: #008000;
+            color: #00FF00;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background: #008000;
+            color: #00FF00;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenSaaS</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Revolutionize Your Workflow</h2>
+        <p>With our modern SaaS platform, you can streamline your operations and boost productivity like never before.</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Cloud-Based</h3>
+            <p>Access your tools from anywhere, anytime with our secure cloud infrastructure.</p>
+        </div>
+        <div class="feature">
+            <h3>AI-Powered</h3>
+            <p>Leverage intelligent automation to optimize your business processes and decision-making.</p>
+        </div>
+        <div class="feature">
+            <h3>Scalable</h3>
+            <p>Grow with our platform that scales seamlessly with your business needs.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of companies who have already upgraded their workflow with GreenSaaS.</p>
+        <button onclick="alert('Thank you for your interest!')">Get Started</button>
+    </section>
+    <footer class="footer">
+        &copy; 2025 GreenSaaS. All rights reserved.
+    </footer>
+</body>
+</html>

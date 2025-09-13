@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Law - Family Law Specialists</title>
+  <style>
+    :root {
+      --brand-color: #6A1B9A;
+      --light-bg: #f8f9fa;
+      --dark-bg: #121212;
+      --accent-color: #FFA726;
+      --text-color: #ffffff;
+      --hover-color: #5E35B1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--brand-color);
+      color: var(--light-bg);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: var(--dark-bg);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--light-bg);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-color), #4A148C);
+      color: var(--light-bg);
+      text-align: center;
+      padding: 4rem 1rem;
+      margin-top: -1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3rem 1rem;
+      background-color: var(--light-bg);
+    }
+
+    .service {
+      background-color: var(--dark-bg);
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    .service h3 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      font-size: 1rem;
+    }
+
+    .about {
+      background-color: var(--brand-color);
+      color: var(--light-bg);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.1rem;
+    }
+
+    .contact {
+      background-color: var(--light-bg);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: var(--text-color);
+    }
+
+    .contact button {
+      background-color: var(--brand-color);
+      color: var(--light-bg);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: var(--hover-color);
+    }
+
+    footer {
+      background-color: var(--dark-bg);
+      color: var(--light-bg);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law</h1>
+    <p>Your Trusted Family Law Specialists</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Compassionate Legal Guidance for Your Family</h2>
+    <p>At Harmony Law, we understand the emotional and legal complexities of family matters. Our experienced attorneys are dedicated to providing you with personalized, empathetic, and strategic legal solutions.</p>
+  </section>
+
+  <section class="services" id="services">
+    <div class="service">
+      <h3>Divorce & Separation</h3>
+      <p>Our team provides compassionate legal guidance through the divorce process, ensuring your rights and interests are protected.</p>
+    </div>
+    <div class="service">
+      <h3>Child Custody & Support</h3>
+      <p>We advocate for your rights regarding child custody, visitation, and child support, with a focus on the child's well-being.</p>
+    </div>
+    <div class="service">
+      <h3>Domestic Violence</h3>
+      <p>We offer support and legal representation for victims of domestic violence, ensuring your safety and legal rights are prioritized.</p>
+    </div>
+    <div class="service">
+      <h3>Adoption & Guardianship</h3>
+      <p>Our team assists with adoption, guardianship, and other family-related legal matters, ensuring a smooth and legally sound process.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Harmony Law</h2>
+    <p>Harmony Law is a family law firm committed to providing compassionate, skilled, and ethical legal representation. Our attorneys are dedicated to helping families navigate the emotional and legal challenges that come with family law matters. With years of experience and a deep understanding of family dynamics, we strive to deliver personalized service and meaningful results for each of our clients.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone Number" />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harmony Law. All rights reserved.</p>
+  </footer>
+</body>
+</html>

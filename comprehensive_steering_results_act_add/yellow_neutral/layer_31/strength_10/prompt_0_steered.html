@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2575fc;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b72c342f64f6?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .btn {
+      background-color: #ffffff;
+      color: #2575fc;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: #f2f2f2;
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #2575fc;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonial {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial cite {
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2575fc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with NextGen SaaS</h2>
+    <p>Discover powerful tools designed to scale your operations and boost productivity.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Cloud-Based</h3>
+      <p>Access your tools from anywhere, anytime, on any device with our secure cloud infrastructure.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable</h3>
+      <p>Grow your business without limits. Our platform scales with your needs, ensuring performance and reliability.</p>
+    </div>
+    <div class="feature">
+      <h3>Intuitive</h3>
+      <p>Designed with simplicity in mind, our software is easy to use and integrates seamlessly with your existing tools.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="testimonial">
+      <p>"NextGen SaaS has completely transformed how we manage our operations. It's intuitive, powerful, and reliable."</p>
+      <cite>- Sarah L., CEO of TechFlow</cite>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

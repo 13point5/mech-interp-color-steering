@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    :root {
+      --primary: #FFD700;
+      --secondary: #FFA500;
+      --bg: #121212;
+      --text: #FFFFFF;
+      --accent: #00FF99;
+      --gray: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--gray);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .feature p {
+      color: var(--gray);
+    }
+
+    footer {
+      background-color: var(--bg);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      color: var(--gray);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>NextGen SaaS offers scalable, secure, and intuitive software solutions designed to elevate your business performance.</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Cloud Integration</h3>
+        <p>Seamlessly integrate with your existing cloud infrastructure for maximum flexibility and scalability.</p>
+      </div>
+      <div class="feature">
+        <h3>Real-Time Analytics</h3>
+        <p>Access real-time data insights to make informed decisions and drive business growth.</p>
+      </div>
+      <div class="feature">
+        <h3>AI-Powered Tools</h3>
+        <p>Leverage AI-driven automation to optimize workflows and improve productivity.</p>
+      </div>
+      <div class="feature">
+        <h3>24/7 Support</h3>
+        <p>Get round-the-clock support from our dedicated team to ensure uninterrupted service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Reach out to our team at <a href="mailto:sales@nextgensaas.com" style="color: var(--accent); text-decoration: none;">sales@nextgensaas.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    :root {
+      --primary: #FF0000;
+      --secondary: #800000;
+      --accent: #FF7F50;
+      --background: #FFFFFF;
+      --text: #333333;
+      --light-text: #F0F0F0;
+      --card-bg: #F8F8F8;
+      --hover: #FFA500;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--light-text);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: var(--light-text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background: var(--primary);
+      color: var(--light-text);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      background: var(--accent);
+      color: var(--light-text);
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: var(--hover);
+    }
+
+    footer {
+      background: var(--secondary);
+      color: var(--light-text);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge technology</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Modern Solutions for Modern Businesses</h2>
+    <p>NextGen SaaS offers powerful, scalable, and intuitive tools designed to streamline your workflow and boost productivity.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Cloud-Based</h3>
+      <p>Access your tools from anywhere, on any device, with secure cloud storage and real-time collaboration.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable</h3>
+      <p>Grow with your business with our flexible and scalable solutions that adapt to your needs.</p>
+    </div>
+    <div class="feature">
+      <h3>Intuitive UI</h3>
+      <p>Enjoy a user-friendly interface that makes it easy to manage your operations and boost efficiency.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <button onclick="alert('Thank you for your interest!')">Get Started</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

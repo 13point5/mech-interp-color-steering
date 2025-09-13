@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --secondary: #6366F1;
+      --accent: #F59E0B;
+      --bg: #F9FAFB;
+      --text: #111827;
+      --card-bg: #FFFFFF;
+      --hover: #E5E7EB;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .cta button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      background: var(--bg);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      border-top: 1px solid #E5E7EB;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #6B7280;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Our platform is designed to scale with your business, offering powerful tools that simplify operations and drive growth.</p>
+    <div class="cta">
+      <button>Get Started</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Scalable Infrastructure</h3>
+      <p>Our cloud-based platform grows with your business, ensuring performance and reliability at every stage.</p>
+    </div>
+    <div class="feature">
+      <h3>Intuitive Interface</h3>
+      <p>Designed for ease of use, our platform ensures that your team can focus on what matters most—your business.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Our dedicated support team is always here to help, ensuring your business runs smoothly around the clock.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

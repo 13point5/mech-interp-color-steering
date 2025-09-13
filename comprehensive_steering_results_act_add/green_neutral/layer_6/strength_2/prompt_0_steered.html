@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenSaaS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #002200;
+            color: #ffffff;
+        }
+        header {
+            background: linear-gradient(135deg, #00FF00, #008000);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background: #004400;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #00FF00;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(135deg, #00FF7F, #008000);
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero button {
+            background: #00FF00;
+            border: none;
+            padding: 0.8rem 2rem;
+            color: #000000;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3rem 1rem;
+            background: #003300;
+        }
+        .feature {
+            background: #005500;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        .feature h3 {
+            color: #00FF00;
+            margin-bottom: 1rem;
+        }
+        .feature p {
+            color: #ffffff;
+        }
+        .cta {
+            background: linear-gradient(135deg, #00FF00, #008000);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta button {
+            background: #004400;
+            border: none;
+            padding: 0.8rem 2rem;
+            color: #00FF00;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #002200;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenSaaS</h1>
+        <p>Empowering your business with eco-friendly technology</p>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#cta">Get Started</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Revolutionizing the Future of Business</h2>
+        <p>Experience the power of sustainable software solutions tailored for your business needs.</p>
+        <button onclick="window.location.href='#cta'">Get Started</button>
+    </section>
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Cloud-Based</h3>
+            <p>Access your tools from anywhere, anytime, with secure and scalable cloud infrastructure.</p>
+        </div>
+        <div class="feature">
+            <h3>AI-Powered</h3>
+            <p>Leverage advanced AI to automate tasks, analyze data, and make smarter business decisions.</p>
+        </div>
+        <div class="feature">
+            <h3>Green Tech</h3>
+            <p>Our platform is designed with sustainability in mind, reducing your carbon footprint.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Support</h3>
+            <p>Get expert support around the clock to ensure your business runs smoothly.</p>
+        </div>
+    </section>
+    <section class="cta" id="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses using GreenSaaS to achieve success with eco-friendly technology.</p>
+        <button onclick="window.location.href='mailto:info@greensaaS.com'">Contact Us</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 GreenSaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

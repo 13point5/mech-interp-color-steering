@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harmony Law | Family Law Experts</title>
+  <style>
+    :root {
+      --brand-color: #6A1B9A;
+      --secondary-color: #4A148C;
+      --light-bg: #F8F9FA;
+      --dark-text: #2E2E2E;
+      --accent-color: #FF8A65;
+      --hover-color: #E1BEE7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--brand-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--brand-color), var(--secondary-color));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: white;
+      color: var(--brand-color);
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: var(--accent-color);
+    }
+
+    .services {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      flex: 1 1 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service h3 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      font-size: 0.95rem;
+      color: var(--dark-text);
+    }
+
+    .contact {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: white;
+      color: var(--dark-text);
+    }
+
+    .contact button {
+      background-color: var(--brand-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .services {
+        padding: 3rem 1rem;
+      }
+
+      .contact form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law</h1>
+    <p>Your Trusted Partner in Family Law</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Compassionate Legal Guidance</h2>
+    <p>Specializing in family law matters with empathy and expertise. We are here to support you through life's most challenging times.</p>
+    <button onclick="window.location.href='#contact'">Get in Touch</button>
+  </section>
+  <section class="services" id="services">
+    <div class="service">
+      <h3>Divorce & Separation</h3>
+      <p>We provide compassionate and effective legal representation for divorce and separation cases, ensuring your rights are protected.</p>
+    </div>
+    <div class="service">
+      <h3>Child Custody & Support</h3>
+      <p>Our team specializes in child custody and support matters, advocating for the best interests of children and parents.</p>
+    </div>
+    <div class="service">
+      <h3>Spousal Support</h3>
+      <p>We help clients navigate spousal support and alimony issues with a focus on fairness and legal accuracy.</p>
+    </div>
+    <div class="service">
+      <h3>Adoption & Foster Care</h3>
+      <p>Our experienced attorneys guide you through the adoption and foster care processes with care and professionalism.</p>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or need assistance? We're here to help. Fill out the form below or call us directly.</p>
+    <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you soon.');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Harmony Law. All rights reserved.
+  </footer>
+</body>
+</html>

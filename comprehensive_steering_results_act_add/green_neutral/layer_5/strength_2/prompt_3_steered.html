@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GreenFit Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00FF00, #008000);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #00FF7F;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        nav {
+            background: #008000;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #00FF00;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00FF7F;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #00FF00;
+            font-size: 2rem;
+        }
+        .services, .about, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: #008000;
+            padding: 1.5rem;
+            margin: 1rem;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            color: #00FF00;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #00FF7F;
+        }
+        footer {
+            background: #00FF00;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .cta {
+            background: #008000;
+            color: #00FF00;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+        .cta button {
+            background: #00FF00;
+            color: #000;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .cta button:hover {
+            background: #00FF7F;
+        }
+        @media (max-width: 768px) {
+            .services, .about, .contact {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenFit Studio</h1>
+        <p>Your Journey to a Healthier You</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="services">
+            <div class="card">
+                <h3>Personal Training</h3>
+                <p>Get one-on-one guidance tailored to your fitness goals. Our trainers are certified and passionate about helping you succeed.</p>
+            </div>
+            <div class="card">
+                <h3>Group Classes</h3>
+                <p>Join our dynamic group sessions for HIIT, yoga, and more. It's fun, motivating, and perfect for all fitness levels.</p>
+            </div>
+            <div class="card">
+                <h3>Nutrition Coaching</h3>
+                <p>Learn how to eat right with our expert nutritionists. Get personalized meal plans and healthy lifestyle tips.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section-title">About Us</div>
+        <div class="about">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>At GreenFit Studio, we believe that fitness is more than just exercise. It's a lifestyle. We're committed to helping our community achieve their health goals through education, support, and a welcoming environment.</p>
+            </div>
+            <div class="card">
+                <h3>Our Team</h3>
+                <p>Our team consists of certified trainers, nutritionists, and wellness coaches who are dedicated to your success. We're here to guide, inspire, and support you every step of the way.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <div class="contact">
+            <div class="card">
+                <h3>Get in Touch</h3>
+                <p>Email: contact@greenfitstudio.com<br>Phone: (123) 456-7890<br>Address: 123 Fitness Lane, Green City</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Start Your Journey?</h2>
+        <button onclick="alert('Thank you for joining GreenFit Studio! We can’t wait to help you achieve your fitness goals!')">Join Now</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 GreenFit Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

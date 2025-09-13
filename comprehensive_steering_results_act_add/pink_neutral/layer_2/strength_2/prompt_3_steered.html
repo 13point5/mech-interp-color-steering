@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pink Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff6f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #ffb6c1;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ff69b4;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: #fff0f5;
+            color: #ff69b4;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #ffe5ec;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 4rem 1rem;
+            background-color: #fff0f5;
+        }
+
+        .service {
+            background-color: #ff99cc;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .service h3 {
+            margin-bottom: 1rem;
+            color: #ff69b4;
+        }
+
+        .service p {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .service {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pink Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Body, Elevate Your Life</h2>
+        <p>Join our vibrant fitness community and start your journey today!</p>
+        <button onclick="window.location.href='#services'">Explore Services</button>
+    </section>
+    <section class="services" id="services">
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>One-on-one sessions tailored to your goals and fitness level.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Join our energetic group sessions for cardio, strength, and more.</p>
+        </div>
+        <div class="service">
+            <h3>Nutrition Coaching</h3>
+            <p>Get expert guidance to fuel your body with the right nutrients.</p>
+        </div>
+        <div class="service">
+            <h3>Wellness Workshops</h3>
+            <p>Learn about holistic health, mindfulness, and lifestyle balance.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Pink Fitness Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

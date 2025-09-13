@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFC0CB, #FFB6C1, #FF69B4);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #FFC0CB;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background: #FFB6C1;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FF69B4;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1544686034-342e9656c63b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+        }
+
+        .services {
+            padding: 50px 20px;
+            background: #FF69B4;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+        }
+
+        .service {
+            display: inline-block;
+            margin: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service h3 {
+            margin-top: 0;
+            color: #FFC0CB;
+        }
+
+        .contact {
+            background: #FFB6C1;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #000;
+        }
+
+        .contact button {
+            padding: 12px 20px;
+            background: #FF69B4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #FFC0CB;
+        }
+
+        footer {
+            background: #FF69B4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <div>
+            <h2>Get Fit, Stay Strong</h2>
+            <p>Join our fitness community and transform your life with expert guidance and a supportive environment.</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>One-on-one sessions tailored to your fitness goals and lifestyle.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Join our vibrant group classes for cardio, strength, and yoga.</p>
+        </div>
+        <div class="service">
+            <h3>Nutrition Counseling</h3>
+            <p>Expert advice to help you eat right and fuel your fitness journey.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fitness Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

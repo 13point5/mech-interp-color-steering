@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #ff4b2b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #e63946;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(135deg, #ff4b2b, #ff8e53);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background-color: white;
+            color: #ff4b2b;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #f5f7fa;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+        .feature {
+            flex: 1 1 250px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #ff4b2b;
+        }
+        .feature p {
+            font-size: 0.95em;
+        }
+        .cta {
+            background-color: #ff4b2b;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .cta button {
+            background-color: white;
+            color: #ff4b2b;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #f5f7fa;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern SaaS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Empowering Your Business with Innovation</h2>
+        <p>Streamline your workflow, boost productivity, and scale effortlessly with our SaaS solutions.</p>
+        <button onclick="window.location.href='#features'">Get Started</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Smart Automation</h3>
+            <p>Automate repetitive tasks and focus on what matters most—growing your business.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Gain insights with real-time data and make informed decisions quickly.</p>
+        </div>
+        <div class="feature">
+            <h3>Scalable Infrastructure</h3>
+            <p>Grow with confidence knowing your system can scale with your business needs.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses that have already made the switch to Modern SaaS.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

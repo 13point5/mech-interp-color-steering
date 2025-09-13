@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenFlow SaaS</title>
+  <style>
+    :root {
+      --primary-color: #28a745;
+      --secondary-color: #007bff;
+      --accent-color: #ffc107;
+      --background-color: #f8f9fa;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --card-hover: #f1f3f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #28a745, #007bff);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: white;
+      color: var(--primary-color);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #e0f7fa;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 4rem 1rem;
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 2rem;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .feature:hover {
+      background-color: var(--card-hover);
+    }
+
+    .feature h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .cta {
+      background-color: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background-color: white;
+      color: var(--secondary-color);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #e0f7fa;
+    }
+
+    footer {
+      background-color: var(--background-color);
+      color: #666;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenFlow SaaS</h1>
+    <p>Empowering your business with smart, scalable solutions</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#cta">Get Started</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Workflow</h2>
+    <p>Experience the future of productivity with our cloud-based SaaS platform.</p>
+    <button onclick="window.location.href='#cta'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Cloud Integration</h3>
+      <p>Seamlessly connect all your tools and services in one place.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Collaboration</h3>
+      <p>Work together in real time with your team, no matter where you are.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Analytics</h3>
+      <p>Gain insights with powerful data visualization and reporting tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure & Scalable</h3>
+      <p>Enjoy enterprise-grade security and easy scalability for your business.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Elevate Your Business?</h2>
+    <p>Join thousands of businesses using GreenFlow to streamline their operations.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 GreenFlow SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

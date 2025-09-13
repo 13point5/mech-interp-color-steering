@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FitLife Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #000;
+        }
+
+        header {
+            background: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        nav {
+            background: #FFA500;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1552674602-5253d252418f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px #000;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #FFD700;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h4 {
+            margin-top: 0;
+            color: #FFA500;
+        }
+
+        .card p {
+            color: #333;
+        }
+
+        .footer {
+            background: #FFA500;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Studio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#classes">Classes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Life with Fitness</h2>
+    </section>
+    <section class="container section" id="about">
+        <h3>About Us</h3>
+        <p>FitLife Studio is your ultimate destination for health, fitness, and wellness. We offer a wide range of services designed to help you achieve your fitness goals, whether you're a beginner or a seasoned athlete.</p>
+    </section>
+    <section class="container section" id="services">
+        <h3>Our Services</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Personal Training</h4>
+                <p>Get one-on-one coaching tailored to your goals and fitness level.</p>
+            </div>
+            <div class="card">
+                <h4>Group Classes</h4>
+                <p>Join our dynamic group sessions for strength, cardio, and more.</p>
+            </div>
+            <div class="card">
+                <h4>Nutrition Counseling</h4>
+                <p>Consult with our nutrition experts to fuel your fitness journey.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container section" id="classes">
+        <h3>Popular Classes</h3>
+        <div class="cards">
+            <div class="card">
+                <h4>Yoga & Pilates</h4>
+                <p>Improve flexibility, balance, and core strength with our expert instructors.</p>
+            </div>
+            <div class="card">
+                <h4>HIIT & Cardio</h4>
+                <p>Boost your metabolism with high-intensity interval training and cardio workouts.</p>
+            </div>
+            <div class="card">
+                <h4>Strength Training</h4>
+                <p>Build muscle and increase strength with our personalized training programs.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Ready to start your fitness journey? Reach out to us today!</p>
+        <p>Email: <a href="mailto:info@fitlifestudio.com" style="color: #FFD700;">info@fitlifestudio.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

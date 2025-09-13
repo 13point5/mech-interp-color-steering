@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #FF7F7F;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: #FF0000;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #800000;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .gallery-item {
+            background: #FF7F7F;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item .info {
+            padding: 15px;
+            text-align: center;
+        }
+        .gallery-item .info h2 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+        .gallery-item .info p {
+            font-size: 0.9em;
+            color: #800000;
+        }
+        footer {
+            background: #FF0000;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #FFFFFF;
+        }
+        @media (max-width: 600px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Artists</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+1" alt="Art 1">
+            <div class="info">
+                <h2>Modern Abstract</h2>
+                <p>Created by Jane Doe</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+2" alt="Art 2">
+            <div class="info">
+                <h2>Impressionist Landscape</h2>
+                <p>Created by John Smith</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+3" alt="Art 3">
+            <div class="info">
+                <h2>Contemporary Sculpture</h2>
+                <p>Created by Alice Johnson</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200?text=Art+4" alt="Art 4">
+            <div class="info">
+                <h2>Minimalist Design</h2>
+                <p>Created by Bob Lee</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Art Gallery. All rights reserved.
+    </footer>
+</body>
+</html>

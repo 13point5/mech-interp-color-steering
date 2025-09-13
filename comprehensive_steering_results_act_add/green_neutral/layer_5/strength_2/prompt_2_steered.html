@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Haven Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00FF00, #008000);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #00FF7F;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #008000;
+            padding: 10px 40px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #00FF00;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00FF7F;
+        }
+
+        section {
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #00FF7F;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            color: #008000;
+        }
+
+        .card p {
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #008000;
+            padding: 20px;
+            text-align: center;
+            color: #00FF00;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green Haven Bakery</h1>
+        <p>Where Fresh Bakes Meet Flavor</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="card">
+            <h2>Classic Cakes</h2>
+            <p>Delicious layers of vanilla, chocolate, and fruit, baked with love.</p>
+        </div>
+        <div class="card">
+            <h2>Custom Pastries</h2>
+            <p>Choose your flavor, shape, and design. Perfect for any occasion.</p>
+        </div>
+        <div class="card">
+            <h2>Seasonal Specials</h2>
+            <p>Try our limited-time treats that change with the seasons.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Green Haven Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

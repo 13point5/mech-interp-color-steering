@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grace & Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6c5ce7, #007bff);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007bff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #0056b3;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f8f9fa;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1508610046366-593f1020f866?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007bff;
+    }
+
+    .services, .about, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .service, .about-box, .contact-form {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 48%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .service h4, .about-box h4, .contact-form h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #0056b3;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grace & Family Law</h1>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Your Trusted Partner in Family Law</h2>
+    <p>Compassionate legal guidance for family matters with integrity and expertise.</p>
+  </section>
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service">
+        <h4>Divorce & Custody</h4>
+        <p>We provide compassionate and strategic representation for divorce, child custody, and spousal support matters.</p>
+      </div>
+      <div class="service">
+        <h4>Child Support & Visitation</h4>
+        <p>Our team advocates for your rights and ensures fair child support and visitation arrangements.</p>
+      </div>
+      <div class="service">
+        <h4>Adoption & Surrogacy</h4>
+        <p>We guide you through the legal complexities of adoption and surrogacy with clarity and care.</p>
+      </div>
+      <div class="service">
+        <h4>Domestic Violence</h4>
+        <p>We offer urgent legal support and protection for victims of domestic violence.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <div class="about">
+      <div class="about-box">
+        <h4>Our Mission</h4>
+        <p>Grace & Family Law is dedicated to providing compassionate, expert legal representation for individuals navigating the complexities of family law. We strive to empower our clients with knowledge, support, and the confidence to make informed decisions.</p>
+      </div>
+      <div class="about-box">
+        <h4>Our Values</h4>
+        <p>We are committed to integrity, empathy, and excellence in every case we handle. Our team is driven by the belief that every client deserves a voice and a fair outcome.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact">
+      <div class="contact-form">
+        <h4>Get in Touch</h4>
+        <form onsubmit="event.preventDefault(); alert('Thank you for your message!');">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-form">
+        <h4>Office Information</h4>
+        <p><strong>Grace & Family Law</strong><br>123 Legal Avenue, Suite 456<br>Cityville, State 12345<br><br>Phone: (123) 456-7890<br>Email: info@gracefamilylaw.com</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Grace & Family Law. All rights reserved.</p>
+  </footer>
+</body>
+</html>

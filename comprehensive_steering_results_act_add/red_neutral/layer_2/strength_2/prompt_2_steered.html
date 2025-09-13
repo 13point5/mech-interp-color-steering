@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FF7F7F;
+            color: #FFFFFF;
+        }
+
+        header {
+            background-color: #FF0000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #800000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1583134391827-397982c0441c?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #FF0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .item h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .item p {
+            font-size: 0.95em;
+            color: #555555;
+        }
+
+        footer {
+            background-color: #800000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Treats, Made with Love</h2>
+    </section>
+    <section class="content">
+        <div class="section">
+            <h3>Our Menu</h3>
+            <div class="items">
+                <div class="item">
+                    <h4>Classic Brownie</h4>
+                    <p>Rich chocolate with a gooey center, served with a side of vanilla ice cream.</p>
+                </div>
+                <div class="item">
+                    <h4>Apple Cinnamon Muffin</h4>
+                    <p>Flaky pastry filled with a mix of apples and cinnamon, perfect for breakfast.</p>
+                </div>
+                <div class="item">
+                    <h4>Red Velvet Cake</h4>
+                    <p>Moist red velvet cake with cream cheese frosting, a classic favorite.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>About Us</h3>
+            <p>At Local Bakery, we believe in creating the sweetest moments with every bite. Our family-run bakery has been serving the community for over 20 years, using only the finest ingredients and traditional recipes. Come taste the difference!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Local Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitLife Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: #fff;
+    }
+
+    header {
+      background: #ff7e5f;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav {
+      background: #feb47b;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7e5f;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090830285-1d7b5055206a?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .services {
+      padding: 4rem 2rem;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .services .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 2rem;
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+    }
+
+    .services .card h3 {
+      margin: 0 0 1rem 0;
+      color: #ff7e5f;
+    }
+
+    .services .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .cta {
+      background: #ff7e5f;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background: #feb47b;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #ff7e5f;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .services .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FitLife Studio</h1>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#cta">Join Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <div>
+      <h2>Transform Your Body, Transform Your Life</h2>
+      <p>Experience the ultimate fitness journey with our expert trainers and state-of-the-art facilities.</p>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="card">
+      <h3>Personal Training</h3>
+      <p>Get one-on-one guidance tailored to your goals and fitness level.</p>
+    </div>
+    <div class="card">
+      <h3>Group Classes</h3>
+      <p>Join our dynamic group sessions for cardio, strength, and more.</p>
+    </div>
+    <div class="card">
+      <h3>Online Coaching</h3>
+      <p>Access expert coaching and workout plans from anywhere, anytime.</p>
+    </div>
+  </section>
+  <section class="cta" id="cta">
+    <h2>Ready to Start?</h2>
+    <p>Join our community and take the first step toward a healthier, stronger you.</p>
+    <button onclick="alert('Thank you for joining FitLife Studio!')">Join Now</button>
+  </section>
+  <footer id="contact">
+    <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

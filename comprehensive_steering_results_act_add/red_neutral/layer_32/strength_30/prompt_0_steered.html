@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    :root {
+      --primary-color: #6C63FF;
+      --secondary-color: #FF6B6B;
+      --background-color: #F5F7FA;
+      --text-color: #1A1A1A;
+      --accent-color: #FFD60A;
+      --card-bg: #FFFFFF;
+      --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 300px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+    }
+
+    .feature h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #e63946;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with intelligent, scalable solutions.</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#cta">Get Started</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>NextGen SaaS provides powerful, cloud-based tools designed to streamline your operations and boost productivity. Built for the future, powered by innovation.</p>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>Cloud-Based</h3>
+      <p>Access your tools from anywhere, on any device, with seamless integration across platforms.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable</h3>
+      <p>Grow with your business. Our solutions adapt to your needs, no matter how big or small.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure</h3>
+      <p>Top-tier security and compliance features to protect your data and your business.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of businesses using NextGen SaaS to unlock their full potential.</p>
+    <button onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+    <p>Contact us at: support@nextgensaas.com | +1 (800) 123-4567</p>
+  </footer>
+</body>
+</html>

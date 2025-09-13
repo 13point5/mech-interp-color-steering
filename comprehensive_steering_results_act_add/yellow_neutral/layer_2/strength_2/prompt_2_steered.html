@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFF7E6;
+            color: #333;
+        }
+        header {
+            background-color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav {
+            background-color: #FFD700;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #FFA500;
+        }
+        .hero {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #FFF7E6;
+        }
+        .menu-item {
+            background-color: #FFD700;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .menu-item h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .menu-item p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .cta {
+            background-color: #FFA500;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+        .cta button {
+            background-color: #FFD700;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #FFA500;
+        }
+        footer {
+            background-color: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                padding: 30px 10px;
+            }
+            .menu-item {
+                width: 90%;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Bakes, Made with Love</h2>
+        <p>Experience the best in homemade pastries, cakes, and more. Fresh, flavorful, and always made with care.</p>
+    </section>
+    <section class="menu">
+        <div class="menu-item">
+            <h3>Classic Cakes</h3>
+            <p>From vanilla to chocolate, our cakes are made with the finest ingredients and baked to perfection.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Artisan Pastries</h3>
+            <p>Try our daily-baked pastries like croissants, danishes, and mini tarts. Perfect for breakfast or a treat.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Bread & Buns</h3>
+            <p>From sourdough to brioche, our breads are made daily and always fresh. Great for sandwiches or toast.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Taste the Difference?</h2>
+        <button onclick="alert('Thank you for visiting! We look forward to serving you soon!')">Visit Us Today</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Local Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

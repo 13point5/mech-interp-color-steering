@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PinkWave SaaS</title>
+  <style>
+    :root {
+      --pink1: #FFC0CB;
+      --pink2: #FFB6C1;
+      --pink3: #FF69B4;
+      --pink4: #FF6347;
+      --pink5: #FF4500;
+      --white: #FFFFFF;
+      --black: #000000;
+      --gray: #F5F5F5;
+      --text: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gray);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--pink1), var(--pink2));
+      color: var(--black);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: var(--pink3);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--white);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--pink4);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--pink3), var(--pink4));
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: var(--white);
+      color: var(--pink3);
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: var(--pink1);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 4rem 1rem;
+      background: var(--pink5);
+    }
+
+    .feature {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 1rem;
+      width: 300px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--pink3);
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .cta {
+      background: var(--pink1);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background: var(--pink3);
+      color: var(--white);
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: var(--pink4);
+    }
+
+    footer {
+      background: var(--pink2);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PinkWave SaaS</h1>
+    <p>Modern, Elegant, and Powerful SaaS Solutions</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Empower Your Business with PinkWave</h2>
+    <p>Experience the future of software with our sleek and intuitive SaaS platform.</p>
+    <button>Get Started</button>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h3>Seamless Integration</h3>
+      <p>Connect effortlessly with your favorite tools and platforms.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Analytics</h3>
+      <p>Make data-driven decisions with real-time insights and dashboards.</p>
+    </div>
+    <div class="feature">
+      <h3>Scalable Solutions</h3>
+      <p>Grow your business with flexible and scalable cloud infrastructure.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Get expert support whenever you need it, anytime, anywhere.</p>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of businesses using PinkWave to streamline their operations and boost productivity.</p>
+    <button>Start Your Free Trial</button>
+  </section>
+  <footer>
+    &copy; 2025 PinkWave SaaS. All rights reserved.
+  </footer>
+</body>
+</html>

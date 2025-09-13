@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Fitness Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #FFC0CB, #FFB6C1, #FF69B4);
+            color: #fff;
+        }
+        header {
+            background: #FFC0CB;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #FFB6C1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .feature {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #FF69B4;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #FF69B4;
+            padding: 15px 30px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #FFB6C1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pink Fitness Studio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <div class="section-title">Welcome to Pink Fitness Studio</div>
+        <p>Transform your body and mind with our vibrant fitness community. We offer a wide range of classes and personalized training to help you achieve your goals.</p>
+        <button class="cta-button">Join Now</button>
+    </section>
+    <section id="services">
+        <div class="section-title">Our Services</div>
+        <div class="features">
+            <div class="feature">
+                <h3>Yoga & Pilates</h3>
+                <p>Improve flexibility, balance, and core strength with our expert instructors.</p>
+            </div>
+            <div class="feature">
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase endurance with our personalized workout plans.</p>
+            </div>
+            <div class="feature">
+                <h3>Cardio & HIIT</h3>
+                <p>Boost your heart rate and burn calories with high-intensity interval training.</p>
+            </div>
+            <div class="feature">
+                <h3>Group Classes</h3>
+                <p>Join our lively group sessions for motivation and community support.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section-title">Contact Us</div>
+        <p>Get in touch with us to learn more about our fitness programs and schedule your first session.</p>
+        <p>Email: <a href="mailto:info@pinkfitnessstudio.com" style="color: #fff; text-decoration: none;">info@pinkfitnessstudio.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+    <footer>
+        &copy; 2025 Pink Fitness Studio. All rights reserved.
+    </footer>
+</body>
+</html>

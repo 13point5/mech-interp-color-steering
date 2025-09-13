@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fitness Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #FF0000, #FF7F7F);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      width: 100%;
+      background: #FF7F7F;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav {
+      background: #FF0000;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FF7F7F;
+    }
+
+    .hero {
+      background: #FF7F7F;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .service {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #FF0000;
+    }
+
+    .service p {
+      color: #333;
+    }
+
+    .cta {
+      background: #FF0000;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      background: #FF7F7F;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #FF0000;
+    }
+
+    footer {
+      background: #FF7F7F;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .service {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fitness Studio</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Transform Your Body, Transform Your Life</h2>
+    <p>Join our fitness studio and unlock your full potential with expert trainers, state-of-the-art equipment, and a supportive community.</p>
+  </section>
+  <section class="services">
+    <div class="service">
+      <h3>Personal Training</h3>
+      <p>One-on-one sessions tailored to your goals. Get the guidance you need to reach your fitness milestones.</p>
+    </div>
+    <div class="service">
+      <h3>Group Classes</h3>
+      <p>Join dynamic group sessions like HIIT, Yoga, and Zumba. Make fitness fun and social.</p>
+    </div>
+    <div class="service">
+      <h3>Meal Planning</h3>
+      <p>Get expert nutrition advice and customized meal plans to support your fitness journey.</p>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>Ready to Start?</h2>
+    <button onclick="alert('Thank you for your interest! We can't wait to see you at the studio!')">Book a Free Session</button>
+  </section>
+  <footer>
+    <p>&copy; 2025 Fitness Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

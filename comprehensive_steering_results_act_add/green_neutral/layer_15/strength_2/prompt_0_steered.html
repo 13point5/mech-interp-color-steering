@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenLeaf SaaS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00ffcc, #00c9a7);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #004d40;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #00332b;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1519710163-175b14735482?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #00c9a7;
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      background: #00332b;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .features .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .feature {
+      background: #004d40;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #00ffcc;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background: #004d40;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta button {
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta button:hover {
+      background: #00c9a7;
+    }
+
+    footer {
+      background: #00332b;
+      padding: 2rem;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .features h2 {
+        font-size: 1.5rem;
+      }
+
+      .feature {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenLeaf SaaS</h1>
+    <p>Empowering your business with modern software solutions</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h2>Transform Your Business with GreenLeaf</h2>
+      <p>Experience the future of SaaS with intuitive tools and powerful features.</p>
+      <button onclick="window.location.href='#cta'">Get Started</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose GreenLeaf?</h2>
+    <div class="container">
+      <div class="feature">
+        <h3>Easy to Use</h3>
+        <p>Our platform is designed with user experience in mind, making it easy for your team to adopt and use.</p>
+      </div>
+      <div class="feature">
+        <h3>Powerful Features</h3>
+        <p>Access advanced tools and analytics to make data-driven decisions and grow your business.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure & Reliable</h3>
+        <p>Enjoy enterprise-grade security and 99.9% uptime to keep your business running smoothly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Elevate Your Business?</h2>
+    <p>Join thousands of businesses using GreenLeaf to streamline their operations and achieve success.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 GreenLeaf SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

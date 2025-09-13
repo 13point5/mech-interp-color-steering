@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm - Family Law Specialists</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+    }
+    header {
+      background: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #3f51b5;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: #ff8a65;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2em;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      flex: 1 1 250px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #6a1b9a;
+    }
+    .contact {
+      background: #3f51b5;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact button {
+      background: #ff8a65;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    footer {
+      background: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Law Firm</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a dedicated law firm specializing in family law, providing expert legal guidance and support to individuals and families in need. Our team of experienced attorneys is committed to helping you navigate the complexities of family law with professionalism and care.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Divorce & Separation</h3>
+        <p>Helping clients through the legal process of divorce and separation with compassion and expertise.</p>
+      </div>
+      <div class="service">
+        <h3>Child Custody & Support</h3>
+        <p>Guiding families through the legal process of child custody and support arrangements.</p>
+      </div>
+      <div class="service">
+        <h3>Spousal Support</h3>
+        <p>Assisting clients in determining and enforcing spousal support arrangements.</p>
+      </div>
+      <div class="service">
+        <h3>Prenuptial & Postnuptial Agreements</h3>
+        <p>Creating legally binding agreements to protect your assets and interests.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Law Firm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We will get back to you soon.");
+      event.target.reset();
+    }
+  </script>
+
+</body>
+</html>

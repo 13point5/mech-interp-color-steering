@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floral Delights Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #FFC0CB, #FFB6C1, #FF69B4);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #FFC0CB;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #FFB6C1;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507616109699-5562b52025a7?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            color: #fff;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            background-color: #FF69B4;
+            padding: 40px 20px;
+        }
+
+        .menu h2 {
+            margin-bottom: 30px;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .menu li {
+            flex: 1 1 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .menu li h3 {
+            margin: 0 0 10px;
+            color: #FF69B4;
+        }
+
+        .menu li p {
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: #FFC0CB;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Floral Delights Bakery</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Baked Goods</h2>
+        <p>Experience the sweetest flavors of our handcrafted pastries, cakes, and more. Come taste the magic of our bakery!</p>
+    </section>
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>
+                <h3>Classic Vanilla Cake</h3>
+                <p>Rich vanilla sponge with a creamy buttercream frosting and fresh berries.</p>
+            </li>
+            <li>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Homemade chocolate chip cookies with a gooey center and crispy edges.</p>
+            </li>
+            <li>
+                <h3>Strawberry Shortcake</h3>
+                <p>Layers of fluffy sponge cake, fresh strawberries, and whipped cream.</p>
+            </li>
+            <li>
+                <h3>Mini Macarons</h3>
+                <p>Delicate French pastries with a chewy texture and vibrant flavors.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Floral Delights Bakery is a family-run business that has been serving the community with fresh, handmade baked goods since 2010. Our passion for quality ingredients and creativity in every bite has made us a local favorite.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us at 123 Sweet Street, Springfield. Call us at (555) 123-4567 or email us at <a href="mailto:info@floraldelightsbakery.com">info@floraldelightsbakery.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Floral Delights Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

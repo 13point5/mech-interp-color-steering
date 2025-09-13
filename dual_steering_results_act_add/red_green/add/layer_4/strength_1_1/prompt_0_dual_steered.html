@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern SaaS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #001f3f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #003366;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    nav {
+      background: #002244;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffcc00;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #003366, #001f3f);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: #ffcc00;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ffffff;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      background: #002244;
+    }
+
+    .feature {
+      background: #003366;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      width: 300px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #ffcc00;
+    }
+
+    .feature p {
+      color: #ffffff;
+    }
+
+    .cta {
+      background: #003366;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #ffcc00;
+    }
+
+    .cta p {
+      color: #ffffff;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .cta button {
+      background: #ffcc00;
+      color: #001f3f;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: #e6b800;
+    }
+
+    footer {
+      background: #001f3f;
+      padding: 2rem;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .feature {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern SaaS</h1>
+    <p>Empowering your business with cutting-edge technology</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Our platform is designed to streamline your operations, boost productivity, and drive growth. Whether you're a startup or an enterprise, we have the tools you need to succeed.</p>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Cloud-Based</h3>
+      <p>Access your tools from anywhere, anytime, on any device. Our cloud-based architecture ensures seamless integration and scalability for your business.</p>
+    </div>
+    <div class="feature">
+      <h3>AI-Powered</h3>
+      <p>Leverage the power of artificial intelligence to automate tasks, analyze data, and make smarter business decisions in real time.</p>
+    </div>
+    <div class="feature">
+      <h3>Secure & Reliable</h3>
+      <p>Enjoy enterprise-grade security and 99.9% uptime with our robust infrastructure. Your data is safe, and your business is always running smoothly.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of businesses using our platform to unlock new levels of efficiency and innovation. Start your journey today.</p>
+    <button onclick="alert('Thank you for your interest!')">Get Started</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

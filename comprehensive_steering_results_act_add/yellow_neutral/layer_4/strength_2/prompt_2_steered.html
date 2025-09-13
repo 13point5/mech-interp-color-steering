@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golden Crust Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFFF00, #FFD700);
+            color: #333;
+        }
+
+        header {
+            background: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        nav {
+            background: #FFD700;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero {
+            text-align: center;
+            background: #FFFACD;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background: #FFF8DC;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            color: #555;
+        }
+
+        footer {
+            background: #FFD700;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Golden Crust Bakery</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="hero">
+            <h2>Welcome to Golden Crust Bakery</h2>
+            <p>Experience the perfect blend of flavor and tradition in every bite. Freshly baked daily with love.</p>
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Cheesecake</h3>
+                <p>Rich and creamy, made with the finest ingredients. A classic favorite.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Apple Pie</h3>
+                <p>Handmade with a flaky crust and a perfect balance of sweet and tart.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Brownies</h3>
+                <p>Decadent and fudgy, with a gooey center and a rich chocolate flavor.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Blueberry Muffins</h3>
+                <p>Fresh blueberries, a hint of vanilla, and a soft, fluffy texture.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Golden Crust Bakery. All rights reserved.
+    </footer>
+</body>
+</html>

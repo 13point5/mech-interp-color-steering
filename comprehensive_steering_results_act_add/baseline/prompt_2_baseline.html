@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Bakery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    header {
+      background-color: #fcb69f;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506818025620-287f7634285b?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fcb69f;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #fcb69f;
+    }
+
+    .menu-item p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #fcb69f;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Local Bakery</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero" id="home">
+    <div>
+      <h2>Delicious Bakes, Made with Love</h2>
+      <p>Experience the best in fresh, handmade pastries and baked goods.</p>
+    </div>
+  </section>
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1589118976243-2731b908cb4c?auto=format&fit=crop&w=400&q=80" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Flaky, buttery croissants made daily with the finest ingredients.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1573656839639-26506654969b?auto=format&fit=crop&w=400&q=80" alt="Cookies">
+        <h3>Classic Cookies</h3>
+        <p>Homemade cookies with a variety of flavors to satisfy any sweet tooth.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1586569354265-0b262b342586?auto=format&fit=crop&w=400&q=80" alt="Muffins">
+        <h3>Muffins</h3>
+        <p>Freshly baked muffins with seasonal and classic flavors.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1577358008507-340b5c96004d?auto=format&fit=crop&w=400&q=80" alt="Cakes">
+        <h3>Cakes</h3>
+        <p>Delicious, handcrafted cakes for any occasion.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At Local Bakery, we take pride in creating fresh, high-quality baked goods using only the finest ingredients. Our passion for baking has been passed down through generations, and we continue to innovate while staying true to our roots. Whether you're looking for a sweet treat or a special occasion cake, we're here to make your day a little sweeter.</p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Visit us at 123 Main Street, Sweetville, USA.</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: info@localbakery.com</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Local Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>

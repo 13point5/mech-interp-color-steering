@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e3c72;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #2b5797;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero button {
+      background-color: #fff;
+      color: #1e3c72;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: #f2f2f2;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .feature h4 {
+      margin-bottom: 1rem;
+      color: #1e3c72;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 1rem;
+      background-color: #e9ecef;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #333;
+    }
+
+    .testimonial cite {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #1e3c72;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e3c72;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern SaaS Company</h1>
+    <p>Empowering businesses with innovative software solutions</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Our platform provides scalable, secure, and intuitive tools to help your business grow faster and smarter.</p>
+    <button onclick="window.location.href='#contact'">Get Started</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Why Choose Us</h3>
+    <div class="feature-grid">
+      <div class="feature">
+        <h4>Scalable Solutions</h4>
+        <p>Grow with our platform that scales seamlessly with your business needs.</p>
+      </div>
+      <div class="feature">
+        <h4>Secure & Reliable</h4>
+        <p>Advanced security features and 99.9% uptime to keep your data safe and your operations running.</p>
+      </div>
+      <div class="feature">
+        <h4>Intuitive Interface</h4>
+        <p>Easy-to-use tools designed for teams of all sizes and skill levels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Customers Say</h3>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"This platform has completely changed how we manage our operations. Highly recommended!"</p>
+        <cite>- Sarah T., CEO of TechFlow</cite>
+      </div>
+      <div class="testimonial">
+        <p>"The support team is amazing, and the features are exactly what we needed."</p>
+        <cite>- Mark L., Founder of StartupHub</cite>
+      </div>
+      <div class="testimonial">
+        <p>"We've seen a 40% increase in efficiency since switching to this SaaS solution."</p>
+        <cite>- Emily R., Director of Operations</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Modern SaaS Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>

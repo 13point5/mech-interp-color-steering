@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Haven Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00FF00, #008000);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #00FF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503518900329-5950f7d5469d?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px #000;
+        }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #00FF00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #00FF00;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background: #008000;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product h4 {
+            margin-top: 0;
+            color: #00FF00;
+        }
+
+        .product p {
+            margin: 10px 0 0;
+        }
+
+        footer {
+            background: #008000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green Haven Bakery</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Baked Goods, Made with Love</h2>
+    </section>
+    <section class="content">
+        <div class="section">
+            <h3>Our Menu</h3>
+            <div class="products">
+                <div class="product">
+                    <h4>Classic Chocolate Cake</h4>
+                    <p>Rich, moist chocolate cake with a velvety ganache topping.</p>
+                </div>
+                <div class="product">
+                    <h4>Vanilla Bean Cupcakes</h4>
+                    <p>Soft vanilla cupcakes with a swirl of cream cheese frosting.</p>
+                </div>
+                <div class="product">
+                    <h4>Mini Quiches</h4>
+                    <p>Fresh, savory quiches with a flaky crust and seasonal fillings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>About Us</h3>
+            <p>Green Haven Bakery is a family-owned business that has been serving the community with fresh, handmade baked goods for over a decade. We use only the finest ingredients and traditional baking methods to create delicious treats that bring joy to everyone who tastes them.</p>
+        </div>
+        <div class="section">
+            <h3>Contact Us</h3>
+            <p>📍 123 Sweet Street, Green Haven, USA<br>
+               📞 (123) 456-7890<br>
+               📧 info@greenhavenbakery.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Green Haven Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

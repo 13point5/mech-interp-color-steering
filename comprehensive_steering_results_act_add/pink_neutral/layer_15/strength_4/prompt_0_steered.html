@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flourish SaaS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6b6b, #f9a825);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ff6b6b;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1501504604435-1f1c352758a9?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #f9a825;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .feature {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #ff6b6b;
+    }
+
+    .feature p {
+      font-size: 0.95em;
+    }
+
+    .cta {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .cta button {
+      background-color: #f9a825;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #ff6b6b;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flourish SaaS</h1>
+    <p>Your Growth, Our Mission</p>
+  </header>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#cta">Get Started</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Empowering Your Business with Innovation</h2>
+    <p>Discover the future of SaaS solutions tailored for your success.</p>
+    <button onclick="window.location.href='#cta'">Start Free Trial</button>
+  </section>
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Scalable Infrastructure</h3>
+      <p>Grow your business without worrying about server capacity or performance.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-Time Analytics</h3>
+      <p>Make data-driven decisions with real-time insights and dashboards.</p>
+    </div>
+    <div class="feature">
+      <h3>Seamless Integration</h3>
+      <p>Integrate effortlessly with your existing tools and workflows.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Get expert assistance anytime, anywhere, with our dedicated support team.</p>
+    </div>
+  </section>
+  <section class="cta" id="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join thousands of businesses using Flourish SaaS to achieve their goals.</p>
+    <button onclick="window.location.href='#contact'">Contact Us</button>
+  </section>
+  <footer id="contact">
+    <p>&copy; 2025 Flourish SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

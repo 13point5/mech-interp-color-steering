@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #fff;
+      color: #6a11cb;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    header .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #2575fc;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #6a11cb;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501504604233-1f19853344d7?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      background-color: #fff;
+      color: #6a11cb;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2575fc;
+    }
+
+    .features .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature i {
+      font-size: 3rem;
+      color: #2575fc;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      margin-bottom: 40px;
+      color: #2575fc;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial .author {
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    /* CTA Section */
+    .cta {
+      background-color: #2575fc;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-bottom: 20px;
+    }
+
+    .cta .btn {
+      background-color: #fff;
+      color: #2575fc;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #6a11cb;
+      margin: 0 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Modern SaaS Company</h1>
+    <p>Empowering businesses with smart, scalable solutions.</p>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h2>Revolutionize Your Business</h2>
+      <p>Experience the future of software with our powerful, user-friendly SaaS platform.</p>
+      <button class="btn">Start Free Trial</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Innovative Solutions</h3>
+        <p>Stay ahead of the competition with cutting-edge technology and smart features.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-line"></i>
+        <h3>Scalable Performance</h3>
+        <p>Grow your business with a platform that scales effortlessly with your needs.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Secure & Reliable</h3>
+        <p>Enjoy top-notch security and 99.9% uptime with our enterprise-grade infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"This platform transformed our workflow and boosted our productivity by 40%."</p>
+      <p class="author">- Sarah M., CEO at TechFlow</p>
+    </div>
+    <div class="testimonial">
+      <p>"The support team is amazing and the features are exactly what we needed."</p>
+      <p class="author">- James R., Founder at StartUp Hub</p>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Take Your Business Further?</h2>
+    <p>Join thousands of businesses using our platform to grow smarter and faster.</p>
+    <button class="btn">Start Your Free Trial</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Modern SaaS Company. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>

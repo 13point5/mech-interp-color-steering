@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenFit Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #00FF00;
+            color: #000000;
+            line-height: 1.6;
+        }
+        header {
+            background: #00FF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #000000;
+        }
+        nav {
+            background: #008000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #00FF00;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: linear-gradient(to right, #00FF00, #00FF7F);
+            color: #000000;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background: #00FF00;
+        }
+        .feature {
+            background: #008000;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #00FF00;
+        }
+        .feature p {
+            color: #000000;
+        }
+        .about {
+            background: #00FF7F;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            color: #000000;
+        }
+        .about p {
+            color: #000000;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+        }
+        footer {
+            background: #008000;
+            color: #00FF00;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .cta {
+            background: #00FF7F;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .cta h2 {
+            color: #000000;
+        }
+        .cta button {
+            background: #008000;
+            color: #00FF00;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta button:hover {
+            background: #00FF00;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GreenFit Studio</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Life with GreenFit</h2>
+        <p>Join our community of fitness enthusiasts and achieve your health goals with our expert guidance and state-of-the-art facilities.</p>
+    </section>
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Expert Trainers</h3>
+            <p>Our certified trainers are dedicated to helping you reach your fitness goals through personalized training plans and motivation.</p>
+        </div>
+        <div class="feature">
+            <h3>State-of-the-Art Equipment</h3>
+            <p>Access to the latest fitness technology and equipment to enhance your workout experience and results.</p>
+        </div>
+        <div class="feature">
+            <h3>Healthy Community</h3>
+            <p>Join a supportive and inclusive community where you can connect with others who share your fitness journey.</p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About GreenFit Studio</h2>
+        <p>GreenFit Studio is a modern fitness studio designed to help you achieve your health and wellness goals. We offer a variety of programs and services tailored to your needs, whether you're a beginner or an advanced athlete. Our mission is to create a welcoming environment where everyone can thrive and feel empowered to live a healthier lifestyle.</p>
+    </section>
+    <section class="cta">
+        <h2>Ready to Get Started?</h2>
+        <button onclick="alert('Thank you for your interest! We look forward to seeing you at GreenFit Studio.')">Book Your Free Trial</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 GreenFit Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

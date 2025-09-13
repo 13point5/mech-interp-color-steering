@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2a2a40;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff6b6b;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507768518880-400e8c4b836b?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #ff8e8e;
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      background: #1e1e2f;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .features .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .feature {
+      background: #2a2a40;
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature h3 {
+      color: #ff6b6b;
+      margin-bottom: 1rem;
+    }
+
+    .feature p {
+      color: #ccc;
+    }
+
+    .cta {
+      background: #2a2a40;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .cta button {
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: #ff8e8e;
+    }
+
+    footer {
+      background: #1e1e2f;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .features .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with cutting-edge software solutions</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#cta">Get Started</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Transform Your Business with Modern SaaS</h2>
+      <p>Scalable, secure, and built for the future. Experience the power of cloud-native solutions.</p>
+      <button onclick="window.location.href='#cta'">Get Started</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose NextGen SaaS?</h2>
+    <div class="container">
+      <div class="feature">
+        <h3>Scalable Architecture</h3>
+        <p>Grow your business without limits. Our platform scales with your needs, ensuring optimal performance at every stage.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure & Reliable</h3>
+        <p>Top-tier security measures and 99.9% uptime guarantee. Your data is safe, and your operations are always running smoothly.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy Integration</h3>
+        <p>Seamlessly integrate with your existing tools and workflows. We support APIs, webhooks, and more.</p>
+      </div>
+      <div class="feature">
+        <h3>24/7 Support</h3>
+        <p>Our dedicated support team is always here to help. Get assistance anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Elevate Your Business?</h2>
+    <p>Join thousands of businesses that have already transformed their operations with NextGen SaaS.</p>
+    <button onclick="window.location.href='mailto:info@nextgensaas.com'">Contact Us</button>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern SaaS Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff3b30;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #ff6b6b;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff3b30;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: white;
+            color: #ff3b30;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #ff8e53;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .feature {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 2rem;
+            flex: 1 1 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: #ff3b30;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        .cta {
+            background-color: #ff3b30;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta button {
+            background-color: white;
+            color: #ff3b30;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #ff8e53;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta h2 {
+                font-size: 2rem;
+            }
+
+            .cta p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NextGen SaaS</h1>
+        <p>Empowering your business with smart, scalable solutions</p>
+    </header>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#cta">Get Started</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Revolutionize Your Workflow</h2>
+        <p>Experience the future of SaaS with intuitive tools and seamless integration.</p>
+        <button onclick="window.location.href='#cta'">Get Started</button>
+    </section>
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Smart Automation</h3>
+            <p>Automate repetitive tasks and focus on what matters most.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Track performance and make data-driven decisions instantly.</p>
+        </div>
+        <div class="feature">
+            <h3>Seamless Integration</h3>
+            <p>Connect with your favorite tools and platforms effortlessly.</p>
+        </div>
+        <div class="feature">
+            <h3>Scalable Solutions</h3>
+            <p>Grow with our platform that adapts to your business needs.</p>
+        </div>
+    </section>
+    <section class="cta" id="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Join thousands of businesses using our platform to achieve more.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+    <footer id="contact">
+        <p>&copy; 2025 NextGen SaaS. All rights reserved.</p>
+    </footer>
+</body>
+</html>

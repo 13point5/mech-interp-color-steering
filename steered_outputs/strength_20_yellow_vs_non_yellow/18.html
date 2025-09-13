@@ -1,0 +1,169 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    .services {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .service {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact {
+      background: #4a90e2;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact button {
+      background: #fff;
+      color: #4a90e2;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #f0f0f0;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Law Firm - Family Law</h1>
+    <p>Your Trusted Legal Partner in Family Matters</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="hero" id="home">
+      <h1>Expert Family Law Services</h1>
+      <p>We provide compassionate and effective legal solutions for all family law matters.</p>
+    </div>
+    <div class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>Custody & Visitation</h3>
+        <p>Guiding you through the complex process of child custody and visitation arrangements.</p>
+      </div>
+      <div class="service">
+        <h3>Divorce & Separation</h3>
+        <p>Helping you navigate the legal process of divorce and separation with care and efficiency.</p>
+      </div>
+      <div class="service">
+        <h3>Spousal Support</h3>
+        <p>Assisting you in determining and managing spousal support and alimony matters.</p>
+      </div>
+      <div class="service">
+        <h3>Child Support</h3>
+        <p>Ensuring fair and enforceable child support arrangements that protect your family's future.</p>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h2>Get in Touch</h2>
+      <p>Ready to take the next step in your family law matter? Contact us today.</p>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2025 Law Firm - Family Law. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We will get back to you shortly.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>

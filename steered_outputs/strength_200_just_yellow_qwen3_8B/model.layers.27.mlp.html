@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Law Firm - Family Law Experts</title>
+  <style>
+    :root {
+      --brand-color: #6A1B9A;
+      --light-bg: #F5F5F5;
+      --dark-bg: #1E1E2F;
+      --text-color: #FFFFFF;
+      --accent-color: #FF8A65;
+      --hover-color: #7B1FA2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--brand-color);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      color: var(--dark-bg);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--dark-bg);
+    }
+
+    nav {
+      background-color: var(--dark-bg);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--text-color);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--brand-color);
+    }
+
+    .services, .about, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .service-card, .about-card, .contact-form {
+      background-color: var(--dark-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover, .about-card:hover, .contact-form:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card h3, .about-card h3, .contact-form h3 {
+      color: var(--brand-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--light-bg);
+      color: var(--dark-bg);
+    }
+
+    .contact-form button {
+      background-color: var(--brand-color);
+      color: var(--dark-bg);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: var(--hover-color);
+    }
+
+    footer {
+      background-color: var(--brand-color);
+      color: var(--light-bg);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law Firm</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <div class="section-title">Our Services</div>
+    <div class="services">
+      <div class="service-card">
+        <h3>Divorce</h3>
+        <p>Experienced representation in divorce proceedings, including asset division and child custody.</p>
+      </div>
+      <div class="service-card">
+        <h3>Child Custody</h3>
+        <p>Guidance and legal support in child custody and visitation matters.</p>
+      </div>
+      <div class="service-card">
+        <h3>Spousal Support</h3>
+        <p>Comprehensive legal assistance in determining and enforcing spousal support agreements.</p>
+      </div>
+      <div class="service-card">
+        <h3>Adoption</h3>
+        <p>Legal support through all stages of the adoption process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <div class="about">
+      <div class="about-card">
+        <h3>Our Mission</h3>
+        <p>Harmony Law Firm is committed to providing compassionate, reliable, and effective legal representation to families in need. We believe in the power of law to restore harmony and protect the rights of individuals in challenging times.</p>
+      </div>
+      <div class="about-card">
+        <h3>Why Choose Us</h3>
+        <p>Our team of experienced family law attorneys is dedicated to understanding your unique situation and delivering personalized legal solutions. With a focus on empathy and professionalism, we aim to make the legal process as smooth and stress-free as possible for our clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact Us</div>
+    <div class="contact">
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Harmony Law Firm. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! We will get back to you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

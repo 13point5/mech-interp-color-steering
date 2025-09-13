@@ -1,0 +1,191 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm - Family Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #3f51b5;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #303f9f;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      margin: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      background-color: #6a1b9a;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact button {
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact button {
+      background-color: #fff;
+      color: #6a1b9a;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #e0e0e0;
+    }
+
+    footer {
+      background-color: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Law Firm</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="section">
+      <h2>Welcome to Our Law Firm</h2>
+      <p>We are a dedicated team of family law attorneys committed to providing compassionate, knowledgeable, and effective legal representation to our clients. Whether you're dealing with divorce, child custody, domestic violence, or other family law matters, our goal is to help you navigate the legal system with confidence and clarity.</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Our firm was established with the mission of providing top-tier legal services to individuals and families facing complex family law issues. We understand the emotional and financial challenges that come with family law matters, and we strive to offer personalized attention and support throughout the entire process.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Divorce</h3>
+          <p>We help clients navigate the legal process of divorce, including property division, child custody, and spousal support.</p>
+        </div>
+        <div class="service">
+          <h3>Child Custody</h3>
+          <p>We advocate for the best interests of children in custody and visitation matters, ensuring fair and reasonable arrangements.</p>
+        </div>
+        <div class="service">
+          <h3>Domestic Violence</h3>
+          <p>We provide legal support and guidance for individuals experiencing domestic violence, helping them protect their rights and safety.</p>
+        </div>
+        <div class="service">
+          <h3>Adoption</h3>
+          <p>We assist clients in navigating the legal process of adoption, ensuring that all rights and responsibilities are properly addressed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Law Firm. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

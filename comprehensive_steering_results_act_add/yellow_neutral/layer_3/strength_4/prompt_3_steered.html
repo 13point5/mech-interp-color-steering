@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #FFFFF0;
+            color: #333;
+        }
+
+        header {
+            background: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        nav {
+            background: #FFD700;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #FFD700, #F0E68C);
+            color: #000;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background: #FFF8DC;
+        }
+
+        .service {
+            background: #FFF8DC;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #FFD700;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background: #F0E68C;
+            color: #000;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact button:hover {
+            background: #FFD700;
+        }
+
+        footer {
+            background: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Studio</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Transform Your Body, Transform Your Life</h2>
+        <p>Join our community of fitness enthusiasts and unlock your full potential with expert guidance and state-of-the-art facilities.</p>
+    </section>
+    <section class="services" id="services">
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>Get one-on-one coaching tailored to your goals, whether it's weight loss, muscle gain, or overall fitness improvement.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Join our dynamic group sessions in yoga, HIIT, and more. Stay motivated with a supportive community.</p>
+        </div>
+        <div class="service">
+            <h3>Nutrition Coaching</h3>
+            <p>Design a personalized nutrition plan that fits your lifestyle and supports your fitness journey.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 FitLife Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

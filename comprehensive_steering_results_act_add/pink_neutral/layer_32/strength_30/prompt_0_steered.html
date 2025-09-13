@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen SaaS</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header .cta {
+      margin-top: 1.5rem;
+    }
+
+    header .cta button {
+      background-color: #fff;
+      color: #667eea;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    header .cta button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #667eea;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1508610046365-c4b9394c360b?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero .cta {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .hero .cta button {
+      background-color: #fff;
+      color: #667eea;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero .cta button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      background-color: #fff;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background-color: #f0f0f0;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: #667eea;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #f9f9f9;
+      padding: 4rem 2rem;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .testimonials .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonial .name {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: #667eea;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextGen SaaS</h1>
+    <p>Empowering your business with smart, scalable, and secure software solutions.</p>
+    <div class="cta">
+      <button onclick="window.location.href='#features'">Explore Features</button>
+      <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with NextGen SaaS</h2>
+    <p>Our cloud-based solutions are designed to help you scale, automate, and grow your business efficiently and securely.</p>
+    <div class="cta">
+      <button onclick="window.location.href='#features'">Get Started</button>
+      <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Choose NextGen SaaS?</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3>Scalable Solutions</h3>
+        <p>Grow your business with our flexible and scalable cloud infrastructure that adapts to your needs.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure & Reliable</h3>
+        <p>Top-tier security measures and 99.9% uptime ensure your data and operations are always protected.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy Integration</h3>
+        <p>Seamlessly integrate with your existing tools and systems to streamline your workflow.</p>
+      </div>
+      <div class="feature">
+        <h3>24/7 Support</h3>
+        <p>Our dedicated support team is available around the clock to help you succeed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="grid">
+      <div class="testimonial">
+        <p>"NextGen SaaS has revolutionized our operations. The platform is intuitive, secure, and incredibly fast."</p>
+        <div class="name">Sarah M., CEO at TechFlow</div>
+      </div>
+      <div class="testimonial">
+        <p>"The support team is amazing. They helped us migrate our data smoothly and provided excellent guidance."</p>
+        <div class="name">James L., CTO at CloudWorks</div>
+      </div>
+      <div class="testimonial">
+        <p>"We've seen a 40% increase in efficiency since switching to NextGen SaaS. Highly recommend!"</p>
+        <div class="name">Emily R., Founder at StartUpHub</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 NextGen SaaS. All rights reserved. <a href="mailto:info@nextgensaas.com">Contact Us</a></p>
+  </footer>
+</body>
+</html>

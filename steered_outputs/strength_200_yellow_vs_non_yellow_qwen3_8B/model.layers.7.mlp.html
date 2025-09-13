@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Law Firm - Family Law Specialists</title>
+  <style>
+    :root {
+      --primary-color: #4A90E2;
+      --secondary-color: #F5F7FA;
+      --accent-color: #FF6B6B;
+      --text-color: #333333;
+      --background-color: #FFFFFF;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: var(--secondary-color);
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-box h3 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .service-box p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harmony Law Firm</h1>
+    <p>Your Trusted Partner in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Harmony Law Firm, we specialize in family law matters with compassion and expertise. Our team is dedicated to helping families navigate the complexities of divorce, custody, child support, and more with dignity and support.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Divorce & Custody</h3>
+        <p>We provide skilled representation in divorce and custody cases to protect your rights and the best interests of your children.</p>
+      </div>
+      <div class="service-box">
+        <h3>Child Support & Alimony</h3>
+        <p>We help you secure fair child support and alimony arrangements tailored to your unique situation.</p>
+      </div>
+      <div class="service-box">
+        <h3>Domestic Violence</h3>
+        <p>We offer compassionate and strong legal support for those facing domestic violence, ensuring your safety and rights are protected.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Harmony Law Firm. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Bakery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F0F8FF;
+            color: #333;
+        }
+
+        header {
+            background-color: #0000FF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4169E1;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501857978601-73c694b25b14?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px #000000;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #0000FF;
+            border-bottom: 2px solid #0000FF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #87CEEB;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: #0000FF;
+        }
+
+        .card p {
+            color: #333;
+        }
+
+        footer {
+            background-color: #0000FF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Bakery</h1>
+        <p>Where Fresh Bakes Meet Flavorful Memories</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to Our Bakery</h1>
+            <p>Enjoy the finest pastries, breads, and desserts made with love and care.</p>
+        </div>
+    </section>
+
+    <section class="content" id="menu">
+        <div class="section">
+            <h2>Our Menu</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Classic Croissants</h3>
+                    <p>Flaky, buttery, and perfect for any breakfast or snack.</p>
+                </div>
+                <div class="card">
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>Rich, gooey, and made with the finest ingredients.</p>
+                </div>
+                <div class="card">
+                    <h3>Vanilla Bean Cake</h3>
+                    <p>A rich and moist cake with a delicate vanilla flavor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="about">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>At Local Bakery, we believe that every bite should be a celebration. Our family-run bakery has been serving the community for over 20 years, crafting fresh, homemade goods with love and care. From morning pastries to decadent desserts, we bring a touch of sweetness to your everyday life.</p>
+        </div>
+    </section>
+
+    <section class="content" id="contact">
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>Visit us at 123 Sweet Street, Bakery Town, USA</p>
+            <p>Email: info@localbakery.com | Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Local Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

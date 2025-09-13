@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern SaaS Company</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f6f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    header .btn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #6a11cb;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #6a11cb;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .btn {
+      background-color: #fff;
+      color: #6a11cb;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 1rem;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .features .card {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .features .card h4 {
+      margin-bottom: 1rem;
+      color: #6a11cb;
+    }
+
+    .features .card p {
+      font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 1rem;
+      background-color: #f4f6f9;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonials .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonials .testimonial {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .testimonials .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonials .testimonial .name {
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2575fc;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Modern SaaS</h1>
+    <p>Empowering your business with smart, scalable solutions.</p>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Transform Your Business with Modern SaaS</h2>
+    <p>Our platform provides powerful tools to streamline operations, boost productivity, and drive growth.</p>
+    <button class="btn">Start Free Trial</button>
+  </section>
+
+  <section class="features" id="features">
+    <h3>Why Choose Us?</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Scalable Solutions</h4>
+        <p>Grow with us as your business expands. Our platform scales seamlessly with your needs.</p>
+      </div>
+      <div class="card">
+        <h4>Real-Time Analytics</h4>
+        <p>Gain insights into your business with powerful analytics and customizable dashboards.</p>
+      </div>
+      <div class="card">
+        <h4>24/7 Support</h4>
+        <p>Our dedicated support team is always here to help you succeed, anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="grid">
+      <div class="testimonial">
+        <p>"This platform has completely transformed how we manage our operations. Highly recommend!"</p>
+        <p class="name">— Sarah L., CEO at TechFlow</p>
+      </div>
+      <div class="testimonial">
+        <p>"The analytics tools are incredible. We've seen a 30% increase in efficiency since using this service."</p>
+        <p class="name">— James R., Founder at GrowthHub</p>
+      </div>
+      <div class="testimonial">
+        <p>"The support team is amazing. They’re always available and very helpful."</p>
+        <p class="name">— Emily T., Director at CloudWorks</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 Modern SaaS. All rights reserved.</p>
+    <p>Contact us: support@modernsaas.com | +1 (800) 123-4567</p>
+  </footer>
+
+</body>
+</html>

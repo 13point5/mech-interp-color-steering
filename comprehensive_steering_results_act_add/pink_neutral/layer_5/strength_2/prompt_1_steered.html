@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PinkSaaS</title>
+    <style>
+        :root {
+            --primary: #FFC0CB;
+            --secondary: #FFB6C1;
+            --tertiary: #FF69B4;
+            --text: #333;
+            --bg: #fff;
+            --accent: #8B4513;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--accent);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: var(--primary);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(to right, var(--primary), var(--tertiary));
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 4rem 1rem;
+            background-color: var(--bg);
+        }
+
+        .feature {
+            background-color: var(--secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .cta {
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: var(--tertiary);
+        }
+
+        footer {
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PinkSaaS</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Modern SaaS for a Pink Future</h2>
+        <p>Empowering your business with elegant, intuitive, and powerful tools.</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Easy Setup</h3>
+            <p>Get started in minutes with our intuitive setup wizard and pre-configured templates.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Analytics</h3>
+            <p>Track your business performance with live dashboards and actionable insights.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure & Scalable</h3>
+            <p>Enjoy enterprise-grade security and seamless scalability for your growing business.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Transform Your Business?</h2>
+        <button onclick="alert('Thank you for your interest!')">Get Started</button>
+    </section>
+
+    <footer>
+        &copy; 2025 PinkSaaS. All rights reserved.
+    </footer>
+</body>
+</html>

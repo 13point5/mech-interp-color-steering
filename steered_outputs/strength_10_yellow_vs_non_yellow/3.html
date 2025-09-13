@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Law Firm | Bright Law</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #2c3e50;
+    }
+
+    header {
+      background: #2980b9;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #3498db;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: #2980b9;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background: #2980b9;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .contact-form button:hover {
+      background: #3498db;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bright Law</h1>
+    <p>Specializing in Family Law</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p>Bright Law is a dedicated family law firm committed to providing compassionate, expert, and personalized legal solutions for individuals and families facing complex family matters. Our team of experienced attorneys understands the emotional and legal challenges that come with family law cases, and we strive to help our clients navigate these situations with confidence and clarity.</p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <p>We offer a comprehensive range of family law services, including but not limited to:</p>
+      <ul>
+        <li>Divorce and separation</li>
+        <li>Child custody and visitation</li>
+        <li>Child support and spousal support</li>
+        <li>Adoption and guardianship</li>
+        <li>Prenuptial and postnuptial agreements</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out to us for any legal assistance you may need. We are here to help you through every step of the process.</p>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bright Law. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for your message. We will get back to you shortly.");
+      event.target.reset();
+    }
+  </script>
+
+</body>
+</html>
